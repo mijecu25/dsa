@@ -16,5 +16,10 @@ public class AppTest //extends TestCase
 		public void testApp() {		
 			Assert.assertEquals(App.reverse("miguel"), "leugim");
 		}
+		
+		@org.junit.Test
+		public void testApp2() {		
+			Assert.assertNotEquals(App.reverse("tazo"), "toza");
+		}
 	   
 }
