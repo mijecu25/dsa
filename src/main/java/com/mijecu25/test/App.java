@@ -10,4 +10,8 @@ public class App
     {
         System.out.println( "Hello World!" );
     }
+    
+    public static String reverse(String src) {
+    	return new StringBuilder(src).reverse().toString();
+    }
 }
