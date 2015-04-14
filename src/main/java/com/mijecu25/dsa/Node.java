@@ -1,7 +1,7 @@
 package com.mijecu25.dsa;
 
 /**
- *  This is the Node class. 
+ * This is the Node class. 
  *  
  * @author Miguel Velez
  * @version 0.1.1
