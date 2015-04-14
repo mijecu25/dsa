@@ -11,27 +11,30 @@ import org.junit.Test;
  * 
  */
 public class TestNode {
-
+	Node node = new Node(6, null);
+	
 	/**
 	 * Test the node constructor.
 	 */
 	@Test
-	public void TestNodeConstructor() {
-		Node node = new Node(6, null);
+	public void TestNodeConstructor() {		
+		// Check if they are the same class
+		Assert.assertSame(Node.class, this.node.getClass()); 
 		
 		// Check if they are the same class
-		Assert.assertSame(Node.class, node.getClass()); 
+		Assert.assertNotSame(String.class, this.node.getClass()); 
 	}
 	
 	/**
 	 * Test the get data method.
 	 */
 	@Test
-	public void TestGetData() {
-		Node node = new Node(5, null);
-		
+	public void TestGetData() {		
 		// Checking if we get the same data back
-		Assert.assertEquals(5, node.getData());
+		Assert.assertEquals(6, this.node.getData());
+		
+		// Check if we do not get the same data back
+		Assert.assertNotEquals(5, this.node.getData());
 	}
 
 }
