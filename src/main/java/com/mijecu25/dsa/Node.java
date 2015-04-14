@@ -1,11 +1,11 @@
 package com.mijecu25.dsa;
 
 /**
- * 
+ *  This is the Node class. 
+ *  
  * @author Miguel Velez
- * @version 0.1
+ * @version 0.1.1
  * 
- * This is the Node class
  */
 public class Node {
 	
@@ -13,10 +13,11 @@ public class Node {
 	private Node	next;
 	
 	/**
-	 * Constructor 
+	 * Constructors a node that contains {@code data} and sets its next node to
+	 * {@code next} 
 	 * 
-	 * @param data
-	 * @param next
+	 * @param data-the data that the node holds.
+	 * @param next-the next node that this node points to.
 	 */
 	public Node(Object data, Node next) 
 	{
@@ -26,8 +27,9 @@ public class Node {
 	}
 	
 	/**
+	 * Gets the content of this node.
 	 * 
-	 * @return
+	 * @return an object containing the data of this node.
 	 */
 	public Object getData() 
 	{
@@ -36,8 +38,9 @@ public class Node {
 	}
 	
 	/**
+	 * Gets the next node of this node.
 	 * 
-	 * @return Node
+	 * @return a reference to the next node that this node points to.
 	 */
 	public Node getNext()
 	{
@@ -46,8 +49,9 @@ public class Node {
 	}
 	
 	/**
+	 * Sets the next node of this node.
 	 * 
-	 * @param next
+	 * @param next-the next node that this node should point to.
 	 */
 	public void setNext(Node next) 
 	{
