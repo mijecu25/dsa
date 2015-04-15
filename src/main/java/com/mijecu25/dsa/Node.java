@@ -4,7 +4,7 @@ package com.mijecu25.dsa;
  * This is the Node class. 
  *  
  * @author Miguel Velez
- * @version 0.1.1
+ * @version 0.1.2
  * 
  */
 public class Node {
@@ -13,7 +13,7 @@ public class Node {
 	private Node	next;
 	
 	/**
-	 * Constructors a node that contains {@code data} and sets its next node to
+	 * Construct a node that contains {@code data} and sets its next node to
 	 * {@code next} 
 	 * 
 	 * @param data-the data that the node holds.
