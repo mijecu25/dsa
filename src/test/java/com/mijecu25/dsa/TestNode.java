@@ -7,11 +7,12 @@ import org.junit.Test;
  * This is the Node test class. 
  * 
  * @author Miguel Velez
- * @version 0.2.1
+ * @version 0.3
  *  
  */
 public class TestNode {
-	Node node = new Node(6, null);
+	Node first = new Node(6, null);
+	Node second = new Node("Dog", null);
 	
 	/**
 	 * Test the node constructor.
@@ -19,10 +20,10 @@ public class TestNode {
 	@Test
 	public void TestNodeConstructor() {		
 		// Check if they are the same class
-		Assert.assertSame(Node.class, this.node.getClass()); 
+		Assert.assertSame(Node.class, this.first.getClass()); 
 		
 		// Check if they are the same class
-		Assert.assertNotSame(String.class, this.node.getClass()); 
+		Assert.assertNotSame(String.class, this.first.getClass()); 
 	}
 	
 	/**
@@ -31,10 +32,25 @@ public class TestNode {
 	@Test
 	public void TestGetData() {		
 		// Checking if we get the same data back
-		Assert.assertEquals(6, this.node.getData());
+		Assert.assertEquals(6, this.first.getData());
 		
 		// Check if we do not get the same data back
-		Assert.assertNotEquals(5, this.node.getData());
+		Assert.assertNotEquals(5, this.first.getData());
+	}
+	
+	/**
+	 * Test the get next method
+	 */
+	@Test
+	public void TestSetGetNext() {
+		// Set second as first's next
+		first.setNext(second);
+		
+		// Check if the next node is the second node
+		Assert.assertEquals(second, first.getNext());
+		
+		// Check if that the next node of second is not first
+		Assert.assertNotEquals(first, second.getNext());
 	}
 
 }
