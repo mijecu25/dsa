@@ -7,12 +7,12 @@ import org.junit.Test;
  * This is the Node test class. 
  * 
  * @author Miguel Velez
- * @version 0.3
+ * @version 0.3.1
  *  
  */
 public class TestNode {
-	Node first = new Node(6, null);
-	Node second = new Node("Dog", null);
+	private Node first = new Node(6, null);
+	private Node second = new Node("Dog", null);
 	
 	/**
 	 * Test the node constructor.
