@@ -7,7 +7,7 @@ import org.junit.Test;
  * This is the Node test class. 
  * 
  * @author Miguel Velez
- * @version 0.3.1
+ * @version 0.3.2
  *  
  */
 public class TestNode {
@@ -18,7 +18,7 @@ public class TestNode {
 	 * Test the node constructor.
 	 */
 	@Test
-	public void TestNodeConstructor() {		
+	public void TestConstructors() {		
 		// Check if they are the same class
 		Assert.assertSame(Node.class, this.first.getClass()); 
 		
