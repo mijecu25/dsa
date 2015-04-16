@@ -13,7 +13,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList test class.
  * 
  * @author Miguel Velez
- * @version 0.1
+ * @version 0.2
  */
 public class TestLinkedList {
 	private Node 		head = new Node(5, null);
@@ -82,6 +82,21 @@ public class TestLinkedList {
 		
 		// Check that the head is not null
 		Assert.assertNotNull(this.list.getHead());
+	}
+	
+	/**
+	 * Test the remove all method.
+	 */
+	@Test
+	public void testRemoveAll() {
+		// Check that the list is not empty
+		Assert.assertNotEquals(true, this.list.isEmpty());
+		
+		// Remove all
+		this.list.removeAll();
+		
+		// Check that the list is empty
+		Assert.assertEquals(true, this.list.isEmpty());
 	}
 	
 

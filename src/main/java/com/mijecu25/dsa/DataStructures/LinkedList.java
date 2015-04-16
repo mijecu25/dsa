@@ -7,7 +7,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList class. It is the simplest implementation of a Linked List.
  * 
  * @author Miguel Velez
- * @version 0.1
+ * @version 0.2
  */
 public class LinkedList {
 	
@@ -67,6 +67,13 @@ public class LinkedList {
 	 */
 	public boolean isEmpty() {
 		return (this.head == null);
+	}
+	
+	/**
+	 * Removes all the nodes from the linked list
+	 */
+	public void removeAll() {
+		this.head = null;
 	}
 
 }
