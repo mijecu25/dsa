@@ -1,7 +1,7 @@
 # dsa
 
 [![Build Status](https://travis-ci.org/mijecu25/dsa.svg?branch=master)](https://travis-ci.org/mijecu25/dsa)
-[![Coverage Status](https://coveralls.io/repos/mijecu25/dsa/badge.svg)](https://coveralls.io/r/mijecu25/dsa)
+<!--[![Coverage Status](https://coveralls.io/repos/mijecu25/dsa/badge.svg)](https://coveralls.io/r/mijecu25/dsa)-->
 
 Implementation of data structures and algorithms in Java
 
