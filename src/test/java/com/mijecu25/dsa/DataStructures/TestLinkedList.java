@@ -12,7 +12,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList test class.
  * 
  * @author Miguel Velez
- * @version 0.2.1
+ * @version 0.3
  */
 public class TestLinkedList {
 	private Node 		head = new Node(5, null);
@@ -73,14 +73,14 @@ public class TestLinkedList {
 	 */
 	@Test
 	public void testGetHead() {
+		// Check that the head is not null
+		Assert.assertNotNull(this.list.getHead());
+
 		// Expect exception
 		expectedException.expect(LinkedListUnderflowException.class);
 		
-		// Get the head from empty lisr
+		// Get the head from empty list
 		this.empty.getHead();
-		
-		// Check that the head is not null
-		Assert.assertNotNull(this.list.getHead());
 	}
 	
 	/**
@@ -96,6 +96,33 @@ public class TestLinkedList {
 		
 		// Check that the list is empty
 		Assert.assertEquals(true, this.list.isEmpty());
+	}
+	
+	/**
+	 * Test the add head method
+	 */
+	@Test
+	public void testAddHead() {
+		// Create new head
+		Node newHead = new Node(1);
+		
+		// Add as the new head
+		this.list.addHead(newHead);
+		
+		// Check that the new head is what we expect
+		Assert.assertEquals(newHead, this.list.getHead());
+		
+		// Check that the next of the new head is the previous head
+		Assert.assertEquals(this.list.getHead(), this.head);
+		
+		// Create a new head with a next
+		newHead = new Node(1, this.head);
+		
+		// Expected exception
+		expectedException.expect(IllegalArgumentException.class);
+		
+		// Add the new head that has a node pointing to another node
+		this.list.addHead(newHead);
 	}
 	
 
