@@ -7,12 +7,13 @@ import org.junit.Test;
  * This is the Node test class. 
  * 
  * @author Miguel Velez
- * @version 0.3.2
+ * @version 0.4
  *  
  */
 public class TestNode {
 	private Node first = new Node(6, null);
 	private Node second = new Node("Dog", null);
+	private Node nextNull = new Node("Cat");
 	
 	/**
 	 * Test the node constructor.
@@ -24,6 +25,9 @@ public class TestNode {
 		
 		// Check if they are the same class
 		Assert.assertNotSame(String.class, this.first.getClass()); 
+		
+		// Check if they are the same class
+		Assert.assertSame(Node.class, this.nextNull.getClass());
 	}
 	
 	/**

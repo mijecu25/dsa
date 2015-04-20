@@ -4,14 +4,14 @@ package com.mijecu25.dsa;
  * This is the Node class. 
  *  
  * @author Miguel Velez
- * @version 0.1.2
+ * @version 0.2
  * 
  */
 public class Node {
 	
 	private Object 	data; 
 	private Node	next;
-	
+		
 	/**
 	 * Construct a node that contains {@code data} and sets its next node to
 	 * {@code next} 
@@ -24,6 +24,17 @@ public class Node {
 		// Creates a new Node object set the values of the parameters.	
 		this.data = data;
 		this.next = next;
+	}
+	
+	/**
+	 * Construct a node that contains {@code data} and sets its next node to
+	 * <i>null</i>
+	 * 
+	 * @param data-the data that the node holds.
+	 */
+	public Node(Object data) {
+		// Call Node(data, next) with null as next
+		this(data, null);
 	}
 	
 	/**
