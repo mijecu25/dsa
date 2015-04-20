@@ -12,7 +12,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList test class.
  * 
  * @author Miguel Velez
- * @version 0.3
+ * @version 0.4
  */
 public class TestLinkedList {
 	private Node 		head = new Node(5, null);
@@ -123,7 +123,45 @@ public class TestLinkedList {
 		
 		// Add the new head that has a node pointing to another node
 		this.list.addHead(newHead);
+		
+		// Try adding an empty node
+		this.list.addHead(null);
 	}
 	
+	/**
+	 * Test the add node method
+	 */
+	@Test
+	public void testAddNode() {
+		// Create new head
+		Node newHead = new Node(1);
+		
+		// Added to empty list
+		this.empty.addNode(newHead);
+		
+		Assert.assertEquals(newHead, this.empty.getHead());
+		
+		// Create node
+		Node node = new Node(1);
+		
+		// Added to list
+		this.empty.addNode(node);
+		
+		// Loop through the nodes of list
+		Node current = this.empty.getHead();
+		
+		while(current.getNext() != null) {
+			current = current.getNext();
+		}
+		
+		// Check if the last node is the one we added
+		Assert.assertEquals(node, current);
+	
+		// Expected exception
+		expectedException.expect(IllegalArgumentException.class);
+				
+		// Try adding an empty node
+		this.list.addNode(null);
+	}
 
 }
