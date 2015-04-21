@@ -7,7 +7,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList class. It is the simplest implementation of a Linked List.
  * 
  * @author Miguel Velez
- * @version 0.4
+ * @version 0.4.1
  */
 public class LinkedList {
 	
@@ -90,6 +90,10 @@ public class LinkedList {
 		}
 	}
 	
+	public void addElement(Object data) {
+		
+	}
+	
 	/**
 	 * Adds a new head to the linked list. Checks if {@code node} has a next, which might cause
 	 * to lose reference to it this method is executed.
@@ -116,6 +120,10 @@ public class LinkedList {
 		
 		// The passed node is the new head
 		this.head = node;
+	}
+	
+	public void addHead(Object head) {
+		
 	}
 	
 	/**
