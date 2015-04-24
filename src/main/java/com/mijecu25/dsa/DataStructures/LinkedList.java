@@ -7,7 +7,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList class. It is the simplest implementation of a Linked List.
  * 
  * @author Miguel Velez
- * @version 0.4.3
+ * @version 0.4.4
  */
 public class LinkedList {
 	
@@ -25,12 +25,12 @@ public class LinkedList {
 	 * 
 	 * @param head-the node that is the head of the list
 	 */
-//	public LinkedList(Node head) {
-//		this.head = head;
-//	}
-	
 	public LinkedList(Object head) {
+		// Create a new node with the data
+		Node node = new Node(head);
 		
+		// Set the head to the new node
+		this.head = node;
 	}
 	
 	/**
