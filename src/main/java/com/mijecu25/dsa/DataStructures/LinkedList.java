@@ -7,7 +7,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList class. It is the simplest implementation of a Linked List.
  * 
  * @author Miguel Velez
- * @version 0.4.5
+ * @version 0.4.6
  */
 public class LinkedList {
 	
@@ -65,37 +65,28 @@ public class LinkedList {
 	}
 	
 	/**
-	 * Add a node to the end of the list. If the list is empty, it is added as the 
+	 * Add an object to the end of the list. If the list is empty, it is added as the 
 	 * head
 	 * 
-	 * @param node-the node that is added to the list
-	 */
-//	public void addNode(Node node) {
-//		// Check if node is null
-//		if(node == null) {
-//			throw new IllegalArgumentException("The node you provided is null");
-//		}
-//		
-//		// Check if list is empty
-//		if(this.isEmpty()) {
-//			// If empty, we are adding a head
-//			this.addHead(node);
-//		}
-//		else {
-//			// We have to loop through the list to find the end
-//			Node current = this.head;
-//					
-//			while(current.getNext() != null) {
-//				current = current.getNext();
-//			}
-//			
-//			// We have found the last node of the list
-//			current.setNext(node);
-//		}
-//	}
-	
-	public void addElement(Object data) {
-		
+	 * @param node-the object that is added to the list
+	 */	
+	public void addElement(Object data) {		
+		// Check if list is empty
+		if(this.isEmpty()) {
+			// If empty, we are adding a head
+			this.addHead(data);
+		}
+		else {
+			// We have to loop through the list to find the end
+			Node current = this.head;
+					
+			while(current.getNext() != null) {
+				current = current.getNext();
+			}
+			
+			// We have found the last node of the list, so add the object
+			current.setNext(new Node(data));
+		}
 	}
 	
 	/**
