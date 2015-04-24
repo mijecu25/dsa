@@ -45,9 +45,9 @@ public class LinkedList {
 	/**
 	 * Returns and removes the head of the linked list.
 	 * 
-	 * @return a reference of the head node.
+	 * @return a reference of the head.
 	 */
-	public Node getHead() {
+	public Object getHead() {
 		// Check if the linked list is empty
 		if(this.isEmpty()) {
 			// Throw exception
@@ -61,7 +61,7 @@ public class LinkedList {
 		this.head = this.head.getNext();
 		
 		// Return the previous head
-		return removed;
+		return removed.getData();
 	}
 	
 	/**
