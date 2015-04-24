@@ -7,7 +7,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList class. It is the simplest implementation of a Linked List.
  * 
  * @author Miguel Velez
- * @version 0.4.6
+ * @version 0.4.7
  */
 public class LinkedList {
 	
@@ -90,35 +90,20 @@ public class LinkedList {
 	}
 	
 	/**
-	 * Adds a new head to the linked list. Checks if {@code node} has a next, which might cause
-	 * to lose reference to it this method is executed.
+	 * Adds a new head to the linked list.
 	 * 
-	 * @param node-the node that is the new head of the list.
+	 * @param head-the object that is the new head of the list.
 	 */
-//	public void addHead(Node node) {
-//		// Check if node is null
-//		if(node == null) {
-//			throw new IllegalArgumentException("The node you provided is null");
-//		}
-//		
-//		// Check if node has a next, which will lose reference
-//		// to that node
-//		if(node.getNext() != null) {
-//			throw new IllegalArgumentException("The node that you want to add as a head points to (" + 
-//					node.getNext().getData() + "). You might lose reference to that node.");
-//		}
-//		
-//		// Check if list is empty
-//		if(!this.isEmpty()) {
-//			node.setNext(this.head);
-//		}
-//		
-//		// The passed node is the new head
-//		this.head = node;
-//	}
-	
-	public void addHead(Object head) {
+	public void addHead(Object head) {	
+		Node node = new Node(head);
 		
+		// Check if list is empty
+		if(!this.isEmpty()) {
+			node.setNext(this.head);
+		}
+		
+		// The passed node is the new head
+		this.head = node;
 	}
 	
 	/**
