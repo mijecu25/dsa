@@ -7,7 +7,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList class. It is the simplest implementation of a Linked List.
  * 
  * @author Miguel Velez
- * @version 0.4.7
+ * @version 0.4.8
  */
 public class LinkedList {
 	
@@ -21,7 +21,7 @@ public class LinkedList {
 	}
 	
 	/**
-	 * Constructs a linked list with the {@code head} node as the head of the list.
+	 * Constructs a linked list with the {@code head} object as the head of the list.
 	 * 
 	 * @param head-the object that is the head of the list
 	 */
@@ -58,7 +58,7 @@ public class LinkedList {
 		Node removed = this.head;
 		
 		// Make the head of the linked list the next node of the head
-		this.head = this.head.getNext();
+		this.head = removed.getNext();
 		
 		// Return the previous head
 		return removed.getData();
