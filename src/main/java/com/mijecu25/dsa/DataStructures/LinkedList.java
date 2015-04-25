@@ -7,7 +7,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList class. It is the simplest implementation of a Linked List.
  * 
  * @author Miguel Velez
- * @version 0.4.8
+ * @version 0.5
  */
 public class LinkedList {
 	
@@ -63,7 +63,7 @@ public class LinkedList {
 		// Return the previous head
 		return removed.getData();
 	}
-	
+		
 	/**
 	 * Add an object to the end of the list. If the list is empty, it is added as the 
 	 * head
@@ -122,4 +122,33 @@ public class LinkedList {
 		this.head = null;
 	}
 
+	/**
+	 * Prints the contents of the linked list
+	 */
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		
+		// Get the head
+		builder.append("LinkedList [head=");
+		builder.append(this.head.getData());
+		
+		// We have to loop through the list to find the end
+		Node current = this.head.getNext();
+				
+		while(current != null) {
+			// Append
+			builder.append(", ");
+			builder.append(current.getData());
+			
+			// Get the next node
+			current = current.getNext();
+		}
+		
+		// Close the string and return
+		builder.append("]");
+		
+		return builder.toString();
+	}
+	
 }
