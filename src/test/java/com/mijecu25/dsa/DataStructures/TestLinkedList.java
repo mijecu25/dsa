@@ -61,11 +61,26 @@ public class TestLinkedList {
 	 */
 	@Test
 	public void testPeek() {
-//		// Check that there is a head
-//		Assert.assertNotNull(this.list.peek());
-//		
-//		// Check that there is not a head
-//		Assert.assertNull(this.empty.peek());
+		// Check that there is a head
+		Assert.assertNotNull(this.list.peek());
+				
+		// Check that there is not a head
+		Assert.assertNull(this.empty.peek());
+	}
+	
+	/**
+	 * Test the peekTail method
+	 */
+	@Test
+	public void testPeekTail() {
+		// Check that there is a tail
+		Assert.assertNotNull(this.list.peekTail());
+				
+		// Check that the tail is the node that we created
+		Assert.assertEquals(this.head, this.list.peekTail());
+		
+		// Check that there is not a tail
+		Assert.assertNull(this.empty.peekTail());
 	}
 
 	/**
@@ -73,6 +88,22 @@ public class TestLinkedList {
 	 */
 	@Test
 	public void testGetHead() {
+		// Check that the head is not null
+		Assert.assertNotNull(this.list.getHead());
+
+		// Expect exception
+		expectedException.expect(LinkedListUnderflowException.class);
+		
+		// Get the head from empty list
+		this.empty.getHead();
+	}
+	
+	// TODO
+//	/**
+//	 * Test the get tail method.
+//	 */
+//	@Test
+//	public void testGetTail() {
 //		// Check that the head is not null
 //		Assert.assertNotNull(this.list.getHead());
 //
@@ -81,21 +112,21 @@ public class TestLinkedList {
 //		
 //		// Get the head from empty list
 //		this.empty.getHead();
-	}
+//	}
 	
 	/**
 	 * Test the remove all method.
 	 */
 	@Test
 	public void testRemoveAll() {
-//		// Check that the list is not empty
-//		Assert.assertNotEquals(true, this.list.isEmpty());
-//		
-//		// Remove all
-//		this.list.removeAll();
-//		
-//		// Check that the list is empty
-//		Assert.assertEquals(true, this.list.isEmpty());
+		// Check that the list is not empty
+		Assert.assertNotEquals(true, this.list.isEmpty());
+		
+		// Remove all
+		this.list.removeAll();
+		
+		// Check that the list is empty
+		Assert.assertEquals(true, this.list.isEmpty());
 	}
 	
 	/**

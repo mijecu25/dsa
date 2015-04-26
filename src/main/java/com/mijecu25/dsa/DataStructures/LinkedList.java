@@ -7,7 +7,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList class. It is the simplest implementation of a Linked List.
  * 
  * @author Miguel Velez
- * @version 0.7
+ * @version 0.7.1
  */
 public class LinkedList {
 	
@@ -43,6 +43,11 @@ public class LinkedList {
 	 * @return a reference of the head object.
 	 */
 	public Object peek() {
+		// Check if empty
+		if(this.isEmpty()) {
+			return null;
+		}
+		
 		return this.head.getData();
 	}
 	
@@ -52,6 +57,11 @@ public class LinkedList {
 	 * @return a reference of the tail object.
 	 */
 	public Object peekTail() {
+		// Check if empty
+		if(this.isEmpty()) {
+			return null;
+		}
+				
 		return this.tail.getData();
 	}
 	
@@ -76,6 +86,29 @@ public class LinkedList {
 		// Return the previous head
 		return removed.getData();
 	}
+	
+	// TODO
+//	/**
+//	 * Returns and removes the tail of the linked list.
+//	 * 
+//	 * @return a reference of the tail.
+//	 */
+//	public Object getTail() {
+//		// Check if the linked list is empty
+//		if(this.isEmpty()) {
+//			// Throw exception
+//			throw new LinkedListUnderflowException();
+//		}
+//		
+//		// Get the head
+//		Node removed = this.head;
+//		
+//		// Make the head of the linked list the next node of the head
+//		this.head = removed.getNext();
+//		
+//		// Return the previous head
+//		return removed.getData();
+//	}
 		
 	/**
 	 * Add an object to the end of the list. If the list is empty, it is added as the 
