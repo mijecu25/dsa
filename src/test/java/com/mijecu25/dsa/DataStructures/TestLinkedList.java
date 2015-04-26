@@ -49,11 +49,11 @@ public class TestLinkedList {
 	 */
 	@Test
 	public void testIsEmpty() {
-//		// Check if the linked list is not empyt
-//		Assert.assertEquals(false, this.list.isEmpty());
-//		
-//		// Check that it is empty
-//		Assert.assertNotEquals(false, this.empty.isEmpty());
+		// Check if the linked list is not empty
+		Assert.assertEquals(false, this.list.isEmpty());
+		
+		// Check that it is empty
+		Assert.assertNotEquals(false, this.empty.isEmpty());
 	}
 	
 	/**
