@@ -7,7 +7,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList class. It is the simplest implementation of a Linked List.
  * 
  * @author Miguel Velez
- * @version 0.6
+ * @version 0.7
  */
 public class LinkedList {
 	
@@ -44,6 +44,15 @@ public class LinkedList {
 	 */
 	public Object peek() {
 		return this.head.getData();
+	}
+	
+	/**
+	 * Gets but does not remove the tail of the linked list.
+	 * 
+	 * @return a reference of the tail object.
+	 */
+	public Object peekTail() {
+		return this.tail.getData();
 	}
 	
 	/**

@@ -12,7 +12,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList test class.
  * 
  * @author Miguel Velez
- * @version 0.4.2
+ * @version 0.5
  */
 public class TestLinkedList {
 	private Node 		head = new Node(5, null);
