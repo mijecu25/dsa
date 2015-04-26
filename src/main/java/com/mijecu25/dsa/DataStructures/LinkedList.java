@@ -7,17 +7,19 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList class. It is the simplest implementation of a Linked List.
  * 
  * @author Miguel Velez
- * @version 0.5
+ * @version 0.6
  */
 public class LinkedList {
 	
 	private Node head;
+	private Node tail;
 	
 	/**
 	 * Constructs an empty linked list.
 	 */
 	public LinkedList() {
 		this.head = null;
+		this.tail = null;
 	}
 	
 	/**
@@ -29,8 +31,10 @@ public class LinkedList {
 		// Create a new node with the data
 		Node node = new Node(head);
 		
-		// Set the head to the new node
+		// Set the head and tail to the new node
 		this.head = node;
+		this.tail = node;
+		
 	}
 	
 	/**
@@ -70,22 +74,21 @@ public class LinkedList {
 	 * 
 	 * @param node-the object that is added to the list
 	 */	
-	public void addElement(Object data) {		
+	public void addElement(Object data) {	
 		// Check if list is empty
 		if(this.isEmpty()) {
 			// If empty, we are adding a head
 			this.addHead(data);
 		}
 		else {
-			// We have to loop through the list to find the end
-			Node current = this.head;
-					
-			while(current.getNext() != null) {
-				current = current.getNext();
-			}
+			// Create a node with the new data
+			Node node = new Node(data);
+								
+			// Add the object
+			this.tail.setNext(node);
 			
-			// We have found the last node of the list, so add the object
-			current.setNext(new Node(data));
+			// Set the new tail
+			this.tail = node;
 		}
 	}
 	
@@ -112,7 +115,7 @@ public class LinkedList {
 	 * @return <i>true</i> if the linked list is empty, else <i>false</i>.
 	 */
 	public boolean isEmpty() {
-		return (this.head == null);
+		return (this.head == null && this.tail == null);
 	}
 	
 	/**
@@ -120,6 +123,7 @@ public class LinkedList {
 	 */
 	public void removeAll() {
 		this.head = null;
+		this.tail = null;
 	}
 
 	/**
@@ -133,10 +137,10 @@ public class LinkedList {
 		builder.append("LinkedList [head=");
 		builder.append(this.head.getData());
 		
-		// We have to loop through the list to find the end
+		// We have to loop through the list to find the tail
 		Node current = this.head.getNext();
 				
-		while(current != null) {
+		while(current != this.tail) {
 			// Append
 			builder.append(", ");
 			builder.append(current.getData());
