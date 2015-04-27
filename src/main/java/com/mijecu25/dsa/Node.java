@@ -4,7 +4,7 @@ package com.mijecu25.dsa;
  * This is the Node class. 
  *  
  * @author Miguel Velez
- * @version 0.2
+ * @version 0.2.1
  * 
  */
 public class Node {
@@ -16,8 +16,8 @@ public class Node {
 	 * Construct a node that contains {@code data} and sets its next node to
 	 * {@code next} 
 	 * 
-	 * @param data-the data that the node holds.
-	 * @param next-the next node that this node points to.
+	 * @param data the data that the node holds.
+	 * @param next the next node that this node points to.
 	 */
 	public Node(Object data, Node next) 
 	{
@@ -30,7 +30,7 @@ public class Node {
 	 * Construct a node that contains {@code data} and sets its next node to
 	 * <i>null</i>
 	 * 
-	 * @param data-the data that the node holds.
+	 * @param data the data that the node holds.
 	 */
 	public Node(Object data) {
 		// Call Node(data, next) with null as next
@@ -62,7 +62,7 @@ public class Node {
 	/**
 	 * Sets the next node of this node.
 	 * 
-	 * @param next-the next node that this node should point to.
+	 * @param next the next node that this node should point to.
 	 */
 	public void setNext(Node next) 
 	{

@@ -7,7 +7,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList class. It is the simplest implementation of a Linked List.
  * 
  * @author Miguel Velez
- * @version 0.7.1
+ * @version 0.7.2
  */
 public class LinkedList {
 	
@@ -25,7 +25,7 @@ public class LinkedList {
 	/**
 	 * Constructs a linked list with the {@code head} object as the head of the list.
 	 * 
-	 * @param head-the object that is the head of the list
+	 * @param head the object that is the head of the list
 	 */
 	public LinkedList(Object head) {
 		// Create a new node with the data
@@ -114,7 +114,7 @@ public class LinkedList {
 	 * Add an object to the end of the list. If the list is empty, it is added as the 
 	 * head
 	 * 
-	 * @param node-the object that is added to the list
+	 * @param node the object that is added to the list
 	 */	
 	public void addElement(Object data) {	
 		// Check if list is empty
@@ -137,7 +137,7 @@ public class LinkedList {
 	/**
 	 * Adds a new head to the linked list.
 	 * 
-	 * @param head-the object that is the new head of the list.
+	 * @param head the object that is the new head of the list.
 	 */
 	public void addHead(Object head) {	
 		Node node = new Node(head);
