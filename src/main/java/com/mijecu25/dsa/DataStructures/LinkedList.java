@@ -7,7 +7,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList class. It is the simplest implementation of a Linked List.
  * 
  * @author Miguel Velez
- * @version 0.7.2
+ * @version 0.7.3
  */
 public class LinkedList {
 	
@@ -114,7 +114,7 @@ public class LinkedList {
 	 * Add an object to the end of the list. If the list is empty, it is added as the 
 	 * head
 	 * 
-	 * @param node the object that is added to the list
+	 * @param data the object that is added to the list
 	 */	
 	public void addElement(Object data) {	
 		// Check if list is empty
