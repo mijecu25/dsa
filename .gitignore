@@ -17,7 +17,7 @@ hs_err_pid*
 /target/
 .settings
 
-# Maven
+# Maven gitignore
 target/
 pom.xml.tag
 pom.xml.releaseBackup
