@@ -60,7 +60,7 @@
         <id>release-sign-artifacts</id>
         <activation>
             <property>
-                <name>release:perform</name>
+                <name>performRelease</name>
                 <value>true</value>
             </property>
         </activation>
