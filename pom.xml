@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mijecu25</groupId>
   <artifactId>dsa</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.1</version>
   <name>DSA</name>
   <description>DSA is an implementation of data structures and algorithms in Java.</description>
   <url>https://github.com/mijecu25/dsa</url>
@@ -28,6 +28,7 @@
 	<developerConnection>scm:git:git@github.com:mijecu25/dsa.git</developerConnection>
 	<url>https://github.com/mijecu25/dsa</url>
     <!--   <tag>dsa-0.1</tag> -->
+    <tag>dsa-0.1</tag>
   </scm>
 
   <developers>
@@ -60,7 +61,7 @@
         <id>release-sign-artifacts</id>
         <activation>
             <property>
-                <name>release:perform</name>
+                <name>performRelease</name>
                 <value>true</value>
             </property>
         </activation>
