@@ -5,18 +5,17 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import com.mijecu25.dsa.Node;
 import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
 
 /**
  * This is the LinkedList test class.
  * 
  * @author Miguel Velez
- * @version 0.5
+ * @version 0.6
  */
 public class TestLinkedList {
-	private Node 		head = new Node(5, null);
-	private LinkedList 	list = new LinkedList(head);
+	private int			value = 15;
+	private LinkedList 	list = new LinkedList(value);
 	private LinkedList	empty = new LinkedList();
 	
 	@Rule
@@ -33,15 +32,11 @@ public class TestLinkedList {
 		// Check if it was created
 		Assert.assertNotNull(list);
 		
-		// Create a node
-		Node head = new Node(5, null);
-		
 		// Create a linked list
-		list = new LinkedList(head);
+		list = new LinkedList(5);
 		
 		//Check if it was created
 		Assert.assertNotNull(list);
-		
 	}
 	
 	/**
@@ -50,10 +45,10 @@ public class TestLinkedList {
 	@Test
 	public void testIsEmpty() {
 		// Check if the linked list is not empty
-		Assert.assertEquals(false, this.list.isEmpty());
+		Assert.assertFalse(this.list.isEmpty());
 		
 		// Check that it is empty
-		Assert.assertNotEquals(false, this.empty.isEmpty());
+		Assert.assertTrue(this.empty.isEmpty());
 	}
 	
 	/**
@@ -75,14 +70,72 @@ public class TestLinkedList {
 	public void testPeekTail() {
 		// Check that there is a tail
 		Assert.assertNotNull(this.list.peekTail());
-				
+						
 		// Check that the tail is the node that we created
-		Assert.assertEquals(this.head, this.list.peekTail());
+		Assert.assertEquals(value, this.list.peekTail());
 		
 		// Check that there is not a tail
 		Assert.assertNull(this.empty.peekTail());
 	}
-
+	
+	/**
+	 * Test the add head method
+	 */
+	@Test
+	public void testAddHead() {
+		// Add as the new head
+		this.list.addHead(18);
+		
+		// Check that the new head is what we expect
+		Assert.assertEquals(18, this.list.peek());
+		
+		// Check that the next of the new head is the previous head
+		Assert.assertEquals(value, this.list.peekTail());
+		
+		// Add a head to an empty list
+		this.empty.addHead(20);
+		
+		// Check that the head and tail are the same
+		Assert.assertEquals(this.empty.peek(), this.empty.peekTail());
+	}
+	
+	/**
+	 * Test the add node method
+	 */
+	@Test
+	public void testAddTail() {
+		// Add a value to empty list
+		this.empty.addTail(89);
+		
+		// Check that the new tail is the same as the head
+		Assert.assertEquals(89, this.empty.peek());
+		
+		// Add a new tail
+		this.empty.addTail(21);
+		
+		// Check that the new tail was added to the list
+		Assert.assertEquals(21, this.empty.peekTail());
+	}
+	
+	/**
+	 * Test the add element method.
+	 */
+	@Test
+	public void testAddElement() {
+		// Add a value to empty list
+		this.empty.addElement(89);
+		
+		// Check that the new element is the same as the head and tail
+		Assert.assertEquals(89, this.empty.peek());
+		Assert.assertEquals(89, this.empty.peekTail());
+		
+		// Add a new tail
+		this.empty.addElement(21);
+		
+		// Check that the new tail was added to the list
+		Assert.assertEquals(21, this.empty.peekTail());
+	}
+	
 	/**
 	 * Test the get head method.
 	 */
@@ -90,7 +143,11 @@ public class TestLinkedList {
 	public void testGetHead() {
 		// Check that the head is not null
 		Assert.assertNotNull(this.list.getHead());
-
+		
+		// Check that the list is empty since we removed from a list with
+		// only 1 node
+		Assert.assertTrue(this.list.isEmpty());
+		
 		// Expect exception
 		expectedException.expect(LinkedListUnderflowException.class);
 		
@@ -98,21 +155,30 @@ public class TestLinkedList {
 		this.empty.getHead();
 	}
 	
-	// TODO
-//	/**
-//	 * Test the get tail method.
-//	 */
-//	@Test
-//	public void testGetTail() {
-//		// Check that the head is not null
-//		Assert.assertNotNull(this.list.getHead());
-//
-//		// Expect exception
-//		expectedException.expect(LinkedListUnderflowException.class);
-//		
-//		// Get the head from empty list
-//		this.empty.getHead();
-//	}
+	/**
+	 * Test the get tail method.
+	 */
+	@Test
+	public void testGetTail() {
+		// Add a value to test longer lists
+		this.list.addElement(10);
+		
+		// Check that the tail is the same as the value we just added
+		Assert.assertEquals(10, this.list.getTail());
+		
+		// Check that the tail is the same as the first value added
+		Assert.assertEquals(value, this.list.getTail());
+
+		// Check that the list is empty since we removed from a list with
+		// only 1 node
+		Assert.assertTrue(this.list.isEmpty());
+		
+		// Expect exception
+		expectedException.expect(LinkedListUnderflowException.class);
+		
+		// Get the head from empty list
+		this.empty.getTail();
+	}
 	
 	/**
 	 * Test the remove all method.
@@ -129,70 +195,4 @@ public class TestLinkedList {
 		Assert.assertEquals(true, this.list.isEmpty());
 	}
 	
-	/**
-	 * Test the add head method
-	 */
-	@Test
-	public void testAddHead() {
-//		// Create new head
-//		Node newHead = new Node(1);
-//		
-//		// Add as the new head
-//		this.list.addHead(newHead);
-//		
-//		// Check that the new head is what we expect
-//		Assert.assertEquals(newHead, this.list.getHead());
-//		
-//		// Check that the next of the new head is the previous head
-//		Assert.assertEquals(this.list.getHead(), this.head);
-//		
-//		// Create a new head with a next
-//		newHead = new Node(1, this.head);
-//		
-//		// Expected exception
-//		expectedException.expect(IllegalArgumentException.class);
-//		
-//		// Add the new head that has a node pointing to another node
-//		this.list.addHead(newHead);
-//		
-//		// Try adding an empty node
-//		this.list.addHead(null);
-	}
-	
-	/**
-	 * Test the add node method
-	 */
-	@Test
-	public void testAddNode() {
-//		// Create new head
-//		Node newHead = new Node(1);
-//		
-//		// Added to empty list
-//		this.empty.addNode(newHead);
-//		
-//		Assert.assertEquals(newHead, this.empty.getHead());
-//		
-//		// Create node
-//		Node node = new Node(1);
-//		
-//		// Added to list
-//		this.empty.addNode(node);
-//		
-//		// Loop through the nodes of list
-//		Node current = this.empty.getHead();
-//		
-//		while(current.getNext() != null) {
-//			current = current.getNext();
-//		}
-//		
-//		// Check if the last node is the one we added
-//		Assert.assertEquals(node, current);
-//	
-//		// Expected exception
-//		expectedException.expect(IllegalArgumentException.class);
-//				
-//		// Try adding an empty node
-//		this.list.addNode(null);
-	}
-
 }
