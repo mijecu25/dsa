@@ -7,7 +7,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList class. It is the simplest implementation of a Linked List.
  * 
  * @author Miguel Velez
- * @version 0.1.1.8
+ * @version 0.1.1.9
  */
 public class LinkedList {
 	
@@ -53,7 +53,8 @@ public class LinkedList {
 	public Object peek() {
 		// Check if empty
 		if(this.isEmpty()) {
-			return null;
+			// Throw exception
+			throw new LinkedListUnderflowException();
 		}
 		
 		return this.head.getData();
@@ -67,7 +68,8 @@ public class LinkedList {
 	public Object peekTail() {
 		// Check if empty
 		if(this.isEmpty()) {
-			return null;
+			// Throw exception
+			throw new LinkedListUnderflowException();
 		}
 				
 		return this.tail.getData();
@@ -203,6 +205,12 @@ public class LinkedList {
 	 * Removes all the nodes from the linked list
 	 */
 	public void removeAll() {
+		// Check if the linked list is empty
+		if(this.isEmpty()) {
+			// Throw exception
+			throw new LinkedListUnderflowException();
+		}
+		
 		this.head = null;
 		this.tail = null;
 	}

@@ -11,7 +11,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList test class.
  * 
  * @author Miguel Velez
- * @version 0.6.1
+ * @version 0.1.1.7
  */
 public class TestLinkedList {
 	private int			value = 15;
@@ -58,9 +58,6 @@ public class TestLinkedList {
 	public void testPeek() {
 		// Check that there is a head
 		Assert.assertNotNull(this.list.peek());
-				
-		// Check that there is not a head
-		Assert.assertNull(this.empty.peek());
 	}
 	
 	/**
@@ -73,9 +70,6 @@ public class TestLinkedList {
 						
 		// Check that the tail is the value that we created
 		Assert.assertEquals(value, this.list.peekTail());
-		
-		// Check that there is not a tail
-		Assert.assertNull(this.empty.peekTail());
 	}
 	
 	/**
