@@ -5,7 +5,7 @@ import com.mijecu25.dsa.Exception.QueueUnderflowException;
 /**
  * @author Miguel Velez
  * 
- * @version 0.1
+ * @version 0.1.1.2
  * 
  * Queue implementation using a LinkedList.
  */
@@ -50,7 +50,7 @@ public class LinkedListQueue {
 	 * 
 	 * @return a reference of the front object.
 	 */
-	public Object deQueue() {
+	public Object dequeue() {
 		// Checks if the linked list is empty
 		if(this.isEmpty()) {
 			// Throw unchecked exception
@@ -66,7 +66,7 @@ public class LinkedListQueue {
 
 	 * @param data the object that is added to the queue
 	 */
-	public void enQueue(Object data) {
+	public void enqueue(Object data) {
 		this.linkedList.addTail(data);
 	}
 	
@@ -75,7 +75,7 @@ public class LinkedListQueue {
 	 * 
 	 * @param queue the queue that is joined with this queue.
 	 */
-	public void enQueue(LinkedListQueue queue) {
+	public void enqueue(LinkedListQueue queue) {
 		this.linkedList.join(queue.linkedList);
 	}
 		
