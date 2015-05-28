@@ -11,7 +11,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList test class.
  * 
  * @author Miguel Velez
- * @version 0.6
+ * @version 0.6.1
  */
 public class TestLinkedList {
 	private int			value = 15;
@@ -71,7 +71,7 @@ public class TestLinkedList {
 		// Check that there is a tail
 		Assert.assertNotNull(this.list.peekTail());
 						
-		// Check that the tail is the node that we created
+		// Check that the tail is the value that we created
 		Assert.assertEquals(value, this.list.peekTail());
 		
 		// Check that there is not a tail
@@ -100,7 +100,7 @@ public class TestLinkedList {
 	}
 	
 	/**
-	 * Test the add node method
+	 * Test the add tail method
 	 */
 	@Test
 	public void testAddTail() {
@@ -145,7 +145,7 @@ public class TestLinkedList {
 		Assert.assertNotNull(this.list.getHead());
 		
 		// Check that the list is empty since we removed from a list with
-		// only 1 node
+		// only 1 value
 		Assert.assertTrue(this.list.isEmpty());
 		
 		// Expect exception
@@ -167,10 +167,10 @@ public class TestLinkedList {
 		Assert.assertEquals(10, this.list.getTail());
 		
 		// Check that the tail is the same as the first value added
-		Assert.assertEquals(value, this.list.getTail());
+		Assert.assertEquals(this.value, this.list.getTail());
 
 		// Check that the list is empty since we removed from a list with
-		// only 1 node
+		// only 1 value
 		Assert.assertTrue(this.list.isEmpty());
 		
 		// Expect exception
@@ -193,6 +193,22 @@ public class TestLinkedList {
 		
 		// Check that the list is empty
 		Assert.assertEquals(true, this.list.isEmpty());
+	}
+	
+	/**
+	 * Test the join method
+	 */
+	@Test
+	public void testJoin() {
+		// Join the empty and list linked lists
+		this.empty.join(this.list);
+		
+		// Check that the head and tail are the single value in the list
+		Assert.assertEquals(this.value, this.empty.peek());
+		Assert.assertEquals(this.value, this.empty.peekTail());
+		
+		// Check that the list is empty
+		Assert.assertTrue(this.list.isEmpty());
 	}
 	
 }

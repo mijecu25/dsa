@@ -7,7 +7,7 @@ import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
  * This is the LinkedList class. It is the simplest implementation of a Linked List.
  * 
  * @author Miguel Velez
- * @version 0.8
+ * @version 0.8.1
  */
 public class LinkedList {
 	
@@ -206,7 +206,47 @@ public class LinkedList {
 		this.head = null;
 		this.tail = null;
 	}
+	
+	/**
+	 * Join two linked lists.
+	 * 
+	 * @param list the linked list that is joined with this linked list.
+	 */
+	public void join(LinkedList list) {
+		// Check if the passed queue is null
+		if(list == null) {
+			// Throw exception
+			throw new IllegalArgumentException("The queue parameter (queue) is null");
+		}
+		
+		// If the passed list is empty, do nothing
+		if(list.isEmpty()) {
+			return;
+		}
 
+		// Get the rear of this list
+		Node thisTail = this.tail;
+		
+		// Get the head of the list
+		Node listHead = list.head;
+		
+		// Check if this list is empty
+		if(this.isEmpty()) {
+			// The front of the passed list is the front of this list
+			this.head = listHead;
+		}
+		else {
+			// Make this tail point to the head of the list
+			thisTail.setNext(listHead);			
+		}
+		
+		// The new rear of the list is the rear of the passed list
+		this.tail = list.tail;
+			
+		// Remove all the Nodes from the passed list that are now in this list
+		list.removeAll();		
+	}
+	
 	/**
 	 * Prints the contents of the linked list
 	 */
@@ -235,64 +275,5 @@ public class LinkedList {
 		
 		return builder.toString();
 	}
-	
-	// TODO join method to concatenate 2 linked lists
-	/*
-	 * // Appends the passed queue to the end of this linked list
-		Node thisRear;
-		Node queueFront;
-
-		// Check if the passed queue is null
-		if(queue == null) 
-		{
-			// Throw exception
-			throw new IllegalArgumentException("The queue parameter (queue) is null");
-		}
-				
-		//  If the passed queue is empty, ignore it
-		if(!queue.isEmpty())
-		{
-			// Get the rear of this list
-			thisRear = this.rear;
-			
-			// Get the front of the queue
-			queueFront = queue.front;
-			
-			// Check if this queue is empty
-			if(this.isEmpty()) 
-			{
-				// If empty, the front of the passed queue is the front of this queue
-				this.front = queueFront;
-			}
-			else
-			{
-				// Make the next variable of this rear point to the front of the passed queue
-				thisRear.setNext(queueFront);			
-			}
-			
-			// The new rear of the list is the rear of the passed queue
-			this.rear = queue.rear;
-			
-			// Remove all the Nodes from the passed queue that are now in this queue
-			queue.removeAll();
-		}	
 		
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 */
-	
 }
