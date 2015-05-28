@@ -5,7 +5,7 @@ import com.mijecu25.dsa.Exception.QueueUnderflowException;
 /**
  * @author Miguel Velez
  * 
- * @version 0.1.1.2
+ * @version 0.1.1.3
  * 
  * Queue implementation using a LinkedList.
  */
@@ -24,6 +24,12 @@ public class LinkedListQueue {
 	 * Remove all elements from the queue
 	 */
 	public void removeAll() {
+		// Check if the queue is empty
+		if(this.isEmpty()) {
+			// Throw exception
+			throw new QueueUnderflowException();
+		}
+		
 		this.linkedList.removeAll();
 	}
 	
@@ -42,6 +48,12 @@ public class LinkedListQueue {
 	 * @return a reference of the front object.
 	 */
 	public Object peek() {
+		// Check if empty
+		if(this.isEmpty()) {
+			// Throw exception
+			throw new QueueUnderflowException();
+		}
+		
 		return this.linkedList.peek();
 	}
 	
