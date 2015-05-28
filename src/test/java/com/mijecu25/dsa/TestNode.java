@@ -7,7 +7,7 @@ import org.junit.Test;
  * This is the Node test class. 
  * 
  * @author Miguel Velez
- * @version 0.4
+ * @version 0.1.1.4
  *  
  */
 public class TestNode {
