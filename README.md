@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/mijecu25/dsa.svg?branch=master)](https://travis-ci.org/mijecu25/dsa)
 [![Coverage Status](https://coveralls.io/repos/mijecu25/dsa/badge.svg)](https://coveralls.io/r/mijecu25/dsa)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.mijecu25/dsa/badge.svg)](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22dsa%22)
 
 Implementation of data structures and algorithms in Java
 
