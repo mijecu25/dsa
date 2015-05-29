@@ -12,7 +12,7 @@ Implementation of data structures and algorithms in Java
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Jack Jensen, Courtney Karppi, Miguel Velez
+Copyright (c) 2015 Mijecu25
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
