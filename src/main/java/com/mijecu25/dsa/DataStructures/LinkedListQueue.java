@@ -3,11 +3,12 @@ package com.mijecu25.dsa.DataStructures;
 import com.mijecu25.dsa.Exception.QueueUnderflowException;
 
 /**
+ * Queue implementation using a LinkedList.
+
  * @author Miguel Velez
  * 
- * @version 0.1.1.3
+ * @version 0.1.1.4
  * 
- * Queue implementation using a LinkedList.
  */
 public class LinkedListQueue {
 	
