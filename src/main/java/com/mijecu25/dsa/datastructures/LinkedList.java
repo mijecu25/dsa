@@ -1,7 +1,7 @@
-package com.mijecu25.dsa.DataStructures;
+package com.mijecu25.dsa.datastructures;
 
 import com.mijecu25.dsa.Node;
-import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
+import com.mijecu25.dsa.exceptions.LinkedListUnderflowException;
 
 /**
  * This is the LinkedList class. It is the simplest implementation of a Linked List.

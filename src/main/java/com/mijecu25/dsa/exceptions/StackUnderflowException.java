@@ -1,4 +1,4 @@
-package com.mijecu25.dsa.Exception;
+package com.mijecu25.dsa.exceptions;
 
 /**
  * StackUnderflowException meaning that the stack is empty.

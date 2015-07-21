@@ -1,11 +1,12 @@
-package com.mijecu25.dsa.DataStructures;
+package com.mijecu25.dsa.datastructures;
 
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import com.mijecu25.dsa.Exception.LinkedListUnderflowException;
+import com.mijecu25.dsa.datastructures.LinkedList;
+import com.mijecu25.dsa.exceptions.LinkedListUnderflowException;
 
 /**
  * This is the LinkedList test class.

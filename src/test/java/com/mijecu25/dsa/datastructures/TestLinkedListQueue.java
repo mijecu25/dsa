@@ -1,8 +1,10 @@
-package com.mijecu25.dsa.DataStructures;
+package com.mijecu25.dsa.datastructures;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import com.mijecu25.dsa.datastructures.LinkedListQueue;
 
 /**
  * This LinkedListQueue test class.

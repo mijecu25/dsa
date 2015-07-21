@@ -1,6 +1,6 @@
-package com.mijecu25.dsa.DataStructures;
+package com.mijecu25.dsa.datastructures;
 
-import com.mijecu25.dsa.Exception.StackUnderflowException;
+import com.mijecu25.dsa.exceptions.StackUnderflowException;
 
 /**
  * Stack implementation using a LinkedList.

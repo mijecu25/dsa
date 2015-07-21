@@ -1,4 +1,4 @@
-package com.mijecu25.dsa.Exception;
+package com.mijecu25.dsa.exceptions;
 
 /**
  * QueueUnderflowException meaning that the queue is empty.
