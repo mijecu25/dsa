@@ -5,7 +5,7 @@ package com.mijecu25.dsa.algorithms.sorting;
  * for sorting.
  * 
  * @author Miguel Velez
- * @version 0.0.2.1
+ * @version 0.1.2.1
  */
 public final class Sort {
 	

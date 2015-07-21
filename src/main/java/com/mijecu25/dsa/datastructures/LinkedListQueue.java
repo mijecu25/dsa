@@ -6,7 +6,7 @@ import com.mijecu25.dsa.exceptions.QueueUnderflowException;
  * Queue implementation using a LinkedList.
  * 
  * @author Miguel Velez
- * @version 0.1.1.5
+ * @version 0.1.2.1
  */
 public class LinkedListQueue {
 	
