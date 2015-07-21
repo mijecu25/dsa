@@ -1,4 +1,4 @@
-package com.mijecu25.dsa.algorithms.shuffleing;
+package com.mijecu25.dsa.algorithms.shuffling;
 
 /**
  * Shuffle class that implements different algorithms and utilities

@@ -1,14 +1,39 @@
 package com.mijecu25.dsa.algorithms.sorting;
 
+import com.mijecu25.dsa.algorithms.shuffling.Shuffle;
+
 /**
  * Sort class that implements different algorithms and utilities
  * for sorting.
  * 
  * @author Miguel Velez
- * @version 0.1.2.3
+ * @version 0.1.2.4
  */
 public final class Sort {
 	
+	/**
+	 * Ineffective sorting algorithm based on the generate and test paradigm. Keep
+	 * shuffling the list until it is sorted.
+	 * 
+	 * <br>
+	 * <br>
+	 * 
+	 * <i>Worst case performance: </i> Unbounded
+	 * <br>
+	 * <i>Best case performance: </i> O(n)
+	 * <br>
+	 * <i>Average case performance: </i> O((n+1)!) 
+	 * 
+	 * @param intArray the array of ints that we want to sort
+	 */
+	public static void bogosort(int[] intArray) {
+		// While the integer array is not sorted
+		while(!Sort.isSorted(intArray)) {
+			// Randomly shuffle the array using fyShuffle
+			Shuffle.fyShuffle(intArray);
+		}
+	}
+		
 	/**
 	 * Check if the integer array is sorted. It loops through the entire integer
 	 * array once, checking that the elements are sorted.

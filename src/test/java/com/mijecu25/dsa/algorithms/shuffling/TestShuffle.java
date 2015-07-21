@@ -1,9 +1,10 @@
-package com.mijecu25.dsa.algorithms.shuffleing;
+package com.mijecu25.dsa.algorithms.shuffling;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.mijecu25.dsa.algorithms.shuffling.Shuffle;
 import com.mijecu25.dsa.algorithms.sorting.Sort;
 
 /**
