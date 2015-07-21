@@ -8,7 +8,7 @@ import org.junit.Test;
  * This LinkedListQueue test class.
  * 
  * @author Miguel Velez
- * @version 0.1.2.1
+ * @version 0.1.2.2
  */
 public class TestLinkedListQueue {
 	private int					value = 15;
@@ -76,6 +76,7 @@ public class TestLinkedListQueue {
 	/**
 	 * Test enqueue by passing an object.
 	 */
+	@Test
 	public void testEnqueueObject() {
 		// Enqueue a new value
 		this.empty.enqueue(14);
@@ -87,6 +88,7 @@ public class TestLinkedListQueue {
 	/**
 	 * Test enqueue by passing another queue
 	 */
+	@Test
 	public void testEnqueueQUeue() {
 		// Join two queues
 		this.empty.enqueue(this.queue);
