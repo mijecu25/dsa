@@ -8,10 +8,11 @@ import org.junit.Test;
  * This is the Sort test class.
  * 
  * @author Miguel Velez
- * @version 0.1.2.1
+ * @version 0.1.2.2
  */
 public class TestSort {
 	private int[] sortedList = {1, 5, 8, 15};
+	private int[] reverseSortedList = {21, 12, 11, 5, 1};
 	private int[] unsortedList = {5, 2, 24, 8, 15};
 	
 	@Before
@@ -29,6 +30,18 @@ public class TestSort {
 		
 		// Assert that the unsorted list is not sorted
 		Assert.assertFalse(Sort.isOrdered(this.unsortedList));
+	}
+	
+	/**
+	 * Test isReveseSorted.
+	 */
+	@Test
+	public void testIsReverseSorted() {
+		// Assert that the reverse sorted list is reverse sorted
+		Assert.assertTrue(Sort.isReverseOrdered(this.reverseSortedList));
+		
+		// Assert that the sorted list is not reverse sorted
+		Assert.assertFalse(Sort.isReverseOrdered(this.sortedList));
 	}
 
 }
