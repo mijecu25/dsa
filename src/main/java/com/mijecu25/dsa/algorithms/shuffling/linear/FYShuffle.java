@@ -6,8 +6,13 @@ import com.mijecu25.dsa.algorithms.shuffling.Shuffle;
  * FYShuffle class that uses the Fisher–Yates shuffle to shuffle
  * elements in arrays. 
  * 
+ * <br>
+ * <br>
+ * 
+ * <i>Runtime: </i> O(n)
+ * 
  * @author Miguel Velez
- * @version 0.1.2.3
+ * @version 0.1.3.1
  */
 public final class FYShuffle extends Shuffle {
 	
@@ -20,11 +25,6 @@ public final class FYShuffle extends Shuffle {
 	
 	/**
 	 * Randomly shuffle the elements in an array  
-	 * 
-	 * <br>
-	 * <br>
-	 * 
-	 * <i>Runtime: </i> O(n)
 	 * 
 	 * @param intArray an array of objects to shuffle.
 	 */
@@ -44,12 +44,7 @@ public final class FYShuffle extends Shuffle {
 	
 	/**
 	 * Randomly shuffle an int array  
-	 * 
-	 * <br>
-	 * <br>
-	 * 
-	 * <i>Runtime: </i> O(n)
-	 * 
+	 *  
 	 * @param intArray array of integers to shuffle.
 	 */
 	public static void shuffle(int[] intArray) {
@@ -74,11 +69,6 @@ public final class FYShuffle extends Shuffle {
 	
 	/**
 	 * Randomly shuffle an float array  
-	 * 
-	 * <br>
-	 * <br>
-	 * 
-	 * <i>Runtime: </i> O(n)
 	 * 
 	 * @param floatArray array of floats to shuffle.
 	 */
@@ -105,11 +95,6 @@ public final class FYShuffle extends Shuffle {
 	/**
 	 * Randomly shuffle an byte array  
 	 * 
-	 * <br>
-	 * <br>
-	 * 
-	 * <i>Runtime: </i> O(n)
-	 * 
 	 * @param byteArray array of bytes to shuffle.
 	 */
 	public static void shuffle(byte[] byteArray) {
@@ -134,11 +119,6 @@ public final class FYShuffle extends Shuffle {
 	
 	/**
 	 * Randomly shuffle an short array  
-	 * 
-	 * <br>
-	 * <br>
-	 * 
-	 * <i>Runtime: </i> O(n)
 	 * 
 	 * @param shortArray array of short to shuffle.
 	 */
@@ -165,11 +145,6 @@ public final class FYShuffle extends Shuffle {
 	/**
 	 * Randomly shuffle an long array  
 	 * 
-	 * <br>
-	 * <br>
-	 * 
-	 * <i>Runtime: </i> O(n)
-	 * 
 	 * @param longArray array of long to shuffle.
 	 */
 	public static void shuffle(long[] longArray) {
@@ -193,12 +168,7 @@ public final class FYShuffle extends Shuffle {
 	}
 	
 	/**
-	 * Randomly shuffle an double array  
-	 * 
-	 * <br>
-	 * <br>
-	 * 
-	 * <i>Runtime: </i> O(n)
+	 * Randomly shuffle a double array  
 	 * 
 	 * @param doubleArray array of double to shuffle.
 	 */
@@ -224,11 +194,6 @@ public final class FYShuffle extends Shuffle {
 	
 	/**
 	 * Randomly shuffle a char array  
-	 * 
-	 * <br>
-	 * <br>
-	 * 
-	 * <i>Runtime: </i> O(n)
 	 * 
 	 * @param charArray array of char to shuffle.
 	 */
