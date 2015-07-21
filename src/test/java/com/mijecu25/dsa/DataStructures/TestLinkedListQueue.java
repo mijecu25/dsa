@@ -8,7 +8,7 @@ import org.junit.Test;
  * This LinkedListQueue test class.
  * 
  * @author Miguel Velez
- * @version 0.1.1.1
+ * @version 0.1.2.1
  */
 public class TestLinkedListQueue {
 	private int					value = 15;
@@ -34,6 +34,7 @@ public class TestLinkedListQueue {
 	/**
 	 * Test is empty.
 	 */
+	@Test
 	public void isEmpty() {
 		// Check if the queue is not empty
 		Assert.assertFalse(this.queue.isEmpty());
