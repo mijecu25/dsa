@@ -1,10 +1,10 @@
 package com.mijecu25.dsa.Exception;
 
 /**
- * QueueUnderflowException
+ * QueueUnderflowException meaning that the queue is empty.
  * 
  * @author Miguel Velez
- * @version 0.1.1.1
+ * @version 0.1.2.1
  */
 public class QueueUnderflowException extends RuntimeException 
 {
