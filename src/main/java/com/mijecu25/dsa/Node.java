@@ -4,7 +4,7 @@ package com.mijecu25.dsa;
  * This is the Node class. 
  *  
  * @author Miguel Velez
- * @version 0.1.1.1
+ * @version 0.1.3.1
  * 
  */
 public class Node {
@@ -19,8 +19,7 @@ public class Node {
 	 * @param data the data that the node holds.
 	 * @param next the next node that this node points to.
 	 */
-	public Node(Object data, Node next) 
-	{
+	public Node(Object data, Node next) {
 		// Creates a new Node object set the values of the parameters.	
 		this.data = data;
 		this.next = next;
@@ -42,8 +41,7 @@ public class Node {
 	 * 
 	 * @return an object containing the data of this node.
 	 */
-	public Object getData() 
-	{
+	public Object getData()	{
 		// Returns the data object
 		return this.data;
 	}
@@ -53,8 +51,7 @@ public class Node {
 	 * 
 	 * @return a reference to the next node that this node points to.
 	 */
-	public Node getNext()
-	{
+	public Node getNext() {
 		// returns the next node
 		return this.next;
 	}
@@ -64,8 +61,7 @@ public class Node {
 	 * 
 	 * @param next the next node that this node should point to.
 	 */
-	public void setNext(Node next) 
-	{
+	public void setNext(Node next) {
 		// Sets the next node
 		this.next = next;
 		
