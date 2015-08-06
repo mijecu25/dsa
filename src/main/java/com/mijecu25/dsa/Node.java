@@ -1,10 +1,11 @@
 package com.mijecu25.dsa;
 
 /**
- * This is the Node class. 
+ * This is the Node class. A node has data object and a reference
+ * to another node.
  *  
  * @author Miguel Velez
- * @version 0.1.3.1
+ * @version 0.1.3.2
  * 
  */
 public class Node {
@@ -66,6 +67,19 @@ public class Node {
 		this.next = next;
 		
 		new StringBuilder().toString();
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		
+		builder.append("Node [data=");
+		builder.append(this.data);
+		builder.append("] [next=");
+		builder.append(this.next);
+		builder.append("]");
+		
+		return builder.toString();
 	}
 
 }
