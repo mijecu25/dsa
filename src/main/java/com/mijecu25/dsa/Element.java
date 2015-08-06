@@ -2,10 +2,12 @@ package com.mijecu25.dsa;
 
 /**
  * This is an element object with an specific type. It is
- * usually used in collections.
+ * usually used in collections. The element object has an 
+ * element and references to a previous and next element
+ * object.
  * 
  * @author Miguel Velez
- * @version 0.1.3.1
+ * @version 0.1.3.2
  * 
  * @param <E> the type of the element
  */
@@ -95,6 +97,21 @@ public class Element<E>{
 	 */
 	public void setNext(Element<E> next) {
 		this.next = next;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		
+		builder.append("Element [element=");
+		builder.append(this.element);
+		builder.append("] [previous=");
+		builder.append(this.previous);
+		builder.append("] [next=");
+		builder.append(this.next);
+		builder.append("]");
+		
+		return builder.toString();
 	}
 		
 }
