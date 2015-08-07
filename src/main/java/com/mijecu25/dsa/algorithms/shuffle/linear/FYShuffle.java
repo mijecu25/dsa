@@ -1,6 +1,6 @@
-package com.mijecu25.dsa.algorithms.shuffling.linear;
+package com.mijecu25.dsa.algorithms.shuffle.linear;
 
-import com.mijecu25.dsa.algorithms.shuffling.Shuffle;
+import com.mijecu25.dsa.algorithms.shuffle.Shuffle;
 
 /**
  * FYShuffle class that uses the Fisher–Yates shuffle to shuffle
@@ -12,7 +12,7 @@ import com.mijecu25.dsa.algorithms.shuffling.Shuffle;
  * <i>Runtime: </i> O(n)
  * 
  * @author Miguel Velez
- * @version 0.1.3.1
+ * @version 0.1.3.2
  */
 public final class FYShuffle extends Shuffle {
 	

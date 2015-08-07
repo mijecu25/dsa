@@ -1,17 +1,17 @@
-package com.mijecu25.dsa.algorithms.shuffling.linear;
+package com.mijecu25.dsa.algorithms.shuffle.linear;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.mijecu25.dsa.algorithms.shuffling.linear.FYShuffle;
-import com.mijecu25.dsa.algorithms.sorting.Sort;
+import com.mijecu25.dsa.algorithms.shuffle.linear.FYShuffle;
+import com.mijecu25.dsa.algorithms.sort.Sort;
 
 /**
  * This is the FYShuffle test class.
  * 
  * @author Miguel Velez
- * @version 0.1.2.3
+ * @version 0.1.3.1
  */
 public class TestFYShuffle {
 	private int[] sortedList = {1, 5, 8, 15};

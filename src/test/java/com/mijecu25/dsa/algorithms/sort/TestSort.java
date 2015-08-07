@@ -1,14 +1,16 @@
-package com.mijecu25.dsa.algorithms.sorting;
+package com.mijecu25.dsa.algorithms.sort;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.mijecu25.dsa.algorithms.sort.Sort;
+
 /**
  * This is the Sort test class.
  * 
  * @author Miguel Velez
- * @version 0.1.2.5
+ * @version 0.1.3.1
  */
 public class TestSort {
 	private int[] sortedList = {1, 5, 8, 15};

@@ -1,16 +1,17 @@
-package com.mijecu25.dsa.algorithms.sorting.inefficient;
+package com.mijecu25.dsa.algorithms.sort.inefficient;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.mijecu25.dsa.algorithms.sorting.Sort;
+import com.mijecu25.dsa.algorithms.sort.Sort;
+import com.mijecu25.dsa.algorithms.sort.inefficient.Bogosort;
 
 /**
  * This is the Bogosort test class.
  * 
  * @author Miguel Velez
- * @version 0.1.2.2
+ * @version 0.1.3.1
  */
 public class TestBogosort {
 	

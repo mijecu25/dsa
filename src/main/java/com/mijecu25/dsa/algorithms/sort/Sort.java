@@ -1,11 +1,11 @@
-package com.mijecu25.dsa.algorithms.sorting;
+package com.mijecu25.dsa.algorithms.sort;
 
 /**
  * Sort class that implements different algorithms and utilities
  * for sorting.
  * 
  * @author Miguel Velez
- * @version 0.1.2.6
+ * @version 0.1.3.1
  */
 public abstract class Sort {
 

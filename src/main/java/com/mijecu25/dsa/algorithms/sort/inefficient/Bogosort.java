@@ -1,7 +1,7 @@
-package com.mijecu25.dsa.algorithms.sorting.inefficient;
+package com.mijecu25.dsa.algorithms.sort.inefficient;
 
-import com.mijecu25.dsa.algorithms.shuffling.linear.FYShuffle;
-import com.mijecu25.dsa.algorithms.sorting.Sort;
+import com.mijecu25.dsa.algorithms.shuffle.linear.FYShuffle;
+import com.mijecu25.dsa.algorithms.sort.Sort;
 
 /**
  * Ineffective sorting algorithm based on the generate and test paradigm. Keep
@@ -17,9 +17,9 @@ import com.mijecu25.dsa.algorithms.sorting.Sort;
  * <i>Average case performance: </i> O((n+1)!) 
  * 
  * @author Miguel Velez
- * @version 0.1.2.6
+ * @version 0.1.3.1
  */
-public final class Bogosort {
+public final class Bogosort extends Sort {
 	
 	/**
 	 * Don't let anyone instantiate this class
