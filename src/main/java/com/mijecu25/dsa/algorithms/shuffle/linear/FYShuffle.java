@@ -15,7 +15,7 @@ import com.mijecu25.dsa.algorithms.shuffle.Shuffle;
  * @version 0.1.3.2
  */
 public final class FYShuffle extends Shuffle {
-	
+	// TODO make it work for lists
 	/**
 	 * Don't let anyone instantiate this class
 	 */

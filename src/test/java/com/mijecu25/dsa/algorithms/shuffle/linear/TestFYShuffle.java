@@ -14,7 +14,6 @@ import com.mijecu25.dsa.algorithms.sort.Sort;
  * @version 0.1.3.1
  */
 public class TestFYShuffle {
-	private int[] sortedList = {1, 5, 8, 15};
 	
 	@Before
 	public void initialize() {
@@ -27,20 +26,25 @@ public class TestFYShuffle {
 	@Test 
 	public void shuffle() {
 		// Create a new array
-		int[] random = new int[this.sortedList.length];
+		int[] random = {2,4,23,3,23,12,12,5,23,6,4,96,68,34,6,4};
 		
-		// Make a copy of the sorted array to avoid pointing to the same memory reference
-		System.arraycopy(this.sortedList, 0, random, 0, this.sortedList.length);
-				
+		// Create a temp array
+		int[] temp = new int[random.length];
+		
+		// Make a copy of the random array to avoid pointing to the same memory reference
+		System.arraycopy(random, 0, temp, 0, random.length);
+		
 		// Shuffle the new array
 		FYShuffle.shuffle(random);
 		
-		// Assert that the sorted list is sorted
-		Assert.assertTrue(Sort.isSorted(this.sortedList));
+		// Assert that the list was shuffled
+		boolean shuffled = false;
 		
-		// Assert that the random list is not sorted
-		// NOTE that it might be sorted. Just run again
-		Assert.assertFalse(Sort.isSorted(random));		
+		for(int i = 0; !shuffled && i < random.length ; i++) {
+			shuffled = random[i] != temp[i];
+		}
+		
+		Assert.assertTrue(shuffled);
 	}
 
 }
