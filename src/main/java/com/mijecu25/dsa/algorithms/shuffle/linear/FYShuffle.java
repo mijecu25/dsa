@@ -2,6 +2,7 @@ package com.mijecu25.dsa.algorithms.shuffle.linear;
 
 import com.mijecu25.dsa.algorithms.shuffle.Shuffle;
 import com.mijecu25.dsa.algorithms.swap.XORSwap;
+import com.mijecu25.dsa.algorithms.swap.XORSwap;
 /**
  * FYShuffle class that uses the Fisher–Yates shuffle to shuffle
  * elements in arrays. 
