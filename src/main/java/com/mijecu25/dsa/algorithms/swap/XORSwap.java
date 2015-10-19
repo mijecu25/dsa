@@ -1,6 +1,4 @@
-package com.mijecu25.dsa.algorithms.swap.xor;
-
-import com.mijecu25.dsa.algorithms.swap.Swap;
+package com.mijecu25.dsa.algorithms.swap;
 
 /**
  * Swapping algorithm that uses the XOR operation to swap elements in an array. This class does
@@ -10,15 +8,22 @@ import com.mijecu25.dsa.algorithms.swap.Swap;
  * <br>
  * <br>
  * 
+ * All of the methods run in O(1) time. The helper methods that swap all of the elements of
+ * the array run in O(Math.min(<code>array1.length, array2.length</code>) time.
+ * 
+ * <br>
+ * <br>
+ * 
  * <i>Runtime: </i> O(1)
  * 
  * @author Miguel Velez
- * @version 0.1.3.1
+ * @version 0.1.3.2
  */
 public class XORSwap extends Swap {
 	
 	/**
-	 * Swap the elements of two int arrays at the specified positions.
+     * Helper method that swaps all the elements of the array. This method runs in 
+     * O(<code>Math.min(array1.length, array2.length</code>) time.
 	 * 
 	 * @param intArray1 one of the arrays that will have one of its values swapped.
 	 * @param array1Index the index of the first array that will be swapped.
@@ -48,7 +53,8 @@ public class XORSwap extends Swap {
 	}
 	
 	/**
-	 * Swap all the elements of the array
+	 * Helper method that swaps all the elements of the array. This method runs in 
+	 * O(<code>Math.min(array1.length, array2.length</code>) time.
 	 * 
 	 * @param intArray1 one array that will have its values swapped.
 	 * @param intArray2 the other array that will have its values swapped. 
@@ -65,7 +71,8 @@ public class XORSwap extends Swap {
 	}
 	
 	/**
-     * Swap the elements of two long arrays at the specified positions.
+     * Helper method that swaps all the elements of the array. This method runs in 
+     * O(<code>Math.min(array1.length, array2.length</code>) time.
      * 
      * @param longArray1 one of the arrays that will have one of its values swapped.
      * @param array1Index the index of the first array that will be swapped.
@@ -142,7 +149,8 @@ public class XORSwap extends Swap {
     }
     
     /**
-     * Swap all the elements of the array
+     * Helper method that swaps all the elements of the array. This method runs in 
+     * O(<code>Math.min(array1.length, array2.length</code>) time.
      * 
      * @param charArray1 one array that will have its values swapped.
      * @param charArray2 the other array that will have its values swapped. 
@@ -189,7 +197,8 @@ public class XORSwap extends Swap {
     }
     
     /**
-     * Swap all the elements of the array
+     * Helper method that swaps all the elements of the array. This method runs in 
+     * O(<code>Math.min(array1.length, array2.length</code>) time.
      * 
      * @param byteArray1 one array that will have its values swapped.
      * @param byteArray2 the other array that will have its values swapped. 
@@ -206,7 +215,8 @@ public class XORSwap extends Swap {
     }
     
     /**
-     * Swap the elements of two short arrays at the specified positions.
+     * Helper method that swaps all the elements of the array. This method runs in 
+     * O(<code>Math.min(array1.length, array2.length</code>) time.
      * 
      * @param shortArray1 one of the arrays that will have one of its values swapped.
      * @param array1Index the index of the first array that will be swapped.
@@ -251,5 +261,5 @@ public class XORSwap extends Swap {
             XORSwap.swap(shortArray1, shortArray2, i);
         }
     }
-    
+        
 }

@@ -1,10 +1,12 @@
-package com.mijecu25.dsa.algorithms.swap.xor;
+package com.mijecu25.dsa.algorithms.swap;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+
+import com.mijecu25.dsa.algorithms.swap.XORSwap;
 
 
 /**
