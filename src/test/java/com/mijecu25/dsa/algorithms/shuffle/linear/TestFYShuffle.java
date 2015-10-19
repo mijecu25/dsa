@@ -11,7 +11,7 @@ import com.mijecu25.dsa.algorithms.sort.Sort;
  * This is the FYShuffle test class.
  * 
  * @author Miguel Velez
- * @version 0.1.3.1
+ * @version 0.1.3.2
  */
 public class TestFYShuffle {
 	
@@ -40,11 +40,12 @@ public class TestFYShuffle {
 		// Assert that the list was shuffled
 		boolean shuffled = false;
 		
-		for(int i = 0; !shuffled && i < random.length ; i++) {
+		for(int i = 0; !shuffled && i < random.length; i++) {
 			shuffled = random[i] != temp[i];
 		}
 		
 		Assert.assertTrue(shuffled);
 	}
 
+	// TODO add tests for Object/float/double
 }
