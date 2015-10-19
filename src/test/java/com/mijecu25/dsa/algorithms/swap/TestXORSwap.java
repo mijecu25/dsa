@@ -13,14 +13,11 @@ import com.mijecu25.dsa.algorithms.swap.XORSwap;
  * Test for XORSwap class.
  * 
  * @author Miguel Velez
- * @version 0.1.3.2
+ * @version 0.1.3.3
  */
 public class TestXORSwap {
 	private int[] list1 = {1, 2, 3, 4};
 	private int[] list2 = {5, 6, 7, 8};
-	
-	@Rule
-	public ExpectedException expectedException = ExpectedException.none();
 	
 	@Before
 	public void initialize() {
