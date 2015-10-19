@@ -1,5 +1,7 @@
 package com.mijecu25.dsa.algorithms.swap;
 
+import org.junit.Before;
+
 /**
  * Test for Swap class.
  * 
@@ -7,5 +9,10 @@ package com.mijecu25.dsa.algorithms.swap;
  * @version 0.1.3.1
  */
 public class TestSwap {
+    
+    @Before
+    public void initialize() {
+        ;
+    }   
 
 }

@@ -79,10 +79,7 @@ public class TestXORSwap {
 			Assert.assertTrue(this.list1[i] == b[i]);
 			Assert.assertTrue(this.list2[i] == a[i]);			
 		}
-		
-		// Expect exception
-		expectedException.expect(ArrayIndexOutOfBoundsException.class);
-		
+				
 		// Try swapping lists of different lengths
 		XORSwap.swap(this.list1, new int[0]);
 	}
