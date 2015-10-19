@@ -13,7 +13,7 @@ import com.mijecu25.dsa.algorithms.swap.XORSwap;
  * Test for XORSwap class.
  * 
  * @author Miguel Velez
- * @version 0.1.3.3
+ * @version 0.1.3.4
  */
 public class TestXORSwap {
 	private int[] list1 = {1, 2, 3, 4};
@@ -81,6 +81,23 @@ public class TestXORSwap {
 				
 		// Try swapping lists of different lengths
 		XORSwap.swap(this.list1, new int[0]);
+	}
+
+	/**
+	 * Test swap(int[] intArray1, int index1, int index2)
+	 */
+	@Test
+	public void swap4() {
+		// Get elements from a list
+		int a = this.list1[this.list1.length-1];
+		int b = this.list1[0];
+
+		// Swap the last elements
+		XORSwap.swap(this.list1, 0, this.list1.length-1);
+
+		// Assert that the values were swapped
+		Assert.assertTrue(this.list1[this.list1.length-1] == b);
+		Assert.assertTrue(this.list1[0] == a);
 	}
 	
 }
