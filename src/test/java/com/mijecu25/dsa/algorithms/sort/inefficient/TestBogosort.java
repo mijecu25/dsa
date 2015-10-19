@@ -34,4 +34,15 @@ public class TestBogosort {
 		Assert.assertTrue(Sort.isSorted(this.unsortedList));
 	}
 
+	/**
+	 * Test descending Bogosort
+	 */
+	@Test
+	public void testDescendingBogosort() {
+		// Sort the list using bogosort
+		Bogosort.sortDescending(this.unsortedList);
+
+		// Assert that the list is sorted in descending order
+		Assert.assertTrue(Sort.isReverseSorted(this.unsortedList));
+	}
 }
