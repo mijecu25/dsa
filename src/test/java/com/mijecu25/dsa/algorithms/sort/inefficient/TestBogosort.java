@@ -11,7 +11,7 @@ import com.mijecu25.dsa.algorithms.sort.inefficient.Bogosort;
  * This is the Bogosort test class.
  * 
  * @author Miguel Velez
- * @version 0.1.3.1
+ * @version 0.1.3.2
  */
 public class TestBogosort {
 	
