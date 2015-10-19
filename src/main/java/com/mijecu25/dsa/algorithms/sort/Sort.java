@@ -5,7 +5,7 @@ package com.mijecu25.dsa.algorithms.sort;
  * for sorting.
  * 
  * @author Miguel Velez
- * @version 0.1.3.1
+ * @version 0.1.3.2
  */
 public abstract class Sort {
 
@@ -18,7 +18,8 @@ public abstract class Sort {
 	 * 
 	 * <i>Runtime: </i> O(n)
 	 * 
-	 * @param intArray the integer array to check
+	 * @param intArray - the integer array to check
+	 * 
 	 * @return <i>true</i> if the integer array is sorted, else <i>false</i>.
 	 */
 	public static boolean isSorted(int[] intArray) {
@@ -47,7 +48,8 @@ public abstract class Sort {
 	 * 
 	 * <i>Runtime: </i> O(n)
 	 * 
-	 * @param intArray the integer array to check
+	 * @param intArray - the integer array to check
+	 * 
 	 * @return <i>true</i> if the integer array is reverse sorted, else <i>false</i>.
 	 */
 	public static boolean isReverseSorted(int[] intArray) {
@@ -76,7 +78,8 @@ public abstract class Sort {
 	 * 
 	 * <i>Runtime: </i> O(n)
 	 * 
-	 * @param byteArray the byte array to check
+	 * @param byteArray - the byte array to check
+	 * 
 	 * @return <i>true</i> if the byte array is sorted, else <i>false</i>.
 	 */
 	public static boolean isSorted(byte[] byteArray) {
@@ -105,7 +108,8 @@ public abstract class Sort {
 	 * 
 	 * <i>Runtime: </i> O(n)
 	 * 
-	 * @param byteArray the byte array to check
+	 * @param byteArray - the byte array to check
+	 * 
 	 * @return <i>true</i> if the byte array is reverse sorted, else <i>false</i>.
 	 */
 	public static boolean isReverseSorted(byte[] byteArray) {
@@ -134,7 +138,8 @@ public abstract class Sort {
 	 * 
 	 * <i>Runtime: </i> O(n)
 	 * 
-	 * @param charArray the char array to check
+	 * @param charArray - the char array to check
+	 * 
 	 * @return <i>true</i> if the char array is sorted, else <i>false</i>.
 	 */
 	public static boolean isSorted(char[] charArray) {
@@ -163,7 +168,8 @@ public abstract class Sort {
 	 * 
 	 * <i>Runtime: </i> O(n)
 	 * 
-	 * @param charArray the char array to check
+	 * @param charArray - the char array to check
+	 * 
 	 * @return <i>true</i> if the char array is reverse sorted, else <i>false</i>.
 	 */
 	public static boolean isReverseSorted(char[] charArray) {
@@ -192,7 +198,8 @@ public abstract class Sort {
 	 * 
 	 * <i>Runtime: </i> O(n)
 	 * 
-	 * @param doubleArray the double array to check
+	 * @param doubleArray - the double array to check
+	 * 
 	 * @return <i>true</i> if the double array is sorted, else <i>false</i>.
 	 */
 	public static boolean isSorted(double[] doubleArray) {
@@ -221,7 +228,8 @@ public abstract class Sort {
 	 * 
 	 * <i>Runtime: </i> O(n)
 	 * 
-	 * @param doubleArray the double array to check
+	 * @param doubleArray - the double array to check
+	 * 
 	 * @return <i>true</i> if the double array is reverse sorted, else <i>false</i>.
 	 */
 	public static boolean isReverseSorted(double[] doubleArray) {
@@ -250,7 +258,8 @@ public abstract class Sort {
 	 * 
 	 * <i>Runtime: </i> O(n)
 	 * 
-	 * @param floatArray the float array to check
+	 * @param floatArray - the float array to check
+	 * 
 	 * @return <i>true</i> if the float array is sorted, else <i>false</i>.
 	 */
 	public static boolean isSorted(float[] floatArray) {
@@ -279,7 +288,8 @@ public abstract class Sort {
 	 * 
 	 * <i>Runtime: </i> O(n)
 	 * 
-	 * @param floatArray the float array to check
+	 * @param floatArray - the float array to check
+	 * 
 	 * @return <i>true</i> if the float array is reverse sorted, else <i>false</i>.
 	 */
 	public static boolean isReverseSorted(float[] floatArray) {
@@ -308,7 +318,8 @@ public abstract class Sort {
 	 * 
 	 * <i>Runtime: </i> O(n)
 	 * 
-	 * @param longArray the long array to check
+	 * @param longArray - the long array to check
+	 * 
 	 * @return <i>true</i> if the long array is sorted, else <i>false</i>.
 	 */
 	public static boolean isSorted(long[] longArray) {
@@ -337,7 +348,8 @@ public abstract class Sort {
 	 * 
 	 * <i>Runtime: </i> O(n)
 	 * 
-	 * @param longArray the long array to check
+	 * @param longArray - the long array to check
+	 * 
 	 * @return <i>true</i> if the long array is reverse sorted, else <i>false</i>.
 	 */
 	public static boolean isReverseSorted(long[] longArray) {
@@ -366,7 +378,8 @@ public abstract class Sort {
 	 * 
 	 * <i>Runtime: </i> O(n)
 	 * 
-	 * @param shortArray the short array to check
+	 * @param shortArray - the short array to check
+	 * 
 	 * @return <i>true</i> if the short array is sorted, else <i>false</i>.
 	 */
 	public static boolean isSorted(short[] shortArray) {
@@ -395,7 +408,8 @@ public abstract class Sort {
 	 * 
 	 * <i>Runtime: </i> O(n)
 	 * 
-	 * @param shortArray the short array to check
+	 * @param shortArray - the short array to check
+	 * 
 	 * @return <i>true</i> if the short array is reverse sorted, else <i>false</i>.
 	 */
 	public static boolean isReverseSorted(short[] shortArray) {

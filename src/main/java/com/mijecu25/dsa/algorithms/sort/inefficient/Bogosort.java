@@ -17,7 +17,7 @@ import com.mijecu25.dsa.algorithms.sort.Sort;
  * <i>Average case performance: </i> O((n+1)!) 
  * 
  * @author Miguel Velez
- * @version 0.1.3.1
+ * @version 0.1.3.2
  */
 public final class Bogosort extends Sort {
 	
@@ -31,7 +31,7 @@ public final class Bogosort extends Sort {
 	/**
 	 * Sort the int array using this algorithm.
 	 * 
-	 * @param intArray the array of ints that we want to sort
+	 * @param intArray - the array of ints that we want to sort
 	 */
 	public static void sort(int[] intArray) {
 		// While the integer array is not sorted
@@ -44,7 +44,7 @@ public final class Bogosort extends Sort {
 	/**
 	 * Sort the byte array using this algorithm.
 	 * 
-	 * @param byteArray the array of bytes that we want to sort
+	 * @param byteArray - the array of bytes that we want to sort
 	 */
 	public static void sort(byte[] byteArray) {
 		// While the byte array is not sorted
@@ -57,7 +57,7 @@ public final class Bogosort extends Sort {
 	/**
 	 * Sort the char array using this algorithm.
 	 * 
-	 * @param charArray the array of chars that we want to sort
+	 * @param charArray - the array of chars that we want to sort
 	 */
 	public static void sort(char[] charArray) {
 		// While the char array is not sorted
@@ -70,7 +70,7 @@ public final class Bogosort extends Sort {
 	/**
 	 * Sort the double array using this algorithm.
 	 * 
-	 * @param doubleArray the array of double that we want to sort
+	 * @param doubleArray - the array of double that we want to sort
 	 */
 	public static void sort(double[] doubleArray) {
 		// While the double array is not sorted
@@ -83,7 +83,7 @@ public final class Bogosort extends Sort {
 	/**
 	 * Sort the float array using this algorithm.
 	 * 
-	 * @param floatArray the array of float that we want to sort
+	 * @param floatArray - the array of float that we want to sort
 	 */
 	public static void sort(float[] floatArray) {
 		// While the float array is not sorted
@@ -96,7 +96,7 @@ public final class Bogosort extends Sort {
 	/**
 	 * Sort the long array using this algorithm.
 	 * 
-	 * @param longArray the array of longs that we want to sort
+	 * @param longArray - the array of longs that we want to sort
 	 */
 	public static void sort(long[] longArray) {
 		// While the long array is not sorted
@@ -109,7 +109,7 @@ public final class Bogosort extends Sort {
 	/**
 	 * Sort the short array using this algorithm.
 	 * 
-	 * @param shortArray the array of shorts that we want to sort
+	 * @param shortArray - the array of shorts that we want to sort
 	 */
 	public static void sort(short[] shortArray) {
 		// While the short array is not sorted

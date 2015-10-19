@@ -13,7 +13,7 @@ import com.mijecu25.dsa.algorithms.swap.XORSwap;
  * Test for XORSwap class.
  * 
  * @author Miguel Velez
- * @version 0.1.3.1
+ * @version 0.1.3.2
  */
 public class TestXORSwap {
 	private int[] list1 = {1, 2, 3, 4};
@@ -63,7 +63,7 @@ public class TestXORSwap {
 	}
 	
 	/**
-	 * swap(int[] intArray1, int[] intArray2)
+	 * Test swap(int[] intArray1, int[] intArray2)
 	 */
 	@Test
 	public void swap3() {
