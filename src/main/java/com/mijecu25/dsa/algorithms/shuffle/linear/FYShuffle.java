@@ -13,7 +13,7 @@ import com.mijecu25.dsa.algorithms.swap.XORSwap;
  * <i>Runtime: </i> O(n)
  * 
  * @author Miguel Velez
- * @version 0.1.3.3
+ * @version 0.1.3.4
  */
 public final class FYShuffle extends Shuffle {
 	// TODO make it work for lists
@@ -58,7 +58,7 @@ public final class FYShuffle extends Shuffle {
 			// Pick a random index
 			swapPlace = (int) (Math.random() * (intArray.length - 1));
 			// Use xor swap to swap the elements current element with the random element
-			XORSwap.swap(intArray, i, intArray, swapPlace);
+			XORSwap.swap(intArray, i, swapPlace);
 		}
 	}
 	
@@ -95,7 +95,7 @@ public final class FYShuffle extends Shuffle {
 			// Pick a random index
 			swapPlace = (int) (Math.random() * (byteArray.length - 1));
 			// Use xor swap to swap the elements current element with the random element
-			XORSwap.swap(byteArray, i, byteArray, swapPlace);
+			XORSwap.swap(byteArray, i, swapPlace);
 		}
 	}
 	
@@ -113,7 +113,7 @@ public final class FYShuffle extends Shuffle {
 			// Pick a random index
 			swapPlace = (int) (Math.random() * (shortArray.length - 1));
 			// Use xor swap to swap the elements current element with the random element
-			XORSwap.swap(shortArray, i, shortArray, swapPlace);
+			XORSwap.swap(shortArray, i, swapPlace);
 		}
 	}
 	
@@ -131,7 +131,7 @@ public final class FYShuffle extends Shuffle {
 			// Pick a random index
 			swapPlace = (int) (Math.random() * (longArray.length - 1));
 			// Use xor swap to swap the elements current element with the random element
-			XORSwap.swap(longArray, i, longArray, swapPlace);
+			XORSwap.swap(longArray, i, swapPlace);
 		}
 	}
 	
@@ -168,7 +168,7 @@ public final class FYShuffle extends Shuffle {
 			// Pick a random index
 			swapPlace = (int) (Math.random() * (charArray.length - 1));
 			// Use xor swap to swap the elements current element with the random element
-			XORSwap.swap(charArray, i, charArray, swapPlace);
+			XORSwap.swap(charArray, i, swapPlace);
 		}
 	}
 
