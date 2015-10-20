@@ -8,7 +8,7 @@ import org.junit.Test;
  * Test for TrivialSwap class.
  * 
  * @author Miguel Velez
- * @version 0.1.3.2
+ * @version 0.1.3.3
  */
 public class TestTrivialSwap {
 	private Integer[] list1 = {1, 2, 3, 4};
@@ -79,7 +79,7 @@ public class TestTrivialSwap {
 	}
 	
 	/**
-	 * Test 
+	 * Test void swap(E[] array, int index1, int index2)
 	 */
 	@Test
 	public void swap7() {

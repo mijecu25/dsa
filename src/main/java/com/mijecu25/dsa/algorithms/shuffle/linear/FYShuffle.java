@@ -14,7 +14,7 @@ import com.mijecu25.dsa.algorithms.swap.XORSwap;
  * <i>Runtime: </i> O(n)
  * 
  * @author Miguel Velez
- * @version 0.1.3.5
+ * @version 0.1.3.6
  */
 public final class FYShuffle extends Shuffle {
 
@@ -38,8 +38,7 @@ public final class FYShuffle extends Shuffle {
 	         // Pick a random index
             swapPlace = (int) (Math.random() * (array.length - 1));
             // Use trivial swap to swap the elements current element with the random element
-//            TrivialSwap.swap(array, i, swapPlace);
-            // TODO complete
+            TrivialSwap.swap(array, i, swapPlace);
 		}
 	}
 	
@@ -77,8 +76,7 @@ public final class FYShuffle extends Shuffle {
 		    // Pick a random index
             swapPlace = (int) (Math.random() * (floatArray.length - 1));
             // Use trivial swap to swap the elements current element with the random element
-//            TrivialSwap.swap(floatArray, i, swapPlace);
-            // TODO complete
+            TrivialSwap.swap(floatArray, i, swapPlace);
 		}
 	}
 	
@@ -150,8 +148,7 @@ public final class FYShuffle extends Shuffle {
 		 // Pick a random index
             swapPlace = (int) (Math.random() * (doubleArray.length - 1));
             // Use trivial swap to swap the elements current element with the random element
-//            TrivialSwap.swap(doubleArray, i, swapPlace);
-            // TODO complete
+            TrivialSwap.swap(doubleArray, i, swapPlace);
 		}
 	}
 	
