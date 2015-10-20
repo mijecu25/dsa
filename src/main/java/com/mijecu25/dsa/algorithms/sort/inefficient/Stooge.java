@@ -33,7 +33,7 @@ import com.mijecu25.dsa.algorithms.sort.Sort;
  * @version 0.1.3.1
  */
 public final class Stooge extends Sort {
-
+    // TODO whole class
 	/**
 	 * Don't let anyone instantiate this class
 	 */

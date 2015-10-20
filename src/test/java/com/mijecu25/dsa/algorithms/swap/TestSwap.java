@@ -6,13 +6,11 @@ import org.junit.Before;
  * Test for Swap class.
  * 
  * @author Miguel Velez
- * @version 0.1.3.1
+ * @version 0.1.3.2
  */
 public class TestSwap {
     
     @Before
-    public void initialize() {
-        ;
-    }   
+    public void initialize() { ; }   
 
 }

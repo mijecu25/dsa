@@ -1,6 +1,7 @@
 package com.mijecu25.dsa.algorithms.shuffle.linear;
 
 import com.mijecu25.dsa.algorithms.shuffle.Shuffle;
+import com.mijecu25.dsa.algorithms.swap.TrivialSwap;
 import com.mijecu25.dsa.algorithms.swap.XORSwap;
 
 /**
@@ -13,36 +14,36 @@ import com.mijecu25.dsa.algorithms.swap.XORSwap;
  * <i>Runtime: </i> O(n)
  * 
  * @author Miguel Velez
- * @version 0.1.3.4
+ * @version 0.1.3.5
  */
 public final class FYShuffle extends Shuffle {
-	// TODO make it work for lists
-	/**
+
+    /**
 	 * Don't let anyone instantiate this class
 	 */
-	private FYShuffle() {
-		;
-	}
+	private FYShuffle() { ; }
 	
 	/**
 	 * Randomly shuffle the elements in an array  
+	 * @param <E>
 	 * 
 	 * @param array - an array of objects to shuffle.
 	 */
-	public static void shuffle(Object[] array) {
-		Object hold = null;
-		int arrayLength = array.length;
+	public static <E> void shuffle(E[] array) {
+	    // Place hold for the random place to swap
 		int swapPlace = -1;
 		
 		// Loop through the entire array
-		for(int i = 0; i < array.length; i++) {
-			// TOD use trivial swap
-			hold = array[i];
-			swapPlace = (int) (Math.random() * (arrayLength - i));
-			array[i] = array[swapPlace];
-			array[swapPlace] = hold;
+		for(int i = 0; i < array.length; i++) {	
+	         // Pick a random index
+            swapPlace = (int) (Math.random() * (array.length - 1));
+            // Use trivial swap to swap the elements current element with the random element
+//            TrivialSwap.swap(array, i, swapPlace);
+            // TODO complete
 		}
 	}
+	
+   // TODO make it work for lists
 	
 	/**
 	 * Randomly shuffle an int array  
@@ -51,7 +52,7 @@ public final class FYShuffle extends Shuffle {
 	 */
 	public static void shuffle(int[] intArray) {
 		// Place hold for the random place to swap
-		int swapPlace = 0;
+		int swapPlace = -1;
 
 		// Loop through the entire array
 		for(int i = 0; i < intArray.length; i++) {
@@ -69,15 +70,15 @@ public final class FYShuffle extends Shuffle {
 	 */
 	public static void shuffle(float[] floatArray) {
 		// Place hold for the random place to swap
-		int swapPlace = 0;
+		int swapPlace = -1;
 
 		// Loop through the entire array
 		for(int i = 0; i < floatArray.length; i++) {
-			// Pick a random index
-			swapPlace = (int) (Math.random() * (floatArray.length - 1));
-			// TODO use trivial swap
-//			// Use xor swap to swap the elements current element with the random element
-//			XORSwap.swap(floatArray, i, floatArray, swapPlace);
+		    // Pick a random index
+            swapPlace = (int) (Math.random() * (floatArray.length - 1));
+            // Use trivial swap to swap the elements current element with the random element
+//            TrivialSwap.swap(floatArray, i, swapPlace);
+            // TODO complete
 		}
 	}
 	
@@ -88,7 +89,7 @@ public final class FYShuffle extends Shuffle {
 	 */
 	public static void shuffle(byte[] byteArray) {
 		// Place hold for the random place to swap
-		int swapPlace = 0;
+		int swapPlace = -1;
 
 		// Loop through the entire array
 		for(int i = 0; i < byteArray.length; i++) {
@@ -106,7 +107,7 @@ public final class FYShuffle extends Shuffle {
 	 */
 	public static void shuffle(short[] shortArray) {
 		// Place hold for the random place to swap
-		int swapPlace = 0;
+		int swapPlace = -1;
 
 		// Loop through the entire array
 		for(int i = 0; i < shortArray.length; i++) {
@@ -124,7 +125,7 @@ public final class FYShuffle extends Shuffle {
 	 */
 	public static void shuffle(long[] longArray) {
 		// Place hold for the random place to swap
-		int swapPlace = 0;
+		int swapPlace = -1;
 
 		// Loop through the entire array
 		for(int i = 0; i < longArray.length; i++) {
@@ -142,15 +143,15 @@ public final class FYShuffle extends Shuffle {
 	 */
 	public static void shuffle(double[] doubleArray) {
 		// Place hold for the random place to swap
-		int swapPlace = 0;
+		int swapPlace = -1;
 
 		// Loop through the entire array
 		for(int i = 0; i < doubleArray.length; i++) {
-			// Pick a random index
-			swapPlace = (int) (Math.random() * (doubleArray.length - 1));
-			// TODO use trivial swap
-//			// Use xor swap to swap the elements current element with the random element
-//			XORSwap.swap(floatArray, i, floatArray, swapPlace);
+		 // Pick a random index
+            swapPlace = (int) (Math.random() * (doubleArray.length - 1));
+            // Use trivial swap to swap the elements current element with the random element
+//            TrivialSwap.swap(doubleArray, i, swapPlace);
+            // TODO complete
 		}
 	}
 	
@@ -161,7 +162,7 @@ public final class FYShuffle extends Shuffle {
 	 */
 	public static void shuffle(char[] charArray) {
 		// Place hold for the random place to swap
-		int swapPlace = 0;
+		int swapPlace = -1;
 
 		// Loop through the entire array
 		for(int i = 0; i < charArray.length; i++) {

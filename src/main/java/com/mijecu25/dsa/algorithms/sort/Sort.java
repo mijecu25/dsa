@@ -5,10 +5,11 @@ package com.mijecu25.dsa.algorithms.sort;
  * for sorting.
  * 
  * @author Miguel Velez
- * @version 0.1.3.2
+ * @version 0.1.3.3
  */
 public abstract class Sort {
 
+    // TODO Make it work for lists with comparable interface
 	/**
 	 * Check if the integer array is sorted. It loops through the entire integer
 	 * array once, checking that the elements are sorted.

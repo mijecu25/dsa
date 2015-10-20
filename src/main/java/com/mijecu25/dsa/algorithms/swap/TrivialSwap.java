@@ -20,7 +20,7 @@ import java.util.List;
  * @version 0.1.3.1
  */
 public class TrivialSwap extends Swap {
-    
+    // TODO add methods for one array and two indices
     /**
      * Swap the elements of two arrays at the specified positions.
      * 

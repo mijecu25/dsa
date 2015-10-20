@@ -4,20 +4,16 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.mijecu25.dsa.algorithms.shuffle.linear.FYShuffle;
-
 /**
  * This is the FYShuffle test class.
  * 
  * @author Miguel Velez
- * @version 0.1.3.2
+ * @version 0.1.3.3
  */
 public class TestFYShuffle {
 	
 	@Before
-	public void initialize() {
-		;
-	}	
+	public void initialize() { ; }	
 	
 	/**
 	 * Test shuffle

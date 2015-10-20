@@ -2,27 +2,20 @@ package com.mijecu25.dsa.algorithms.swap;
 
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
-
-import com.mijecu25.dsa.algorithms.swap.XORSwap;
-
 
 /**
  * Test for XORSwap class.
  * 
  * @author Miguel Velez
- * @version 0.1.3.4
+ * @version 0.1.3.5
  */
 public class TestXORSwap {
 	private int[] list1 = {1, 2, 3, 4};
 	private int[] list2 = {5, 6, 7, 8};
 	
 	@Before
-	public void initialize() {
-		;
-	}	
+	public void initialize() { ; }	
 	
 	/**
 	 * Test swap(int[] intArray1, int array1Index, int[] intArray2, int array2Index)

@@ -4,13 +4,11 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.mijecu25.dsa.algorithms.sort.Sort;
-
 /**
  * This is the Sort test class.
  * 
  * @author Miguel Velez
- * @version 0.1.3.1
+ * @version 0.1.3.2
  */
 public class TestSort {
 	private int[] sortedList = {1, 5, 8, 15};
@@ -18,9 +16,7 @@ public class TestSort {
 	private int[] unsortedList = {5, 2, 24, 8, 15};
 	
 	@Before
-	public void initialize() {
-		;
-	}
+	public void initialize() { ; }
 	
 	/**
 	 * Test isSorted.

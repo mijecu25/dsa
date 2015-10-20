@@ -5,22 +5,19 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.mijecu25.dsa.algorithms.sort.Sort;
-import com.mijecu25.dsa.algorithms.sort.inefficient.Bogosort;
 
 /**
  * This is the Bogosort test class.
  * 
  * @author Miguel Velez
- * @version 0.1.3.2
+ * @version 0.1.3.3
  */
 public class TestBogosort {
 	
 	private int[] unsortedList = {5, 2, 24, 8, 15};
 	
 	@Before
-	public void initialize() {
-		;
-	}
+	public void initialize() { ; }
 	
 	/**
 	 * Test Bogosort

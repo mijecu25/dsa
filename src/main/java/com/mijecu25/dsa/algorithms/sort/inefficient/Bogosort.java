@@ -17,16 +17,16 @@ import com.mijecu25.dsa.algorithms.sort.Sort;
  * <i>Average case performance: </i> O((n+1)!) 
  * 
  * @author Miguel Velez
- * @version 0.1.3.3
+ * @version 0.1.3.4
  */
 public final class Bogosort extends Sort {
 	
 	/**
 	 * Don't let anyone instantiate this class
 	 */
-	private Bogosort() {
-		;
-	}
+	private Bogosort() { ; }
+	
+	// TODO make it work for lists with comparable interface
 	
 	/**
 	 * Sort the int array in ascending order using this algorithm.

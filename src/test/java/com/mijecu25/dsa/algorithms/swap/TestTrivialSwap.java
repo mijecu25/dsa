@@ -2,9 +2,7 @@ package com.mijecu25.dsa.algorithms.swap;
 
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 
 /**
  * Test for TrivialSwap class.
@@ -18,14 +16,10 @@ public class TestTrivialSwap {
 	private int[] int1 = {1, 2, 3, 4};
     private int[] int2 = {5, 6, 7, 8};
 	
-	@Rule
-	public ExpectedException expectedException = ExpectedException.none();
-	
 	@Before
-	public void initialize() {
-		;
-	}	
+	public void initialize() { ; }	
 	
+	// TODO add test for method with one array and two indexes
 	/**
 	 * Test swap(E[] array1, int array1Index, E[] array2, int array2Index)
 	 */
