@@ -8,7 +8,7 @@ import org.junit.Test;
  * Test for TrivialSwap class.
  * 
  * @author Miguel Velez
- * @version 0.1.3.1
+ * @version 0.1.3.2
  */
 public class TestTrivialSwap {
 	private Integer[] list1 = {1, 2, 3, 4};
@@ -18,8 +18,7 @@ public class TestTrivialSwap {
 	
 	@Before
 	public void initialize() { ; }	
-	
-	// TODO add test for method with one array and two indexes
+
 	/**
 	 * Test swap(E[] array1, int array1Index, E[] array2, int array2Index)
 	 */
@@ -80,6 +79,23 @@ public class TestTrivialSwap {
 	}
 	
 	/**
+	 * Test 
+	 */
+	@Test
+	public void swap7() {
+	    // Get elements from a list
+        int a = this.list1[this.list1.length-1];
+        int b = this.list1[0];
+
+        // Swap the last elements
+        TrivialSwap.swap(this.list1, 0, this.list1.length-1);
+
+        // Assert that the values were swapped
+        Assert.assertTrue(this.list1[this.list1.length-1] == b);
+        Assert.assertTrue(this.list1[0] == a);
+	}
+	
+	/**
      * Test swap(int[] intArray1, int array1Index, int[] intArray2, int array2Index)
      */
     @Test 
@@ -136,6 +152,23 @@ public class TestTrivialSwap {
                 
         // Try swapping lists of different lengths
         TrivialSwap.swap(this.int1, new int[0]);
+    }
+    
+    /**
+     * Test swap(int[] intArray1, int index1, int index2)
+     */
+    @Test
+    public void swap8() {
+        // Get elements from an array
+        int a = this.int1[this.int1.length-1];
+        int b = this.int1[0];
+
+        // Swap the last elements
+        TrivialSwap.swap(this.int1, 0, this.int1.length-1);
+
+        // Assert that the values were swapped
+        Assert.assertTrue(this.int1[this.int1.length-1] == b);
+        Assert.assertTrue(this.int1[0] == a);
     }
 	
 }
