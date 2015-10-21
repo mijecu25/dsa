@@ -17,10 +17,10 @@ import java.util.List;
  * <i>Runtime: </i> O(1)
  * 
  * @author Miguel Velez
- * @version 0.1.3.2
+ * @version 0.1.3.3
  */
 public class TrivialSwap extends Swap {
-    // TODO add methods for one array and two indices
+   
     /**
      * Swap the elements of two arrays at the specified positions.
      * 
@@ -93,7 +93,9 @@ public class TrivialSwap extends Swap {
     }
     
     /**
-     * Swap the elements of two lists at the specified positions.
+     * Swap the elements of two lists at the specified positions. The run time of this method
+     * depends on the implementation of the lists since elements are removed and added in the
+     * lists.
      * 
      * @param <E> - the type of elements in this list.
      *  
@@ -105,18 +107,34 @@ public class TrivialSwap extends Swap {
     public static <E> void swap(List<E> list1, int list1Index, List<E> list2, int list2Index) {
         // If the values are not the same
         if(list1.get(list1Index) != list2.get(list2Index)) {
-            // Place the element of the first list in a variable
-            E hold = list1.get(list1Index);
-            // Set the element of the first list equal to the element in the second list
-            list1.add(list1Index, list2.get(list2Index));
+            // Remove the element of the first list in a variable
+            E hold = list1.remove(list1Index);            
+
+            // If the lists are different
+            if(list1 != list2){
+                // Set the element of the first list equal to the element in the second list
+                list1.add(list1Index, list2.get(list2Index));
+            }
+            else {
+                // Set the element of the first list equal to the element in the second list
+                // We have to decrease the index since we are working on the same list
+                // and we just removed an element from it
+                list1.add(list1Index, list2.get(list2Index-1));
+            }
+            // Remove the element of the second list
+            list2.remove(list2Index);
             // Set the element of the second list equal to the temporary variable
-            list2.add(list2Index, hold);
+            list2.add(list2Index, hold);                
         }
         
     }
     
     /**
-     * Swap all the elements of two lists at the same position
+     * Swap all the elements of two lists at the same position. The run time of this method
+     * depends on the implementation of the lists since elements are removed and added in the
+     * lists.
+     * 
+     * @param <E> - the type of elements in this list.
      *  
      * @param intArray1 - one of the lists that will have one of its values swapped.
      * @param intArray2 - the other list that will have one of its values swapped.
@@ -124,13 +142,16 @@ public class TrivialSwap extends Swap {
      */
     public static <E> void swap(List<E> list1, List<E> list2, int index) {
         // Call the other method by passing the index twice
-        TrivialSwap.swap(list1, list2, index);
+        TrivialSwap.swap(list1, index, list2, index);
     }
     
     /**
-     * Swap two elements of a list at the specified positions
-     * @param <E>
-     *
+     * Swap two elements of a list at the specified positions. The run time of this method
+     * depends on the implementation of the lists since elements are removed and added in the
+     * lists.
+     * 
+     * @param <E> - the type of elements in this list.
+     * 
      * @param list - list that will have two of its values swapped.
      * @param index1 - one of the indexes of the list.
      * @param index2 - other index of the list.
@@ -141,9 +162,12 @@ public class TrivialSwap extends Swap {
     }
     
     /**
-     * Helper method that swaps all the elements of the arrays. This method runs in 
-     * O(<code>Math.min(array1.length, array2.length</code>) time.
+     * Helper method that swaps all the elements of the arrays. The run time of this method
+     * depends on the implementation of the lists since elements are removed and added in the
+     * lists. It also depends on the length of the shortest list.
      *  
+     * @param <E> - the type of elements in this list. 
+     * 
      * @param intArray1 one array that will have its values swapped.
      * @param intArray2 the other array that will have its values swapped. 
      */
