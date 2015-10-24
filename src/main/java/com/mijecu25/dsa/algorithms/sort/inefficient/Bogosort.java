@@ -1,5 +1,7 @@
 package com.mijecu25.dsa.algorithms.sort.inefficient;
 
+import java.util.List;
+
 import com.mijecu25.dsa.algorithms.shuffle.linear.FYShuffle;
 import com.mijecu25.dsa.algorithms.sort.Sort;
 
@@ -17,7 +19,7 @@ import com.mijecu25.dsa.algorithms.sort.Sort;
  * <i>Average case performance: </i> O((n+1)!) 
  * 
  * @author Miguel Velez
- * @version 0.1.3.4
+ * @version 0.1.3.5
  */
 public final class Bogosort extends Sort {
 	
@@ -26,7 +28,35 @@ public final class Bogosort extends Sort {
 	 */
 	private Bogosort() { ; }
 	
-	// TODO make it work for lists with comparable interface
+    /**
+     * Sort the array in ascending order using this algorithm.
+     * 
+     * @param <E> - the type of elements in this array.
+     * 
+     * @param array - the array that we want to sort
+     */
+    public static <E extends Comparable<E>> void sort(E[] array) {
+        // While the array is not sorted
+        while(!Sort.isSorted(array)) {
+            // Randomly shuffle the array using fyShuffle
+            FYShuffle.shuffle(array);
+        }
+    }
+        
+    /**
+     * Sort the list in ascending order using this algorithm.
+     * 
+     * @param <E> - the type of elements in this list.
+     * 
+     * @param list - the list that we want to sort
+     */
+    public static <E extends Comparable<E>> void sort(List<E> list) {
+        // While the list is not sorted
+        while(!Sort.isSorted(list)) {
+            // Randomly shuffle the list using fyShuffle
+            FYShuffle.shuffle(list);
+        }
+    }
 	
 	/**
 	 * Sort the int array in ascending order using this algorithm.
@@ -119,13 +149,43 @@ public final class Bogosort extends Sort {
 		}
 	}
 
+	 /**
+     * Sort the array in descending order using this algorithm.
+     * 
+     * @param <E> - the type of elements in this array.
+     * 
+     * @param array - the array that we want to sort
+     */
+    public static <E extends Comparable<E>> void sortDescending(E[] array) {
+        // While the integer array is not reverse sorted
+        while(!Sort.isReverseSorted(array)) {
+            // Randomly shuffle the array using fyShuffle
+            FYShuffle.shuffle(array);
+        }
+    }
+    
+    /**
+     * Sort the list in descending order using this algorithm.
+     * 
+     * @param <E> - the type of elements in this list.
+     * 
+     * @param list - the list that we want to sort
+     */
+    public static <E extends Comparable<E>> void sortDescending(List<E> list) {
+        // While the list is not reverse sorted
+        while(!Sort.isReverseSorted(list)) {
+            // Randomly shuffle the list using fyShuffle
+            FYShuffle.shuffle(list);
+        }
+    }
+    
 	/**
 	 * Sort the int array in descending order using this algorithm.
 	 *
 	 * @param intArray - the array of ints that we want to sort
 	 */
 	public static void sortDescending(int[] intArray) {
-		// While the integer array is not sorted
+		// While the integer array is not reverse sorted
 		while(!Sort.isReverseSorted(intArray)) {
 			// Randomly shuffle the array using fyShuffle
 			FYShuffle.shuffle(intArray);
@@ -138,7 +198,7 @@ public final class Bogosort extends Sort {
 	 * @param byteArray - the array of bytes that we want to sort
 	 */
 	public static void sortDescending(byte[] byteArray) {
-		// While the byte array is not sorted
+		// While the byte array is not reverse sorted
 		while(!Sort.isReverseSorted(byteArray)) {
 			// Randomly shuffle the array using fyShuffle
 			FYShuffle.shuffle(byteArray);
@@ -151,7 +211,7 @@ public final class Bogosort extends Sort {
 	 * @param charArray - the array of chars that we want to sort
 	 */
 	public static void sortDescending(char[] charArray) {
-		// While the char array is not sorted
+		// While the char array is not reverse sorted
 		while(!Sort.isReverseSorted(charArray)) {
 			// Randomly shuffle the array using fyShuffle
 			FYShuffle.shuffle(charArray);
@@ -164,7 +224,7 @@ public final class Bogosort extends Sort {
 	 * @param doubleArray - the array of double that we want to sort
 	 */
 	public static void sortDescending(double[] doubleArray) {
-		// While the double array is not sorted
+		// While the double array is not reverse sorted
 		while(!Sort.isReverseSorted(doubleArray)) {
 			// Randomly shuffle the array using fyShuffle
 			FYShuffle.shuffle(doubleArray);
@@ -177,7 +237,7 @@ public final class Bogosort extends Sort {
 	 * @param floatArray - the array of float that we want to sort
 	 */
 	public static void sortDescending(float[] floatArray) {
-		// While the float array is not sorted
+		// While the float array is not reverse sorted
 		while(!Sort.isReverseSorted(floatArray)) {
 			// Randomly shuffle the array using fyShuffle
 			FYShuffle.shuffle(floatArray);
@@ -190,7 +250,7 @@ public final class Bogosort extends Sort {
 	 * @param longArray - the array of longs that we want to sort
 	 */
 	public static void sortDescending(long[] longArray) {
-		// While the long array is not sorted
+		// While the long array is not reverse sorted
 		while(!Sort.isReverseSorted(longArray)) {
 			// Randomly shuffle the array using fyShuffle
 			FYShuffle.shuffle(longArray);
@@ -203,7 +263,7 @@ public final class Bogosort extends Sort {
 	 * @param shortArray - the array of shorts that we want to sort
 	 */
 	public static void sortDescending(short[] shortArray) {
-		// While the short array is not sorted
+		// While the short array is not reverse sorted
 		while(!Sort.isReverseSorted(shortArray)) {
 			// Randomly shuffle the array using fyShuffle
 			FYShuffle.shuffle(shortArray);

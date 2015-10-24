@@ -10,12 +10,11 @@ import com.mijecu25.dsa.algorithms.sort.Sort;
  * This is the Bogosort test class.
  * 
  * @author Miguel Velez
- * @version 0.1.3.4
+ * @version 0.1.3.5
  */
 public class TestBogosort {
 	
-	private int[] unsortedList = {5, 2, 24, 8, 15};
-	private double[] unsortedList2 = {5.2, 2.4, 24.2, 8.1, 15.5, 8.2};
+	private int[]      unsortedArray = {5, 2, 24, 8, 15};
 	
 	@Before
 	public void initialize() { ; }
@@ -25,11 +24,11 @@ public class TestBogosort {
 	 */
 	@Test
 	public void testBogosort() {
-		// Sort the list using bogosort
-		Bogosort.sort(this.unsortedList);
+		// Sort the array using bogosort
+		Bogosort.sort(this.unsortedArray);
 		
-		// Assert that the list is sorted
-		Assert.assertTrue(Sort.isSorted(this.unsortedList));
+		// Assert that the array is sorted
+		Assert.assertTrue(Sort.isSorted(this.unsortedArray));
 	}
 
 	/**
@@ -37,34 +36,11 @@ public class TestBogosort {
 	 */
 	@Test
 	public void testDescendingBogosort() {
-		// Sort the list using bogosort
-		Bogosort.sortDescending(this.unsortedList);
+		// Sort the array using bogosort
+		Bogosort.sortDescending(this.unsortedArray);
 
-		// Assert that the list is sorted in descending order
-		Assert.assertTrue(Sort.isReverseSorted(this.unsortedList));
+		// Assert that the array is sorted in descending order
+		Assert.assertTrue(Sort.isReverseSorted(this.unsortedArray));
 	}
-	
-	/**
-     * Test Bogosort of doubles, floats, and elements
-     */
-    @Test
-    public void testBogosort2() {
-        // Sort the list using bogosort
-        Bogosort.sort(this.unsortedList2);
-        
-        // Assert that the list is sorted
-        Assert.assertTrue(Sort.isSorted(this.unsortedList2));
-    }
-
-    /**
-     * Test descending Bogosort of doubles, floats, and elements
-     */
-    @Test
-    public void testDescendingBogosort2() {
-        // Sort the list using bogosort
-        Bogosort.sortDescending(this.unsortedList2);
-
-        // Assert that the list is sorted in descending order
-        Assert.assertTrue(Sort.isReverseSorted(this.unsortedList2));
-    }
+	    
 }
