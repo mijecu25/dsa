@@ -1,5 +1,7 @@
 package com.mijecu25.dsa.algorithms.shuffle.linear;
 
+import java.util.List;
+
 import com.mijecu25.dsa.algorithms.shuffle.Shuffle;
 import com.mijecu25.dsa.algorithms.swap.TrivialSwap;
 import com.mijecu25.dsa.algorithms.swap.XORSwap;
@@ -14,7 +16,7 @@ import com.mijecu25.dsa.algorithms.swap.XORSwap;
  * <i>Runtime: </i> O(n)
  * 
  * @author Miguel Velez
- * @version 0.1.3.6
+ * @version 0.1.3.7
  */
 public final class FYShuffle extends Shuffle {
 
@@ -25,7 +27,8 @@ public final class FYShuffle extends Shuffle {
 	
 	/**
 	 * Randomly shuffle the elements in an array  
-	 * @param <E>
+	 * 
+     * @param <E> - the type of elements in this arrays.
 	 * 
 	 * @param array - an array of objects to shuffle.
 	 */
@@ -42,7 +45,25 @@ public final class FYShuffle extends Shuffle {
 		}
 	}
 	
-   // TODO make it work for lists
+	/**
+     * Randomly shuffle the elements in a list
+	 * 
+     * @param <E> - the type of elements in this list.
+	 * 
+	 * @param list - a list of objects to shuffle.
+	 */
+	public static <E> void shuffle(List<E> list) {
+	    // Place hold for the random place to swap
+        int swapPlace = -1;
+        
+        // Loop through the entire list
+        for(int i = 0; i < list.size(); i++) { 
+             // Pick a random index
+            swapPlace = (int) (Math.random() * (list.size() - 1));
+            // Use trivial swap to swap the elements current element with the random element
+            TrivialSwap.swap(list, i, swapPlace);
+        }
+	}
 	
 	/**
 	 * Randomly shuffle an int array  
