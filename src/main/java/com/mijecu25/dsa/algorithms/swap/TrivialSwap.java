@@ -17,7 +17,7 @@ import java.util.List;
  * <i>Runtime: </i> O(1)
  * 
  * @author Miguel Velez
- * @version 0.1.3.4
+ * @version 0.1.3.5
  */
 public class TrivialSwap extends Swap {
    
@@ -157,7 +157,6 @@ public class TrivialSwap extends Swap {
      * @param index2 - other index of the list.
      */
     public static <E> void swap(List<E> list, int index1, int index2) {
-        System.out.println(list + " - " + index1 + " - " + index2);
         // Call the other method by passing the list twice
         TrivialSwap.swap(list, index1, list, index2);
     }
