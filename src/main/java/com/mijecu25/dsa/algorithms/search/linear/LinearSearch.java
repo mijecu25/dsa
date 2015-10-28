@@ -1,5 +1,7 @@
 package com.mijecu25.dsa.algorithms.search.linear;
 
+import java.util.List;
+
 import com.mijecu25.dsa.algorithms.search.Search;
 
 /**
@@ -12,12 +14,13 @@ import com.mijecu25.dsa.algorithms.search.Search;
  * <i>Runtime: </i> O(n)
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.1
+ * @version 0.1.3.2
  */
 public class LinearSearch extends Search {
     
     /**
-     * Search for the value in the array.
+     * Search for the value in the array and return the index of the first occurrence from the
+     * beginning of the array
      * 
      * @param <E> - the type of elements in this array.
      * 
@@ -42,7 +45,36 @@ public class LinearSearch extends Search {
     }
     
     /**
-     * Search for the value in the int array.
+     * Search for the value in the list and return the index of the first occurrence from the
+     * beginning of the list. The run time of this algorithm depends on the 
+     * implementation of the list. It is advised to use an array based implementation
+     * to achieve O(n) runtime.
+     * 
+     * @param <E> - the type of elements in this list.
+     * 
+     * @param list - list that we are searching in.
+     * @param value - value that is being searched in the list.
+     * 
+     * @return the index where the value is found in the list, else -1.
+     */
+    public static <E> int search(List<E> list, E value) { 
+        // Loop through the entire list
+        for(int i = 0; i < list.size(); i++) {
+            // If the current value equals the value we are looking for
+            if(list.get(i) == value) {
+                // Return the index
+                return i;
+            }
+        }
+        
+        // If the method has not returned by this point, it means that the
+        // value was not found. So we return -1
+        return -1;
+    }
+    
+    /**
+     * Search for the value in the int array and return the index of the first occurrence from the
+     * beginning of the list.
      *  
      * @param intArray - array that we are searching in.
      * @param value - value that is being searched in the array.
@@ -65,7 +97,8 @@ public class LinearSearch extends Search {
     }
     
     /**
-     * Search for the value in the char array.
+     * Search for the value in the char array and return the index of the first occurrence from the
+     * beginning of the list.
      *  
      * @param charArray - array that we are searching in.
      * @param value - value that is being searched in the array.
@@ -88,7 +121,8 @@ public class LinearSearch extends Search {
     }
     
     /**
-     * Search for the value in the byte array.
+     * Search for the value in the byte array and return the index of the first occurrence from the
+     * beginning of the list.
      *  
      * @param byteArray - array that we are searching in.
      * @param value - value that is being searched in the array.
@@ -111,7 +145,8 @@ public class LinearSearch extends Search {
     }
     
     /**
-     * Search for the value in the short array.
+     * Search for the value in the short array and return the index of the first occurrence from the
+     * beginning of the list.
      *  
      * @param shortArray - array that we are searching in.
      * @param value - value that is being searched in the array.
@@ -134,7 +169,8 @@ public class LinearSearch extends Search {
     }
     
     /**
-     * Search for the value in the long array.
+     * Search for the value in the long array and return the index of the first occurrence from the
+     * beginning of the list.
      *  
      * @param longArray - array that we are searching in.
      * @param value - value that is being searched in the array.
@@ -157,7 +193,8 @@ public class LinearSearch extends Search {
     }
     
     /**
-     * Search for the value in the float array.
+     * Search for the value in the float array and return the index of the first occurrence from the
+     * beginning of the list.
      *  
      * @param floatArray - array that we are searching in.
      * @param value - value that is being searched in the array.
@@ -180,7 +217,8 @@ public class LinearSearch extends Search {
     }
     
     /**
-     * Search for the value in the double array.
+     * Search for the value in the double array and return the index of the first occurrence from the
+     * beginning of the list.
      *  
      * @param doubleArray - array that we are searching in.
      * @param value - value that is being searched in the array.
