@@ -15,8 +15,8 @@ import com.mijecu25.dsa.algorithms.swap.XORSwap;
  * 
  * <i>Runtime: </i> O(n)
  * 
- * @author Miguel Velez
- * @version 0.1.3.7
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.1.3.8
  */
 public final class FYShuffle extends Shuffle {
 

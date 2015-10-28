@@ -10,8 +10,8 @@ import org.junit.Test;
 /**
  * Test for TrivialSwap class.
  * 
- * @author Miguel Velez
- * @version 0.1.3.4
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.1.3.5
  */
 public class TestTrivialSwap {
 	private Integer[] array1 = {1, 2, 3, 4};

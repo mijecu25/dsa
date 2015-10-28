@@ -16,8 +16,8 @@ import java.util.List;
  * 
  * <i>Runtime: </i> O(1)
  * 
- * @author Miguel Velez
- * @version 0.1.3.5
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.1.3.6
  */
 public class TrivialSwap extends Swap {
    

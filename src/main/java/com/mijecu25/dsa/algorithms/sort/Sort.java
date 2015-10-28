@@ -6,8 +6,8 @@ import java.util.List;
  * Sort class that implements different algorithms and utilities
  * for sorting.
  * 
- * @author Miguel Velez
- * @version 0.1.3.4
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.1.3.5
  */
 public abstract class Sort {
     

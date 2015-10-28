@@ -7,8 +7,8 @@ import org.junit.Test;
 /**
  * Test for XORSwap class.
  * 
- * @author Miguel Velez
- * @version 0.1.3.5
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.1.3.6
  */
 public class TestXORSwap {
 	private int[] list1 = {1, 2, 3, 4};

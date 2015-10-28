@@ -5,8 +5,8 @@ import org.junit.Before;
 /**
  * Test for Search class.
  * 
- * @author Miguel Velez
- * @version 0.1.3.1
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.1.3.2
  */
 public class TestSearch {
 

@@ -10,8 +10,8 @@ import org.junit.Test;
 /**
  * This is the Sort test class.
  * 
- * @author Miguel Velez
- * @version 0.1.3.3
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.1.3.4
  */
 public class TestSort {
 	private int[]          sortedArray = {1, 5, 8, 15};

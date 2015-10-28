@@ -10,8 +10,8 @@ import org.junit.Test;
 /**
  * This is the FYShuffle test class.
  * 
- * @author Miguel Velez
- * @version 0.1.3.6
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.1.3.7
  */
 public class TestFYShuffle {
 

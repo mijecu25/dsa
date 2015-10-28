@@ -18,8 +18,8 @@ import com.mijecu25.dsa.algorithms.sort.Sort;
  * <br>
  * <i>Average case performance: </i> O((n+1)!) 
  * 
- * @author Miguel Velez
- * @version 0.1.3.5
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.1.3.6
  */
 public final class Bogosort extends Sort {
 	
