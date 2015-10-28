@@ -3,7 +3,7 @@ package com.mijecu25.dsa.algorithms.swap;
 import java.util.List;
 
 /**
- * Swapping algorithm that trivial swaps elements in an array by using a temporary variable.
+ * Swapping algorithm that trivially swaps elements in an array by using a temporary variable.
  * 
  * <br>
  * <br>
@@ -17,7 +17,7 @@ import java.util.List;
  * <i>Runtime: </i> O(1)
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.6
+ * @version 0.1.3.7
  */
 public class TrivialSwap extends Swap {
    
