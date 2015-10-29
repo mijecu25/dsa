@@ -1,7 +1,9 @@
 package com.mijecu25.dsa.algorithms.search.linear;
 
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,12 +14,15 @@ import org.junit.Assert;
  * Test for LinearSearch class.
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.3
+ * @version 0.1.3.4
  */
 public class TestLinearSearch {
     private Integer[] array = {1, 2, 3, 4, 1, 3, 4};
     private List<Integer> list = new ArrayList<>();
     private int[] int1 = { 1, 5, 3, 8, 14, 5, 1, 7, 10};
+    
+    @Rule
+    public ExpectedException exception = ExpectedException.none();
     
     @Before
     public void initialize() { 
@@ -71,7 +76,7 @@ public class TestLinearSearch {
         // Assert that the value was found
         Assert.assertTrue(index >= 0);
         
-        // Search for a value that is not in the array
+        // Search for a value that is not in the list
         index = LinearSearch.search(this.list, 75);
         // Assert that the value was not found
         Assert.assertTrue(index < 0);
@@ -119,10 +124,71 @@ public class TestLinearSearch {
         // Assert that the value was found
         Assert.assertTrue(index >= 0);
         
-        // Search for a value that is not in the array
+        // Search for a value that is not in the list
         index = LinearSearch.searchLast(this.list, 75);
         // Assert that the value was not found
         Assert.assertTrue(index < 0);
+    }
+    
+    /**
+     * Test search occurrence for elements.
+     */
+    @Test
+    public void search7() {
+        // Search for the second occurrence of a value in the array
+        int index = LinearSearch.search(this.array, 3, 2);
+        // Assert that the value was found
+        Assert.assertTrue(index >= 0);
+        
+        // Search for occurrence of a value that is not in the array
+        index = LinearSearch.search(this.array, 75, 5);
+        // Assert that the value was not found
+        Assert.assertTrue(index < 0);
+        
+        // Assert that we get an illegal argument exception for research an invalid occurrence
+        exception.expect(IllegalArgumentException.class);
+        LinearSearch.search(this.array, 3, 0);
+        
+    }
+    
+    /**
+     * Test search occurrence for primitives
+     */
+    @Test
+    public void search8() {
+        // Search for the second occurrence of a value in the array
+        int index = LinearSearch.search(this.int1, 1, 2);
+        // Assert that the value was found
+        Assert.assertTrue(index >= 0);
+        
+        // Search for occurrence of a value that is not in the array
+        index = LinearSearch.search(this.int1, 75, 5);
+        // Assert that the value was not found
+        Assert.assertTrue(index < 0);
+        
+        // Assert that we get an illegal argument exception for research an invalid occurrence
+        exception.expect(IllegalArgumentException.class);
+        LinearSearch.search(this.int1, 1, 0);
+    }
+    
+    /**
+     * Test search occurrence for lists
+     */
+    @Test
+    public void search9() {
+        // Search for occurrence of a value in the list
+        int index = LinearSearch.search(this.list, 3, 2);
+        // Assert that the value was found
+        Assert.assertTrue(index >= 0);
+        
+        // Search for occurrence a value that is not in the list
+        index = LinearSearch.search(this.list, 75, 5);
+        // Assert that the value was not found
+        Assert.assertTrue(index < 0);
+        
+        // Assert that we get an illegal argument exception for research an invalid occurrence
+        exception.expect(IllegalArgumentException.class);
+        LinearSearch.search(this.list, 3, -3);
     }
 
 }
