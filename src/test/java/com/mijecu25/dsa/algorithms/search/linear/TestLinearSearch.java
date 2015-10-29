@@ -12,7 +12,7 @@ import org.junit.Assert;
  * Test for LinearSearch class.
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.2
+ * @version 0.1.3.3
  */
 public class TestLinearSearch {
     private Integer[] array = {1, 2, 3, 4, 1, 3, 4};
@@ -73,6 +73,54 @@ public class TestLinearSearch {
         
         // Search for a value that is not in the array
         index = LinearSearch.search(this.list, 75);
+        // Assert that the value was not found
+        Assert.assertTrue(index < 0);
+    }
+    
+    /**
+     * Test backwards search for elements.
+     */
+    @Test
+    public void search4() {
+        // Search for a value in the array backwards
+        int index = LinearSearch.searchLast(this.array, 2);
+        // Assert that the value was found
+        Assert.assertTrue(index >= 0);
+        
+        // Search for a value that is not in the array
+        index = LinearSearch.searchLast(this.array, 75);
+        // Assert that the value was not found
+        Assert.assertTrue(index < 0);
+    }
+    
+    /**
+     * Test backwards search for primitives
+     */
+    @Test
+    public void search5() {
+        // Search for a value in the array backwards
+        int index = LinearSearch.searchLast(this.int1, 8);
+        // Assert that the value was found
+        Assert.assertTrue(index >= 0);
+        
+        // Search for a value that is not in the array
+        index = LinearSearch.searchLast(this.int1, 75);
+        // Assert that the value was not found
+        Assert.assertTrue(index < 0);
+    }
+    
+    /**
+     * Test backwards search for lists
+     */
+    @Test
+    public void search6() {
+        // Search for a value in the list backwards
+        int index = LinearSearch.searchLast(this.list, 9);
+        // Assert that the value was found
+        Assert.assertTrue(index >= 0);
+        
+        // Search for a value that is not in the array
+        index = LinearSearch.searchLast(this.list, 75);
         // Assert that the value was not found
         Assert.assertTrue(index < 0);
     }
