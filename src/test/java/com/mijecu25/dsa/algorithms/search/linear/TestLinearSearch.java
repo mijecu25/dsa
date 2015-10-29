@@ -14,7 +14,7 @@ import org.junit.Assert;
  * Test for LinearSearch class.
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.4
+ * @version 0.1.3.5
  */
 public class TestLinearSearch {
     private Integer[] array = {1, 2, 3, 4, 1, 3, 4};
@@ -189,6 +189,67 @@ public class TestLinearSearch {
         // Assert that we get an illegal argument exception for research an invalid occurrence
         exception.expect(IllegalArgumentException.class);
         LinearSearch.search(this.list, 3, -3);
+    }
+    
+    /**
+     * Test search occurrence for elements from the back.
+     */
+    @Test
+    public void search10() {
+        // Search for the second occurrence of a value in the array from the end
+        int index = LinearSearch.searchLast(this.array, 3, 2);
+        // Assert that the value was found
+        Assert.assertTrue(index >= 0);
+        
+        // Search for occurrence of a value that is not in the array from the end
+        index = LinearSearch.searchLast(this.array, 75, 5);
+        // Assert that the value was not found
+        Assert.assertTrue(index < 0);
+        
+        // Assert that we get an illegal argument exception for research an invalid occurrence
+        exception.expect(IllegalArgumentException.class);
+        LinearSearch.searchLast(this.array, 3, 0);
+        
+    }
+    
+    /**
+     * Test search occurrence for primitives from the back
+     */
+    @Test
+    public void search11() {
+        // Search for the second occurrence of a value in the array from the end
+        int index = LinearSearch.searchLast(this.int1, 1, 2);
+        // Assert that the value was found
+        Assert.assertTrue(index >= 0);
+        
+        // Search for occurrence of a value that is not in the array from the end
+        index = LinearSearch.searchLast(this.int1, 75, 5);
+        // Assert that the value was not found
+        Assert.assertTrue(index < 0);
+        
+        // Assert that we get an illegal argument exception for research an invalid occurrence
+        exception.expect(IllegalArgumentException.class);
+        LinearSearch.searchLast(this.int1, 1, 0);
+    }
+    
+    /**
+     * Test search occurrence for lists from the back
+     */
+    @Test
+    public void search12() {
+        // Search for occurrence of a value in the list from the end
+        int index = LinearSearch.searchLast(this.list, 3, 2);
+        // Assert that the value was found
+        Assert.assertTrue(index >= 0);
+        
+        // Search for occurrence a value that is not in the list from the end
+        index = LinearSearch.searchLast(this.list, 75, 5);
+        // Assert that the value was not found
+        Assert.assertTrue(index < 0);
+        
+        // Assert that we get an illegal argument exception for research an invalid occurrence
+        exception.expect(IllegalArgumentException.class);
+        LinearSearch.searchLast(this.list, 3, -3);
     }
 
 }
