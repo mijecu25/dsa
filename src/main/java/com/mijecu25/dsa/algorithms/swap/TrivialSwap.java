@@ -17,7 +17,7 @@ import java.util.List;
  * <i>Runtime: </i> O(1)
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.8
+ * @version 0.1.3.9
  */
 public final class TrivialSwap extends Swap {
    
@@ -115,7 +115,7 @@ public final class TrivialSwap extends Swap {
             // Remove the element of the first list in a variable
             E hold = list1.remove(list1Index);            
 
-            // If the lists are different
+            // If the lists are different or the first index is greater than the second index
             if(list1 != list2 || list1Index > list2Index){
                 // Set the element of the first list equal to the element in the second list
                 list1.add(list1Index, list2.get(list2Index));
