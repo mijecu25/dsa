@@ -19,7 +19,7 @@ import com.mijecu25.dsa.algorithms.sort.Sort;
  * <i>Average case performance: </i> O(n<sup>2</sup>)
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.1
+ * @version 0.1.3.2
  */
 public final class Insertion extends Sort {
 
@@ -64,8 +64,7 @@ public final class Insertion extends Sort {
         
     /**
      * Sort the list in ascending order using this algorithm. The run time of this algorithm depends on the 
-     * implementation of the list. It is advised to use an array based implementation
-     * to achieve O(n<sup>2</sup>) runtime.
+     * implementation of the list since it has elements added and removed from it.
      * 
      * @param <E> - the type of elements in this list.
      * 
@@ -80,8 +79,9 @@ public final class Insertion extends Sort {
         for(int i = 1; i < list.size(); i++) {
             // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the list            
-            value = list.get(index);
+            // Set value to the current element of the list. We have to remove the element
+            // since we are working with lists.
+            value = list.remove(index);
             
             // While the index is greater than 0 and the value is less than the
             // value to the left
@@ -358,8 +358,7 @@ public final class Insertion extends Sort {
     
     /**
      * Sort the list in descending order using this algorithm. The run time of this algorithm depends on the 
-     * implementation of the list. It is advised to use an array based implementation
-     * to achieve O(n<sup>2</sup>) runtime.
+     * implementation of the list since it has elements added and removed from it.
      * 
      * @param <E> - the type of elements in this list.
      * 
@@ -374,8 +373,9 @@ public final class Insertion extends Sort {
         for(int i = 1; i < list.size(); i++) {
             // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the list            
-            value = list.get(index);
+            // Set value to the current element of the list. Remove the value since
+            // we are manipulating a list
+            value = list.remove(index);
             
             // While the index is greater than 0 and the value is greater than the
             // value to the left
