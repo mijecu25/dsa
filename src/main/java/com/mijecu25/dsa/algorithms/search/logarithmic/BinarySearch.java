@@ -25,10 +25,15 @@ import com.mijecu25.dsa.algorithms.search.Search;
  * <i>Runtime: </i> O(log(n))
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.1
+ * @version 0.1.3.2
  */
-public class BinarySearch extends Search {
+public final class BinarySearch extends Search {
       
+    /**
+     * Don't let anyone instantiate this class
+     */
+    private BinarySearch() { ; }
+    
     /**
      * Search for the value in the sorted sorted array and return the index.
      * 

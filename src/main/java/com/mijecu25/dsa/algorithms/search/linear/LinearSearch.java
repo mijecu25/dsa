@@ -14,9 +14,14 @@ import com.mijecu25.dsa.algorithms.search.Search;
  * <i>Runtime: </i> O(n)
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.5
+ * @version 0.1.3.6
  */
-public class LinearSearch extends Search {
+public final class LinearSearch extends Search {
+    
+    /**
+     * Don't let anyone instantiate this class
+     */
+    private LinearSearch() { ; }
     
     /**
      * Search for the value in the array and return the index of the first occurrence from the

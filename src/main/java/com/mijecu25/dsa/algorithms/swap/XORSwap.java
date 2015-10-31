@@ -17,10 +17,15 @@ package com.mijecu25.dsa.algorithms.swap;
  * <i>Runtime: </i> O(1)
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.6
+ * @version 0.1.3.7
  */
-public class XORSwap extends Swap {
+public final class XORSwap extends Swap {
 	
+    /**
+     * Don't let anyone instantiate this class
+     */
+    private XORSwap() { ; }
+    
 	/**
      * Swap the elements of two long arrays at the specified positions.
 	 * 

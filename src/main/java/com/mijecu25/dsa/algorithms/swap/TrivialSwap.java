@@ -17,10 +17,15 @@ import java.util.List;
  * <i>Runtime: </i> O(1)
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.7
+ * @version 0.1.3.8
  */
-public class TrivialSwap extends Swap {
+public final class TrivialSwap extends Swap {
    
+    /**
+     * Don't let anyone instantiate this class
+     */
+    private TrivialSwap() { ; }
+    
     /**
      * Swap the elements of two arrays at the specified positions.
      * 
