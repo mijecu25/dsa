@@ -5,10 +5,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import com.mijecu25.dsa.algorithms.sort.inefficient.Bogosort;
+import com.mijecu25.dsa.algorithms.sort.quadratic.Insertion;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.junit.Assert;
@@ -17,7 +16,7 @@ import org.junit.Assert;
  * Test for BinarySearch class.
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.1
+ * @version 0.1.3.2
  */
 public class TestBinarySearch {
     private Integer[] array = {1, 2, 3, 4, 1, 3, 4};
@@ -43,8 +42,7 @@ public class TestBinarySearch {
     @Test
     public void search1() {
         // Sort the array
-        // TODO use insertion sort
-        Arrays.sort(this.array);
+        Insertion.sort(this.array);
         
         // Search for a value in the array
         int index = BinarySearch.search(this.array, 2);
@@ -63,8 +61,7 @@ public class TestBinarySearch {
     @Test
     public void search2() {
         // Sort the array
-        // TODO use insertion sort
-        Arrays.sort(this.int1);
+        Insertion.sort(this.int1);
         
         // Search for a value in the array
         int index = BinarySearch.search(this.int1, 8);
@@ -82,9 +79,8 @@ public class TestBinarySearch {
      */
     @Test
     public void search3() {
-        // Sort the list
-        // TODO use insertion sort
-        Bogosort.sort(this.list);
+        // Sort the array
+        Insertion.sort(this.list);
         
         // Search for a value in the list
         int index = BinarySearch.search(this.list, 9);
@@ -102,9 +98,8 @@ public class TestBinarySearch {
      */
     @Test
     public void search4() {
-        // Reverse sort the array
-        // TODO use insertion sort
-        Bogosort.sortDescending(this.array);
+        // Sort the array
+        Insertion.sortDescending(this.array);
         
         // Search for a value in the array
         int index = BinarySearch.searchDescending(this.array, 2);
@@ -122,9 +117,8 @@ public class TestBinarySearch {
      */
     @Test
     public void search5() {
-        // Reverse sort the array
-        // TODO use insertion sort
-        Bogosort.sortDescending(this.int1);
+        // Sort the array
+        Insertion.sortDescending(this.int1);
         
         // Search for a value in the array
         int index = BinarySearch.searchDescending(this.int1, 8);
@@ -142,9 +136,8 @@ public class TestBinarySearch {
      */
     @Test
     public void search6() {
-        // Reverse sort the list
-        // TODO use insertion sort
-        Bogosort.sortDescending(this.list);
+        // Sort the array
+        Insertion.sortDescending(this.list);
         
         // Search for a value in the list
         int index = BinarySearch.searchDescending(this.list, 9);
