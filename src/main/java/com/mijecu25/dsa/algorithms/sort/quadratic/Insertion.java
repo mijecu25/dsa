@@ -19,7 +19,7 @@ import com.mijecu25.dsa.algorithms.sort.Sort;
  * <i>Average case performance: </i> O(n<sup>2</sup>)
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.2
+ * @version 0.1.3.3
  */
 public final class Insertion extends Sort {
 
@@ -40,7 +40,7 @@ public final class Insertion extends Sort {
         int index = 0;
         E value = null;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < array.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -75,7 +75,7 @@ public final class Insertion extends Sort {
         int index = 0;
         E value = null;
         
-        // Loop through the list beginning at the first element
+        // Loop through the list beginning at the second element
         for(int i = 1; i < list.size(); i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -108,7 +108,7 @@ public final class Insertion extends Sort {
         int index = 0;
         int value = 0;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < intArray.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -140,7 +140,7 @@ public final class Insertion extends Sort {
         int index = 0;
         byte value = 0;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < byteArray.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -172,7 +172,7 @@ public final class Insertion extends Sort {
         int index = 0;
         char value = 0;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < charArray.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -204,7 +204,7 @@ public final class Insertion extends Sort {
         int index = 0;
         double value = 0.0;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < doubleArray.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -236,7 +236,7 @@ public final class Insertion extends Sort {
         int index = 0;
         float value = 0f;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < floatArray.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -268,7 +268,7 @@ public final class Insertion extends Sort {
         int index = 0;
         long value = 0;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < longArray.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -300,7 +300,7 @@ public final class Insertion extends Sort {
         int index = 0;
         short value = 0;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < shortArray.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -334,7 +334,7 @@ public final class Insertion extends Sort {
         int index = 0;
         E value = null;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < array.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -369,7 +369,7 @@ public final class Insertion extends Sort {
         int index = 0;
         E value = null;
         
-        // Loop through the list beginning at the first element
+        // Loop through the list beginning at the second element
         for(int i = 1; i < list.size(); i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -402,7 +402,7 @@ public final class Insertion extends Sort {
         int index = 0;
         int value = 0;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < intArray.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -434,7 +434,7 @@ public final class Insertion extends Sort {
         int index = 0;
         byte value = 0;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < byteArray.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -466,7 +466,7 @@ public final class Insertion extends Sort {
         int index = 0;
         char value = 0;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < charArray.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -498,7 +498,7 @@ public final class Insertion extends Sort {
         int index = 0;
         double value = 0;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < doubleArray.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -530,7 +530,7 @@ public final class Insertion extends Sort {
         int index = 0;
         float value = 0;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < floatArray.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -562,7 +562,7 @@ public final class Insertion extends Sort {
         int index = 0;
         long value = 0;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < longArray.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
@@ -594,7 +594,7 @@ public final class Insertion extends Sort {
         int index = 0;
         short value = 0;
         
-        // Loop through the array beginning at the first element
+        // Loop through the array beginning at the second element
         for(int i = 1; i < shortArray.length; i++) {
             // Set the index to the current iteration of the loop
             index = i;
