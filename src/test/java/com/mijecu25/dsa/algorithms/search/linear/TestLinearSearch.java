@@ -1,12 +1,9 @@
 package com.mijecu25.dsa.algorithms.search.linear;
 
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.mijecu25.dsa.algorithms.search.TestSearch;
 
 import org.junit.Assert;
 
@@ -14,24 +11,13 @@ import org.junit.Assert;
  * Test for LinearSearch class.
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.5
+ * @version 0.1.3.6
  */
-public class TestLinearSearch {
-    private Integer[] array = {1, 2, 3, 4, 1, 3, 4};
-    private List<Integer> list = new ArrayList<>();
-    private int[] int1 = { 1, 5, 3, 8, 14, 5, 1, 7, 10};
-    
-    @Rule
-    public ExpectedException exception = ExpectedException.none();
-    
+public class TestLinearSearch extends TestSearch {
+
     @Before
     public void initialize() { 
-        list.add(4);
-        list.add(3);
-        list.add(1);
-        list.add(9);
-        list.add(3);
-        list.add(1);
+        super.initialize();
     }
     
     /**
