@@ -8,7 +8,7 @@ import org.junit.Test;
  * Test for XORSwap class.
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.7
+ * @version 0.1.3.8
  */
 public class TestXORSwap extends TestSwap {
 	
@@ -40,16 +40,16 @@ public class TestXORSwap extends TestSwap {
 	 */
 	@Test
 	public void swap2() {
-		// Get the last elements of both lists
-		int a = this.intArray1[this.intArray1.length-1];
-		int b = this.intArray2[this.intArray2.length-1];
+		// Get the second elements of both lists
+		int a = this.intArray1[1];
+		int b = this.intArray2[1];
 		
 		// Swap the last elements
-		XORSwap.swap(this.intArray1, this.intArray2, this.intArray1.length-1);
+		XORSwap.swap(this.intArray1, this.intArray2, 1);
 		
 		// Assert that the values were swapped
-		Assert.assertTrue(this.intArray1[this.intArray1.length-1] == b);
-		Assert.assertTrue(this.intArray2[this.intArray2.length-1] == a);	
+		Assert.assertTrue(this.intArray1[1] == b);
+		Assert.assertTrue(this.intArray2[1] == a);	
 	}
 	
 	/**
@@ -67,7 +67,7 @@ public class TestXORSwap extends TestSwap {
 		XORSwap.swap(this.intArray1, this.intArray2);
 		
 		// Assert that the values were swapped
-		for(int i = 0; i < this.intArray1.length; i++) {
+		for(int i = 0; i < Math.min(this.intArray1.length, this.intArray2.length); i++) {
 			Assert.assertTrue(this.intArray1[i] == b[i]);
 			Assert.assertTrue(this.intArray2[i] == a[i]);			
 		}

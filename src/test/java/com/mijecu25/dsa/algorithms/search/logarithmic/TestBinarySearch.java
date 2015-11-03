@@ -12,7 +12,7 @@ import org.junit.Assert;
  * Test for BinarySearch class.
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.4
+ * @version 0.1.3.5
  */
 public class TestBinarySearch extends TestSearch {
 
@@ -27,15 +27,15 @@ public class TestBinarySearch extends TestSearch {
     @Test
     public void search1() {
         // Sort the array
-        Insertion.sort(this.integerArray);
+        Insertion.sort(this.integerArray1);
         
         // Search for a value in the array
-        int index = BinarySearch.search(this.integerArray, 2);
+        int index = BinarySearch.search(this.integerArray1, 2);
         // Assert that the value was found
         Assert.assertTrue(index >= 0);
         
         // Search for a value that is not in the array
-        index = BinarySearch.search(this.integerArray, 75);
+        index = BinarySearch.search(this.integerArray1, 75);
         // Assert that the value was not found
         Assert.assertTrue(index < 0);
     }
@@ -46,34 +46,34 @@ public class TestBinarySearch extends TestSearch {
     @Test
     public void search2() {
         // Sort the array
-        Insertion.sort(this.intArray);
+        Insertion.sort(this.intArray1);
         
         // Search for a value in the array
-        int index = BinarySearch.search(this.intArray, 8);
+        int index = BinarySearch.search(this.intArray1, 8);
         // Assert that the value was found
         Assert.assertTrue(index >= 0);
         
         // Search for a value that is not in the array
-        index = BinarySearch.search(this.intArray, 75);
+        index = BinarySearch.search(this.intArray1, 75);
         // Assert that the value was not found
         Assert.assertTrue(index < 0);
     }
     
     /**
-     * Test search for lists
+     * Test search for list1s
      */
     @Test
     public void search3() {
         // Sort the array
-        Insertion.sort(this.list);
+        Insertion.sort(this.list1);
         
-        // Search for a value in the list
-        int index = BinarySearch.search(this.list, 9);
+        // Search for a value in the list1
+        int index = BinarySearch.search(this.list1, 9);
         // Assert that the value was found
         Assert.assertTrue(index >= 0);
         
-        // Search for a value that is not in the list
-        index = BinarySearch.search(this.list, 75);
+        // Search for a value that is not in the list1
+        index = BinarySearch.search(this.list1, 75);
         // Assert that the value was not found
         Assert.assertTrue(index < 0);
     }
@@ -84,15 +84,15 @@ public class TestBinarySearch extends TestSearch {
     @Test
     public void search4() {
         // Sort the array
-        Insertion.sortDescending(this.integerArray);
+        Insertion.sortDescending(this.integerArray1);
         
         // Search for a value in the array
-        int index = BinarySearch.searchDescending(this.integerArray, 2);
+        int index = BinarySearch.searchDescending(this.integerArray1, 2);
         // Assert that the value was found
         Assert.assertTrue(index >= 0);
         
         // Search for a value that is not in the array
-        index = BinarySearch.search(this.integerArray, 75);
+        index = BinarySearch.search(this.integerArray1, 75);
         // Assert that the value was not found
         Assert.assertTrue(index < 0);
     }
@@ -103,34 +103,34 @@ public class TestBinarySearch extends TestSearch {
     @Test
     public void search5() {
         // Sort the array
-        Insertion.sortDescending(this.intArray);
+        Insertion.sortDescending(this.intArray1);
         
         // Search for a value in the array
-        int index = BinarySearch.searchDescending(this.intArray, 8);
+        int index = BinarySearch.searchDescending(this.intArray1, 8);
         // Assert that the value was found
         Assert.assertTrue(index >= 0);
         
         // Search for a value that is not in the array
-        index = BinarySearch.search(this.intArray, 75);
+        index = BinarySearch.search(this.intArray1, 75);
         // Assert that the value was not found
         Assert.assertTrue(index < 0);
     }
     
     /**
-     * Test reverse search for lists
+     * Test reverse search for list1s
      */
     @Test
     public void search6() {
         // Sort the array
-        Insertion.sortDescending(this.list);
+        Insertion.sortDescending(this.list1);
         
-        // Search for a value in the list
-        int index = BinarySearch.searchDescending(this.list, 9);
+        // Search for a value in the list1
+        int index = BinarySearch.searchDescending(this.list1, 9);
         // Assert that the value was found
         Assert.assertTrue(index >= 0);
         
-        // Search for a value that is not in the list
-        index = BinarySearch.search(this.list, 75);
+        // Search for a value that is not in the list1
+        index = BinarySearch.search(this.list1, 75);
         // Assert that the value was not found
         Assert.assertTrue(index < 0);
     }

@@ -11,7 +11,7 @@ import org.junit.Test;
  * Test for TrivialSwap class.
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.6
+ * @version 0.1.3.7
  */
 public class TestTrivialSwap extends TestSwap {
 	
@@ -43,16 +43,16 @@ public class TestTrivialSwap extends TestSwap {
 	 */
 	@Test
 	public void swap2() {
-		// Get the last elements of both lists
-		int a = this.integerArray1[this.integerArray1.length-1];
-		int b = this.integerArray2[this.integerArray2.length-1];
+		// Get the third elements of both lists
+		int a = this.integerArray1[2];
+		int b = this.integerArray2[2];
 		
-		// Swap the last elements
-		TrivialSwap.swap(this.integerArray1, this.integerArray2, this.integerArray1.length-1);
+		// Swap the third elements
+		TrivialSwap.swap(this.integerArray1, this.integerArray2, 2);
 		
 		// Assert that the values were swapped
-		Assert.assertTrue(this.integerArray1[this.integerArray1.length-1] == b);
-		Assert.assertTrue(this.integerArray2[this.integerArray2.length-1] == a);	
+		Assert.assertTrue(this.integerArray1[2] == b);
+		Assert.assertTrue(this.integerArray2[2] == a);	
 	}
 	
 	/**
@@ -70,7 +70,7 @@ public class TestTrivialSwap extends TestSwap {
 		TrivialSwap.swap(this.integerArray1, this.integerArray2);
 		
 		// Assert that the values were swapped
-		for(int i = 0; i < this.integerArray1.length; i++) {
+		for(int i = 0; i < Math.min(this.integerArray1.length, this.integerArray2.length); i++) {
 			Assert.assertTrue(this.integerArray1[i] == b[i]);
 			Assert.assertTrue(this.integerArray2[i] == a[i]);			
 		}
@@ -117,16 +117,16 @@ public class TestTrivialSwap extends TestSwap {
      */
     @Test
     public void swap5() {
-        // Get the last elements of both lists
-        int a = this.intArray1[this.intArray1.length-1];
-        int b = this.intArray2[this.intArray2.length-1];
+        // Get the second elements of both lists
+        int a = this.intArray1[1];
+        int b = this.intArray2[1];
         
         // Swap the last elements
-        TrivialSwap.swap(this.intArray1, this.intArray2, this.intArray1.length-1);
+        TrivialSwap.swap(this.intArray1, this.intArray2, 1);
         
         // Assert that the values were swapped
-        Assert.assertTrue(this.intArray1[this.intArray1.length-1] == b);
-        Assert.assertTrue(this.intArray2[this.intArray2.length-1] == a);    
+        Assert.assertTrue(this.intArray1[1] == b);
+        Assert.assertTrue(this.intArray2[1] == a);    
     }
     
     /**
@@ -144,7 +144,7 @@ public class TestTrivialSwap extends TestSwap {
         TrivialSwap.swap(this.intArray1, this.intArray2);
         
         // Assert that the values were swapped
-        for(int i = 0; i < this.intArray1.length; i++) {
+        for(int i = 0; i < Math.min(this.intArray1.length, this.intArray2.length); i++) {
             Assert.assertTrue(this.intArray1[i] == b[i]);
             Assert.assertTrue(this.intArray2[i] == a[i]);           
         }
@@ -236,7 +236,7 @@ public class TestTrivialSwap extends TestSwap {
         TrivialSwap.swap(this.list1, this.list2);
 
         // Assert that the values were swapped
-        for(int i = 0; i < this.list1.size(); i++) {
+        for(int i = 0; i < Math.min(this.list1.size(), this.list2.size()); i++) {
             
             Assert.assertTrue(this.list1.get(i) == b.get(i));
             Assert.assertTrue(this.list2.get(i) == a.get(i));           
