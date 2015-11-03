@@ -11,12 +11,12 @@ import org.junit.rules.ExpectedException;
  * Test for Search class.
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.3
+ * @version 0.1.3.4
  */
 public class TestSearch {
-    protected Integer[]     array = {1, 2, 3, 4, 1, 3, 4};
+    protected Integer[]     integerArray = {1, 2, 3, 4, 1, 3, 4};
     protected List<Integer> list = new ArrayList<>();
-    protected int[]         int1 = { 1, 5, 3, 8, 14, 5, 1, 7, 10};
+    protected int[]         intArray = { 1, 5, 3, 8, 14, 5, 1, 7, 10};
     
     @Rule
     public ExpectedException exception = ExpectedException.none();
