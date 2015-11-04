@@ -11,7 +11,7 @@ import org.junit.Test;
  * Test for TrivialSwap class.
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.7
+ * @version 0.1.3.8
  */
 public class TestTrivialSwap extends TestSwap {
 	
@@ -137,7 +137,7 @@ public class TestTrivialSwap extends TestSwap {
         // Get the lists
         int[] a = new int[this.intArray1.length];
         System.arraycopy(this.intArray1, 0, a, 0, this.intArray1.length);
-        int[] b = new int[this.integerArray2.length];
+        int[] b = new int[this.intArray2.length];
         System.arraycopy(this.intArray2, 0, b, 0, this.intArray2.length);
         
         // Swap the last elements
