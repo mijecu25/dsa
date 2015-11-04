@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.mijecu25.dsa.algorithms.search.TestSearch;
+import com.mijecu25.dsa.algorithms.sort.quadratic.Selection;
 
 import org.junit.Assert;
 
@@ -11,7 +12,7 @@ import org.junit.Assert;
  * Test for LinearSearch class.
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.8
+ * @version 0.1.3.9
  */
 public class TestLinearSearch extends TestSearch {
 
@@ -53,7 +54,7 @@ public class TestLinearSearch extends TestSearch {
     }
     
     /**
-     * Test search for list1s
+     * Test search for lists
      */
     @Test
     public void search3() {
@@ -101,7 +102,7 @@ public class TestLinearSearch extends TestSearch {
     }
     
     /**
-     * Test backwards search for list1s
+     * Test backwards search for lists
      */
     @Test
     public void search6() {
@@ -158,7 +159,7 @@ public class TestLinearSearch extends TestSearch {
     }
     
     /**
-     * Test search occurrence for list1s
+     * Test search occurrence for lists
      */
     @Test
     public void search9() {
@@ -219,7 +220,7 @@ public class TestLinearSearch extends TestSearch {
     }
     
     /**
-     * Test search occurrence for list1s from the back
+     * Test search occurrence for lists from the back
      */
     @Test
     public void search12() {
@@ -237,5 +238,168 @@ public class TestLinearSearch extends TestSearch {
         exception.expect(IllegalArgumentException.class);
         LinearSearch.searchLast(this.list1, 3, -3);
     }
+    
+    /**
+     * Test searchMin for elements.
+     */
+    @Test
+    public void search13() {
+        // Sort the array
+        Selection.sort(this.integerArray1);
+        
+        // The minimum element is at the beginning
+        Integer min = this.integerArray1[0];
+                
+        // The minimum element is at the beginning
+        Assert.assertTrue(LinearSearch.searchMin(this.integerArray1) == min);
+    }
+    
+    /**
+     * Test searchMax for elements
+     */
+    @Test
+    public void search14() {
+        // Sort the array
+        Selection.sort(this.integerArray1);
+        
+        // The maximum element is at the end
+        Integer max = this.integerArray1[this.integerArray1.length - 1];
+                
+        // The minimum element is at the end
+        Assert.assertTrue(LinearSearch.searchMax(this.integerArray1) == max);
+    }
+    
+//    /**
+//     * Test findMin for elements
+//     */
+//    @Test
+//    public void search15() {
+//        // Sort the array
+//        Selection.sort(this.integerArray1);
+//                
+//        // The minimum element is at the beginning
+//        Assert.assertTrue(LinearSearch.findMin(this.integerArray1) == 0);
+//    }
+    
+//    /**
+//     * Test findMax for elements.
+//     */
+//    @Test
+//    public void search16() {
+//        // Sort the array
+//        Selection.sort(this.integerArray1);
+//                
+//        // The minimum element is at the end
+//        Assert.assertTrue(LinearSearch.findMax(this.integerArray1) == (this.integerArray1.length - 1));
+//    }
+    
+    /**
+     * Test searchMin for primitives.
+     */
+    @Test
+    public void search17() {
+        // Sort the array
+        Selection.sort(this.intArray1);
+        
+        // The minimum element is at the beginning
+        Integer min = this.intArray1[0];
+                
+        // The minimum element is at the beginning
+        Assert.assertTrue(LinearSearch.searchMin(this.intArray1) == min);
+    }
+    
+    /**
+     * Test searchMax for primitives
+     */
+    @Test
+    public void search18() {
+        // Sort the array
+        Selection.sort(this.intArray1);
+        
+        // The maximum element is at the end
+        Integer max = this.intArray1[this.intArray1.length - 1];
+                
+        // The minimum element is at the end
+        Assert.assertTrue(LinearSearch.searchMax(this.intArray1) == max);
+    }
+    
+//    /**
+//     * Test findMin for primitives
+//     */
+//    @Test
+//    public void search19() {
+//        // Sort the array
+//        Selection.sort(this.intArray1);
+//                
+//        // The minimum element is at the beginning
+//        Assert.assertTrue(LinearSearch.findMin(this.intArray1) == 0);
+//    }
+    
+//    /**
+//     * Test findMax for elements.
+//     */
+//    @Test
+//    public void search20() {
+//        // Sort the array
+//        Selection.sort(this.intArray1);
+//                
+//        // The minimum element is at the end
+//        Assert.assertTrue(LinearSearch.findMax(this.intArray1) == (this.intArray1.length - 1));
+//    }
+    
+    /**
+     * Test searchMin for lists.
+     */
+    @Test
+    public void search21() {
+        // Sort the list
+        Selection.sort(this.list1);
+        
+        // The minimum element is at the beginning
+        Integer min = this.list1.get(0);
+                
+        // The minimum element is at the beginning
+        Assert.assertTrue(LinearSearch.searchMin(this.list1) == min);
+    }
+    
+    /**
+     * Test searchMax for lists
+     */
+    @Test
+    public void search22() {
+        // Sort the list
+        Selection.sort(this.list1);
+        
+        // The maximum element is at the end
+        Integer max = this.list1.get(this.list1.size() - 1);
+                
+        // The minimum element is at the end
+        Assert.assertTrue(LinearSearch.searchMax(this.list1) == max);
+    }
+    
+//    /**
+//     * Test findMin for lists
+//     */
+//    @Test
+//    public void search23() {
+//        // Sort the list
+//        Selection.sort(this.list1);
+//                
+//        // The minimum element is at the beginning
+//        Assert.assertTrue(LinearSearch.findMin(this.list1) == 0);
+//    }
+    
+//    /**
+//     * Test findMax for lists.
+//     */
+//    @Test
+//    public void search24() {
+//        // Sort the array
+//        Selection.sort(this.list1);
+//                
+//        // The minimum element is at the end
+//        Assert.assertTrue(LinearSearch.findMax(this.list1) == (this.list1.size() - 1));
+//    }
+    
 
 }

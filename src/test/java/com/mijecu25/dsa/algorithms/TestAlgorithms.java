@@ -11,11 +11,11 @@ import org.junit.rules.ExpectedException;
  * Test for Algorithm classes.
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.2
+ * @version 0.1.3.3
  */
 public class TestAlgorithms {
 
-    protected Integer[]         integerArray1 = {1, 2, 3, 4, 1, 3, 4};
+    protected Integer[]         integerArray1 = {1, 2, 3, 4, 1, 3, 4, 5};
     protected Integer[]         integerArray2 = {5, 8, 7, 6};
     protected int[]             intArray1 = {1, 5, 3, 8, 14, 5, 1, 7, 10};
     protected int[]             intArray2 = {5, 8, 7, 6, 9, 8};
