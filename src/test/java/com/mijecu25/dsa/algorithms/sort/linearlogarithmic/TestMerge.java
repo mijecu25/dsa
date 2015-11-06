@@ -11,7 +11,7 @@ import com.mijecu25.dsa.algorithms.sort.TestSort;
  * This is the Merge sort test class.
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.1
+ * @version 0.1.3.2
  */
 public class TestMerge extends TestSort {
 
@@ -42,6 +42,30 @@ public class TestMerge extends TestSort {
         
         // Assert that the array is sorted
         Assert.assertTrue(Sort.isReverseSorted(this.intArray1));
+    }
+    
+    /**
+     * Test Merge for elements
+     */
+    @Test
+    public void testMerge2() {
+        // Sort the array using Merge
+        Merge.sort(this.integerArray1);
+        
+        // Assert that the array is sorted
+        Assert.assertTrue(Sort.isSorted(this.integerArray1));
+    }
+    
+    /**
+     * Test Merge descending for elements
+     */
+    @Test
+    public void testMergeDescending2() {
+        // Sort the array using Merge
+        Merge.sortDescending(this.integerArray1);
+        
+        // Assert that the array is sorted
+        Assert.assertTrue(Sort.isReverseSorted(this.integerArray1));
     }
     
 }
