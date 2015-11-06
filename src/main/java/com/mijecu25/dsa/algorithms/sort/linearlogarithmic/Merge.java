@@ -23,7 +23,7 @@ import com.mijecu25.dsa.algorithms.sort.Sort;
  * <i>Average case performance: </i> O(n log(n))
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.3
+ * @version 0.1.3.4
  */
 public class Merge extends Sort {
     
@@ -187,7 +187,6 @@ public class Merge extends Sort {
             
     /**
      * Sort the array in descending order using this algorithm.
-     * @param <E>
      * 
      * @param <E> - the type of elements in this array.
      *
@@ -196,6 +195,30 @@ public class Merge extends Sort {
     public static <E extends Comparable<E>> void sortDescending(E[] intArray) {
         // Call the sort routine in descending order
         Merge.sort(intArray, 0, intArray.length-1, true);
+    }
+    
+    /**
+     * Sort the list in ascending order using this algorithm.
+     * 
+     * @param <E> - the type of elements in this list.
+     * 
+     * @param list - the list that we want to sort
+     */
+    public static <E extends Comparable<E>> void sort(List<E> list) {
+        // Call the sort routine in ascending order
+        Merge.sort(list, 0, list.size()-1, false);
+    }
+            
+    /**
+     * Sort the list in descending order using this algorithm.
+     * 
+     * @param <E> - the type of elements in this array.
+     *
+     * @param list - the array that we want to sort
+     */
+    public static <E extends Comparable<E>> void sortDescending(List<E> list) {
+        // Call the sort routine in descending order
+        Merge.sort(list, 0, list.size()-1, true);
     }
     
     /**
@@ -1373,6 +1396,171 @@ public class Merge extends Sort {
         
         // There is no need to put the rest of the element of the right sub array, since they are already 
         // in sorted order since all of the small elements where put to the left of the array.
+    }
+    
+    /**
+     * Sort routine that recursively calls itself after splitting the original list
+     * in half. This routine is used for both ascending and descending sort since 
+     * the work done is similar. The only difference is when calling the merge
+     * routine.
+     * 
+     * @param <E> - the type of elements in this list.
+     * 
+     * @param list - list that we want to sort
+     * @param start - index of the starting point to sort
+     * @param end - index of the end point to sort
+     * @param descending - boolean value that determines if we want to do descending sort
+     */
+    private static <E extends Comparable<E>> void sort(List<E> list, int start, int end, boolean descending) {
+        // If start index equals the end index
+        if(start == end) {
+            return ;
+        }
+        
+        // Get the middle of the list
+        int middle = (start + end) >> 1;
+        
+        // Recursively call the same routine on the left half of the list
+        Merge.sort(list, start, middle, descending);
+        // Recursively call the same routine on the right half of the list
+        Merge.sort(list, middle + 1, end, descending);
+        
+        // If we want descending sort
+        if(descending) {
+            // Call the descending merge routine
+            Merge.mergeDescending(list, start, middle, end);                        
+        }
+        else {
+            // Call the ascending merge routine
+            Merge.merge(list, start, middle, end);            
+        }
+    }
+    
+    /**
+     * Merge two sorted list into a bigger list in ascending order. This routine runs in O(n) time.
+     * 
+     * @param <E> - the type of elements in this list.
+     * 
+     * @param list - list with two sorted sub arrays that will be merged
+     * @param start - index of the starting point of the left list
+     * @param middle - index that splits the array in two sub lists
+     * @param end - index of the end point of the right list
+     */
+    private static <E extends Comparable<E>> void merge(List<E> list, int start, int middle, int end) {
+        // Create a temporary list
+        List<E> temp = new LinkedList<>();
+        
+        // Copy all of the elements from the original list to the temp list
+        for(int i = 0; i < list.size(); i++) {
+            temp.add(list.get(i));
+        }
+        
+        // Initialize auxiliary indexes
+        int left = start;
+        int right  = middle + 1;
+        int current = start;
+        
+        // While the left index is less or equal to the middle index and the right
+        // index is less or equal to the end index
+        while(left <= middle && right <= end) {
+            // Remove the element at the current position
+            list.remove(current);
+            
+            // If the left value is less or equal to the right value
+            if(temp.get(left).compareTo(temp.get(right)) <= 0) {
+                // Set the current value to the left value
+                list.add(current, temp.get(left));
+                // Move the left pointer to the right
+                left++;
+            }
+            else {
+                // Set the current value to the right value
+                list.add(current, temp.get(right));
+                // Move the right pointer to the right
+                right++;
+            }
+            
+            // Move the current pointer to the right
+            current++;
+        }
+        
+        // While the left index is less or equal to the middle index
+        while(left <= middle) {
+            // Remove the element at the current position
+            list.remove(current);
+            // Set the current value to the left value
+            list.add(current, temp.get(left));
+            // Move the left pointer to the right
+            left++;
+            // Move the current pointer to the right
+            current++;
+        }
+        
+        // There is no need to put the rest of the element of the right sub array, since they are already 
+        // in sorted order since all of the small elements where put to the left of the array.
+    }
+    
+    /**
+     * Merge two sorted arrays into a bigger array in descending order. This routine runs in O(n) time.
+     * @param <E>
+     * 
+     * @param list - array with two sorted sub arrays that will be merged
+     * @param start - index of the starting point of the left array
+     * @param middle - index that splits the array in two sub arrays
+     * @param end - index of the end point of the right array
+     */
+    private static <E extends Comparable<E>> void mergeDescending(List<E> list, int start, int middle, int end) {
+        // Create a temporary list
+        List<E> temp = new LinkedList<>();
+        
+        // Copy all of the elements from the original list to the temp list
+        for(int i = 0; i < list.size(); i++) {
+            temp.add(list.get(i));
+        }
+        
+        // Initialize auxiliary indexes
+        int left = start;
+        int right  = middle + 1;
+        int current = start;
+        
+        // While the left index is less or equal to the middle index and the right
+        // index is less or equal to the end index
+        while(left <= middle && right <= end) {
+            // Remove the element at the current position
+            list.remove(current);
+            
+            // If the left value is less or equal to the right value
+            if(temp.get(left).compareTo(temp.get(right)) >= 0) {
+                // Set the current value to the left value
+                list.add(current, temp.get(left));
+                // Move the left pointer to the right
+                left++;
+            }
+            else {
+                // Set the current value to the right value
+                list.add(current, temp.get(right));
+                // Move the right pointer to the right
+                right++;
+            }
+            
+            // Move the current pointer to the right
+            current++;
+        }
+        
+        // While the left index is less or equal to the middle index
+        while(left <= middle) {
+            // Remove the element at the current position
+            list.remove(current);
+            // Set the current value to the left value
+            list.add(current, temp.get(left));
+            // Move the left pointer to the right
+            left++;
+            // Move the current pointer to the right
+            current++;
+        }
+        
+        // There is no need to put the rest of the element of the right sub list, since they are already 
+        // in sorted order since all of the small elements where put to the left of the list.
     }
     
 }
