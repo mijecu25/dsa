@@ -25,7 +25,7 @@ import com.mijecu25.dsa.algorithms.search.Search;
  * <i>Runtime: </i> O(log(n))
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.2
+ * @version 0.1.3.3
  */
 public final class BinarySearch extends Search {
       
@@ -41,7 +41,6 @@ public final class BinarySearch extends Search {
      * 
      * @param array - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -87,7 +86,6 @@ public final class BinarySearch extends Search {
      * 
      * @param list - list that we are searching in.
      * @param value - value that is being searched in the list.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the list, else -1.
      */
@@ -129,7 +127,6 @@ public final class BinarySearch extends Search {
      *  
      * @param intArray - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -171,7 +168,6 @@ public final class BinarySearch extends Search {
      *  
      * @param charArray - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -213,7 +209,6 @@ public final class BinarySearch extends Search {
      *  
      * @param byteArray - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -255,7 +250,6 @@ public final class BinarySearch extends Search {
      *  
      * @param shortArray - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -297,7 +291,6 @@ public final class BinarySearch extends Search {
      *  
      * @param longArray - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -339,7 +332,6 @@ public final class BinarySearch extends Search {
      *  
      * @param floatArray - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -381,7 +373,6 @@ public final class BinarySearch extends Search {
      *  
      * @param doubleArray - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -425,7 +416,6 @@ public final class BinarySearch extends Search {
      * 
      * @param array - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -471,7 +461,6 @@ public final class BinarySearch extends Search {
      * 
      * @param list - list that we are searching in.
      * @param value - value that is being searched in the list.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the list, else -1.
      */
@@ -513,7 +502,6 @@ public final class BinarySearch extends Search {
      *  
      * @param intArray - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -555,7 +543,6 @@ public final class BinarySearch extends Search {
      *  
      * @param charArray - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -597,7 +584,6 @@ public final class BinarySearch extends Search {
      *  
      * @param byteArray - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -639,7 +625,6 @@ public final class BinarySearch extends Search {
      *  
      * @param shortArray - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -681,7 +666,6 @@ public final class BinarySearch extends Search {
      *  
      * @param longArray - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -723,7 +707,6 @@ public final class BinarySearch extends Search {
      *  
      * @param floatArray - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -765,7 +748,6 @@ public final class BinarySearch extends Search {
      *  
      * @param doubleArray - array that we are searching in.
      * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */

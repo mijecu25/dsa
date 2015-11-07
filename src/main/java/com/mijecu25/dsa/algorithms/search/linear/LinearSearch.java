@@ -14,7 +14,7 @@ import com.mijecu25.dsa.algorithms.search.Search;
  * <i>Runtime: </i> O(n)
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.7
+ * @version 0.1.3.8
  */
 public final class LinearSearch extends Search {
     
@@ -504,7 +504,7 @@ public final class LinearSearch extends Search {
      * 
      * @param <E> - the type of elements in this list.
      * 
-     * @param array - list that we are searching in.
+     * @param list - list that we are searching in.
      * 
      * @return the minimum element in the list.
      */
@@ -566,7 +566,7 @@ public final class LinearSearch extends Search {
      *      
      * @param <E> - the type of elements in this list.
      * 
-     * @param array - list that we are searching in.
+     * @param list - list that we are searching in.
      * 
      * @return the maximum element in the list.
      */

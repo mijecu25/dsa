@@ -17,7 +17,7 @@ import java.util.List;
  * <i>Runtime: </i> O(1)
  * 
  * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.9
+ * @version 0.1.3.10
  */
 public final class TrivialSwap extends Swap {
    
@@ -141,8 +141,8 @@ public final class TrivialSwap extends Swap {
      * 
      * @param <E> - the type of elements in this list.
      *  
-     * @param intArray1 - one of the lists that will have one of its values swapped.
-     * @param intArray2 - the other list that will have one of its values swapped.
+     * @param list1 - one of the lists that will have one of its values swapped.
+     * @param list2 - the other list that will have one of its values swapped.
      * @param index - the index of the lists that will have their values swapped.
      */
     public static <E> void swap(List<E> list1, List<E> list2, int index) {
@@ -173,8 +173,8 @@ public final class TrivialSwap extends Swap {
      *  
      * @param <E> - the type of elements in this list. 
      * 
-     * @param intArray1 one array that will have its values swapped.
-     * @param intArray2 the other array that will have its values swapped. 
+     * @param list1 one array that will have its values swapped.
+     * @param list2 the other array that will have its values swapped. 
      */
     public static <E> void swap(List<E> list1, List<E> list2) {     
         // Get the minimum length of both arrays
