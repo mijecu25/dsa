@@ -8,7 +8,7 @@ import com.mijecu25.dsa.algorithms.sort.Sort;
 /**
  * Linear logarithmic sorting algorithm. This recursive algorithm divides the collection in half
  * until having a collection of one element, and then repeatedly merges the collection until
- * having a sorted collection. The implementation of this algorithm is in place. Although this
+ * having a sorted collection. The implementation of this algorithm is stable. Although this
  * algorithm is asymptotically faster than other algorithms, because it is recursive, it might
  * perform slower when used with small collections. Also, if the list is very large, you could
  * get an StackOverflowError if the algorithm recurses too deeply.
