@@ -3,8 +3,8 @@
   <groupId>com.mijecu25</groupId>
   <artifactId>dsa</artifactId>
   <version>0.2.0-SNAPSHOT</version>
-  <name>DSA</name>
-  <description>DSA is an implementation of data structures and algorithms in Java.</description>
+  <name>dsa</name>
+  <description>dsa is an implementation of data structures and algorithms in Java.</description>
   <url>https://github.com/mijecu25/dsa</url>
   <inceptionYear>2015</inceptionYear>
   <organization>
@@ -58,7 +58,7 @@
   
   <profiles>
     <profile>
-        <id>release-sign-artifacts</id>
+        <id>release</id>
         <activation>
             <property>
                 <name>performRelease</name>
@@ -84,6 +84,35 @@
                         </execution>
                     </executions>
                 </plugin>
+                
+                <plugin>
+		      		<groupId>org.apache.maven.plugins</groupId>
+		      		<artifactId>maven-source-plugin</artifactId>
+				    <version>2.2.1</version>
+				    <executions>
+		        		<execution>
+		          			<id>attach-sources</id>
+		          			<goals>
+		            			<goal>jar-no-fork</goal>
+		          			</goals>
+		        		</execution>
+		      		</executions>
+		    	</plugin>
+		    	
+    	    	<plugin>
+			    	<groupId>org.apache.maven.plugins</groupId>
+			      	<artifactId>maven-javadoc-plugin</artifactId>
+			      	<version>2.9.1</version>
+			      	<executions>
+			        	<execution>
+				          	<id>attach-javadocs</id>
+				          	<goals>
+				            	<goal>jar</goal>
+				          	</goals>
+			        	</execution>
+			      	</executions>
+			    </plugin>
+		    	
             </plugins>
         </build>
     </profile>
@@ -135,21 +164,7 @@
  	 			<encoding>UTF-8</encoding>
   			</configuration>
   		</plugin>
-  		
-  		<plugin>
-      		<groupId>org.apache.maven.plugins</groupId>
-      		<artifactId>maven-source-plugin</artifactId>
-		    <version>2.2.1</version>
-		    <executions>
-        		<execution>
-          			<id>attach-sources</id>
-          			<goals>
-            			<goal>jar-no-fork</goal>
-          			</goals>
-        		</execution>
-      		</executions>
-    	</plugin>
-    	
+  		    	
     	<plugin>
     		<artifactId>maven-jar-plugin</artifactId>
             <version>2.5</version>
@@ -163,19 +178,6 @@
             </configuration>
         </plugin>
     
-    	<plugin>
-	    	<groupId>org.apache.maven.plugins</groupId>
-	      	<artifactId>maven-javadoc-plugin</artifactId>
-	      	<version>2.9.1</version>
-	      	<executions>
-	        	<execution>
-		          	<id>attach-javadocs</id>
-		          	<goals>
-		            	<goal>jar</goal>
-		          	</goals>
-	        	</execution>
-	      	</executions>
-	    </plugin>
   	</plugins>
   </build>
   
