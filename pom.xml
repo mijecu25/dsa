@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mijecu25</groupId>
   <artifactId>dsa</artifactId>
-  <version>0.1.3-SNAPSHOT</version>
+  <version>0.2.0-SNAPSHOT</version>
   <name>DSA</name>
   <description>DSA is an implementation of data structures and algorithms in Java.</description>
   <url>https://github.com/mijecu25/dsa</url>
@@ -35,7 +35,7 @@
         <id>miguelvelezmj25</id>
         <name>Miguel Velez</name>
         <email>miguelvelez@mijecu25.com</email>
-        <url>http://www.mijecu25.com/miguelvelez.html</url>
+        <url>http://www.mijecu25.com/miguelvelez/</url>
         <roles>
             <role>developer</role>
         </roles>
@@ -70,7 +70,10 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-gpg-plugin</artifactId>
-                    <version>1.4</version>
+                    <version>1.5</version>
+                    <configuration>
+                    	<passphrase>${gpg.passphrase}</passphrase>
+                    </configuration>
                     <executions>
                         <execution>
                             <id>sign-artifacts</id>
