@@ -10,8 +10,8 @@ import org.junit.rules.ExpectedException;
 /**
  * Test for Algorithm classes.
  * 
- * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.3
+ * @author Miguel Velez miguelvelezmj25
+ * @version 0.2.0.1
  */
 public class TestAlgorithms {
 

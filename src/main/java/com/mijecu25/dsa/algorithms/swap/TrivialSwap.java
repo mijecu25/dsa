@@ -16,8 +16,8 @@ import java.util.List;
  * 
  * <i>Runtime: </i> O(1)
  * 
- * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.10
+ * @author Miguel Velez miguelvelezmj25
+ * @version 0.2.0.1
  */
 public final class TrivialSwap extends Swap {
    
@@ -29,12 +29,12 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two arrays at the specified positions.
      * 
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param array1 - one of the arrays that will have one of its values swapped.
-     * @param array1Index - the index of the first array that will be swapped.
-     * @param array2 - the other array that will have one of its values swapped.
-     * @param array2Index - the index of the second array that will be swapped.
+     * @param array1 one of the arrays that will have one of its values swapped.
+     * @param array1Index the index of the first array that will be swapped.
+     * @param array2 the other array that will have one of its values swapped.
+     * @param array2Index the index of the second array that will be swapped.
      */
     public static <E> void swap(E[] array1, int array1Index, E[] array2, int array2Index) {
         // If the values are not the same
@@ -52,11 +52,11 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two arrays at the same position
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param array1 - one of the arrays that will have one of its values swapped.
-     * @param array2 - the other array that will have one of its values swapped.
-     * @param index - the index of the arrays that will have their values swapped.
+     * @param array1 one of the arrays that will have one of its values swapped.
+     * @param array2 the other array that will have one of its values swapped.
+     * @param index the index of the arrays that will have their values swapped.
      */
     public static <E> void swap(E[] array1, E[] array2, int index) {
         // Call the other method by passing the index twice
@@ -66,11 +66,11 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap two elements of array at the specified positions
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      *
-     * @param array - array that will have two of its values swapped.
-     * @param index1 - one of the indexes of the array.
-     * @param index2 - other index of the array.
+     * @param array array that will have two of its values swapped.
+     * @param index1 one of the indexes of the array.
+     * @param index2 other index of the array.
      */
     public static <E> void swap(E[] array, int index1, int index2) {
         // Call the other method by passing the array twice
@@ -81,7 +81,7 @@ public final class TrivialSwap extends Swap {
      * Helper method that swaps all the elements of the arrays. This method runs in 
      * O(<code>Math.min(array1.length, array2.length</code>) time.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
      * @param array1 one array that will have its values swapped.
      * @param array2 the other array that will have its values swapped. 
@@ -102,12 +102,12 @@ public final class TrivialSwap extends Swap {
      * depends on the implementation of the lists since elements are removed and added in the
      * lists.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      *  
-     * @param list1 - one of the lists that will have one of its values swapped.
-     * @param list1Index - the index of the first list that will be swapped.
-     * @param list2 - the other list that will have one of its values swapped.
-     * @param list2Index - the index of the second list that will be swapped.
+     * @param list1 one of the lists that will have one of its values swapped.
+     * @param list1Index the index of the first list that will be swapped.
+     * @param list2 the other list that will have one of its values swapped.
+     * @param list2Index the index of the second list that will be swapped.
      */
     public static <E> void swap(List<E> list1, int list1Index, List<E> list2, int list2Index) {
         // If the values are not the same
@@ -139,11 +139,11 @@ public final class TrivialSwap extends Swap {
      * depends on the implementation of the lists since elements are removed and added in the
      * lists.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      *  
-     * @param list1 - one of the lists that will have one of its values swapped.
-     * @param list2 - the other list that will have one of its values swapped.
-     * @param index - the index of the lists that will have their values swapped.
+     * @param list1 one of the lists that will have one of its values swapped.
+     * @param list2 the other list that will have one of its values swapped.
+     * @param index the index of the lists that will have their values swapped.
      */
     public static <E> void swap(List<E> list1, List<E> list2, int index) {
         // Call the other method by passing the index twice
@@ -155,11 +155,11 @@ public final class TrivialSwap extends Swap {
      * depends on the implementation of the lists since elements are removed and added in the
      * lists.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - list that will have two of its values swapped.
-     * @param index1 - one of the indexes of the list.
-     * @param index2 - other index of the list.
+     * @param list list that will have two of its values swapped.
+     * @param index1 one of the indexes of the list.
+     * @param index2 other index of the list.
      */
     public static <E> void swap(List<E> list, int index1, int index2) {
         // Call the other method by passing the list twice
@@ -171,7 +171,7 @@ public final class TrivialSwap extends Swap {
      * depends on the implementation of the lists since elements are removed and added in the
      * lists. It also depends on the length of the shortest list.
      *  
-     * @param <E> - the type of elements in this list. 
+     * @param <E> the type of elements in this list. 
      * 
      * @param list1 one array that will have its values swapped.
      * @param list2 the other array that will have its values swapped. 
@@ -190,10 +190,10 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two int arrays at the specified positions.
      *  
-     * @param intArray1 - one of the arrays that will have one of its values swapped.
-     * @param array1Index - the index of the first array that will be swapped.
-     * @param intArray2 - the other array that will have one of its values swapped.
-     * @param array2Index - the index of the second array that will be swapped.
+     * @param intArray1 one of the arrays that will have one of its values swapped.
+     * @param array1Index the index of the first array that will be swapped.
+     * @param intArray2 the other array that will have one of its values swapped.
+     * @param array2Index the index of the second array that will be swapped.
      */
     public static void swap(int[] intArray1, int array1Index, int[] intArray2, int array2Index) {
         // If the values are not the same
@@ -211,9 +211,9 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two int arrays at the same position
      *  
-     * @param intArray1 - one of the arrays that will have one of its values swapped.
-     * @param intArray2 - the other array that will have one of its values swapped.
-     * @param index - the index of the arrays that will have their values swapped.
+     * @param intArray1 one of the arrays that will have one of its values swapped.
+     * @param intArray2 the other array that will have one of its values swapped.
+     * @param index the index of the arrays that will have their values swapped.
      */
     public static void swap(int[] intArray1, int[] intArray2, int index) {
         // Call the other method by passing the index twice
@@ -223,9 +223,9 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap two elements of an int array at the specified positions
      *
-     * @param intArray - array that will have two of its values swapped.
-     * @param index1 - one of the indexes of the array.
-     * @param index2 - other index of the array.
+     * @param intArray array that will have two of its values swapped.
+     * @param index1 one of the indexes of the array.
+     * @param index2 other index of the array.
      */
     public static void swap(int[] intArray, int index1, int index2) {
         // Call the other method by passing the array twice
@@ -253,10 +253,10 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two char arrays at the specified positions.
      *  
-     * @param charArray1 - one of the arrays that will have one of its values swapped.
-     * @param array1Index - the index of the first array that will be swapped.
-     * @param charArray2 - the other array that will have one of its values swapped.
-     * @param array2Index - the index of the second array that will be swapped.
+     * @param charArray1 one of the arrays that will have one of its values swapped.
+     * @param array1Index the index of the first array that will be swapped.
+     * @param charArray2 the other array that will have one of its values swapped.
+     * @param array2Index the index of the second array that will be swapped.
      */
     public static void swap(char[] charArray1, int array1Index, char[] charArray2, int array2Index) {
         // If the values are not the same
@@ -274,9 +274,9 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two char arrays at the same position
      *  
-     * @param charArray1 - one of the arrays that will have one of its values swapped.
-     * @param charArray2 - the other array that will have one of its values swapped.
-     * @param index - the index of the arrays that will have their values swapped.
+     * @param charArray1 one of the arrays that will have one of its values swapped.
+     * @param charArray2 the other array that will have one of its values swapped.
+     * @param index the index of the arrays that will have their values swapped.
      */
     public static void swap(char[] charArray1, char[] charArray2, int index) {
         // Call the other method by passing the index twice
@@ -286,9 +286,9 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap two elements of a char array at the specified positions
      *
-     * @param charArray - array that will have two of its values swapped.
-     * @param index1 - one of the indexes of the array.
-     * @param index2 - other index of the array.
+     * @param charArray array that will have two of its values swapped.
+     * @param index1 one of the indexes of the array.
+     * @param index2 other index of the array.
      */
     public static void swap(char[] charArray, int index1, int index2) {
         // Call the other method by passing the array twice
@@ -316,10 +316,10 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two byte arrays at the specified positions.
      *  
-     * @param byteArray1 - one of the arrays that will have one of its values swapped.
-     * @param array1Index - the index of the first array that will be swapped.
-     * @param byteArray2 - the other array that will have one of its values swapped.
-     * @param array2Index - the index of the second array that will be swapped.
+     * @param byteArray1 one of the arrays that will have one of its values swapped.
+     * @param array1Index the index of the first array that will be swapped.
+     * @param byteArray2 the other array that will have one of its values swapped.
+     * @param array2Index the index of the second array that will be swapped.
      */
     public static void swap(byte[] byteArray1, int array1Index, byte[] byteArray2, int array2Index) {
         // If the values are not the same
@@ -337,9 +337,9 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two byte arrays at the same position
      *  
-     * @param byteArray1 - one of the arrays that will have one of its values swapped.
-     * @param byteArray2 - the other array that will have one of its values swapped.
-     * @param index - the index of the arrays that will have their values swapped.
+     * @param byteArray1 one of the arrays that will have one of its values swapped.
+     * @param byteArray2 the other array that will have one of its values swapped.
+     * @param index the index of the arrays that will have their values swapped.
      */
     public static void swap(byte[] byteArray1, byte[] byteArray2, int index) {
         // Call the other method by passing the index twice
@@ -349,9 +349,9 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap two elements of a byte array at the specified positions
      *
-     * @param byteArray - array that will have two of its values swapped.
-     * @param index1 - one of the indexes of the array.
-     * @param index2 - other index of the array.
+     * @param byteArray array that will have two of its values swapped.
+     * @param index1 one of the indexes of the array.
+     * @param index2 other index of the array.
      */
     public static void swap(byte[] byteArray, int index1, int index2) {
         // Call the other method by passing the array twice
@@ -379,10 +379,10 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two short arrays at the specified positions.
      *  
-     * @param shortArray1 - one of the arrays that will have one of its values swapped.
-     * @param array1Index - the index of the first array that will be swapped.
-     * @param shortArray2 - the other array that will have one of its values swapped.
-     * @param array2Index - the index of the second array that will be swapped.
+     * @param shortArray1 one of the arrays that will have one of its values swapped.
+     * @param array1Index the index of the first array that will be swapped.
+     * @param shortArray2 the other array that will have one of its values swapped.
+     * @param array2Index the index of the second array that will be swapped.
      */
     public static void swap(short[] shortArray1, int array1Index, short[] shortArray2, int array2Index) {
         // If the values are not the same
@@ -400,9 +400,9 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two short arrays at the same position
      *  
-     * @param shortArray1 - one of the arrays that will have one of its values swapped.
-     * @param shortArray2 - the other array that will have one of its values swapped.
-     * @param index - the index of the arrays that will have their values swapped.
+     * @param shortArray1 one of the arrays that will have one of its values swapped.
+     * @param shortArray2 the other array that will have one of its values swapped.
+     * @param index the index of the arrays that will have their values swapped.
      */
     public static void swap(short[] shortArray1, short[] shortArray2, int index) {
         // Call the other method by passing the index twice
@@ -412,9 +412,9 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap two elements of a short array at the specified positions
      *
-     * @param shortArray - array that will have two of its values swapped.
-     * @param index1 - one of the indexes of the array.
-     * @param index2 - other index of the array.
+     * @param shortArray array that will have two of its values swapped.
+     * @param index1 one of the indexes of the array.
+     * @param index2 other index of the array.
      */
     public static void swap(short[] shortArray, int index1, int index2) {
         // Call the other method by passing the array twice
@@ -442,10 +442,10 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two long arrays at the specified positions.
      *  
-     * @param longArray1 - one of the arrays that will have one of its values swapped.
-     * @param array1Index - the index of the first array that will be swapped.
-     * @param longArray2 - the other array that will have one of its values swapped.
-     * @param array2Index - the index of the second array that will be swapped.
+     * @param longArray1 one of the arrays that will have one of its values swapped.
+     * @param array1Index the index of the first array that will be swapped.
+     * @param longArray2 the other array that will have one of its values swapped.
+     * @param array2Index the index of the second array that will be swapped.
      */
     public static void swap(long[] longArray1, int array1Index, long[] longArray2, int array2Index) {
         // If the values are not the same
@@ -463,9 +463,9 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two long arrays at the same position
      *  
-     * @param longArray1 - one of the arrays that will have one of its values swapped.
-     * @param longArray2 - the other array that will have one of its values swapped.
-     * @param index - the index of the arrays that will have their values swapped.
+     * @param longArray1 one of the arrays that will have one of its values swapped.
+     * @param longArray2 the other array that will have one of its values swapped.
+     * @param index the index of the arrays that will have their values swapped.
      */
     public static void swap(long[] longArray1, long[] longArray2, int index) {
         // Call the other method by passing the index twice
@@ -475,9 +475,9 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap two elements of a long array at the specified positions
      *
-     * @param longArray - array that will have two of its values swapped.
-     * @param index1 - one of the indexes of the array.
-     * @param index2 - other index of the array.
+     * @param longArray array that will have two of its values swapped.
+     * @param index1 one of the indexes of the array.
+     * @param index2 other index of the array.
      */
     public static void swap(long[] longArray, int index1, int index2) {
         // Call the other method by passing the array twice
@@ -505,10 +505,10 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two float arrays at the specified positions.
      *  
-     * @param floatArray1 - one of the arrays that will have one of its values swapped.
-     * @param array1Index - the index of the first array that will be swapped.
-     * @param floatArray2 - the other array that will have one of its values swapped.
-     * @param array2Index - the index of the second array that will be swapped.
+     * @param floatArray1 one of the arrays that will have one of its values swapped.
+     * @param array1Index the index of the first array that will be swapped.
+     * @param floatArray2 the other array that will have one of its values swapped.
+     * @param array2Index the index of the second array that will be swapped.
      */
     public static void swap(float[] floatArray1, int array1Index, float[] floatArray2, int array2Index) {
         // If the values are not the same
@@ -526,9 +526,9 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two float arrays at the same position
      *  
-     * @param floatArray1 - one of the arrays that will have one of its values swapped.
-     * @param floatArray2 - the other array that will have one of its values swapped.
-     * @param index - the index of the arrays that will have their values swapped.
+     * @param floatArray1 one of the arrays that will have one of its values swapped.
+     * @param floatArray2 the other array that will have one of its values swapped.
+     * @param index the index of the arrays that will have their values swapped.
      */
     public static void swap(float[] floatArray1, float[] floatArray2, int index) {
         // Call the other method by passing the index twice
@@ -538,9 +538,9 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap two elements of a float array at the specified positions
      *
-     * @param floatArray - array that will have two of its values swapped.
-     * @param index1 - one of the indexes of the array.
-     * @param index2 - other index of the array.
+     * @param floatArray array that will have two of its values swapped.
+     * @param index1 one of the indexes of the array.
+     * @param index2 other index of the array.
      */
     public static void swap(float[] floatArray, int index1, int index2) {
         // Call the other method by passing the array twice
@@ -568,10 +568,10 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two double arrays at the specified positions.
      *  
-     * @param doubleArray1 - one of the arrays that will have one of its values swapped.
-     * @param array1Index - the index of the first array that will be swapped.
-     * @param doubleArray2 - the other array that will have one of its values swapped.
-     * @param array2Index - the index of the second array that will be swapped.
+     * @param doubleArray1 one of the arrays that will have one of its values swapped.
+     * @param array1Index the index of the first array that will be swapped.
+     * @param doubleArray2 the other array that will have one of its values swapped.
+     * @param array2Index the index of the second array that will be swapped.
      */
     public static void swap(double[] doubleArray1, int array1Index, double[] doubleArray2, int array2Index) {
         // If the values are not the same
@@ -589,9 +589,9 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap the elements of two double arrays at the same position
      *  
-     * @param doubleArray1 - one of the arrays that will have one of its values swapped.
-     * @param doubleArray2 - the other array that will have one of its values swapped.
-     * @param index - the index of the arrays that will have their values swapped.
+     * @param doubleArray1 one of the arrays that will have one of its values swapped.
+     * @param doubleArray2 the other array that will have one of its values swapped.
+     * @param index the index of the arrays that will have their values swapped.
      */
     public static void swap(double[] doubleArray1, double[] doubleArray2, int index) {
         // Call the other method by passing the index twice
@@ -601,9 +601,9 @@ public final class TrivialSwap extends Swap {
     /**
      * Swap two elements of a double array at the specified positions
      *
-     * @param doubleArray - array that will have two of its values swapped.
-     * @param index1 - one of the indexes of the array.
-     * @param index2 - other index of the array.
+     * @param doubleArray array that will have two of its values swapped.
+     * @param index1 one of the indexes of the array.
+     * @param index2 other index of the array.
      */
     public static void swap(double[] doubleArray, int index1, int index2) {
         // Call the other method by passing the array twice

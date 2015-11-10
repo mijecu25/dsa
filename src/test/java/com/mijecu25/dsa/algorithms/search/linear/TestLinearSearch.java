@@ -11,8 +11,8 @@ import org.junit.Assert;
 /**
  * Test for LinearSearch class.
  * 
- * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.9
+ * @author Miguel Velez miguelvelezmj25
+ * @version 0.2.0.1
  */
 public class TestLinearSearch extends TestSearch {
 
@@ -263,7 +263,7 @@ public class TestLinearSearch extends TestSearch {
         Selection.sort(this.integerArray1);
         
         // The maximum element is at the end
-        Integer max = this.integerArray1[this.integerArray1.length - 1];
+        Integer max = this.integerArray1[this.integerArray1.length - 1 ];
                 
         // The minimum element is at the end
         Assert.assertTrue(LinearSearch.searchMax(this.integerArray1) == max);
@@ -290,7 +290,7 @@ public class TestLinearSearch extends TestSearch {
 //        Selection.sort(this.integerArray1);
 //                
 //        // The minimum element is at the end
-//        Assert.assertTrue(LinearSearch.findMax(this.integerArray1) == (this.integerArray1.length - 1));
+//        Assert.assertTrue(LinearSearch.findMax(this.integerArray1) == (this.integerArray1.length - 1 ));
 //    }
     
     /**
@@ -317,7 +317,7 @@ public class TestLinearSearch extends TestSearch {
         Selection.sort(this.intArray1);
         
         // The maximum element is at the end
-        Integer max = this.intArray1[this.intArray1.length - 1];
+        Integer max = this.intArray1[this.intArray1.length - 1 ];
                 
         // The minimum element is at the end
         Assert.assertTrue(LinearSearch.searchMax(this.intArray1) == max);
@@ -344,7 +344,7 @@ public class TestLinearSearch extends TestSearch {
 //        Selection.sort(this.intArray1);
 //                
 //        // The minimum element is at the end
-//        Assert.assertTrue(LinearSearch.findMax(this.intArray1) == (this.intArray1.length - 1));
+//        Assert.assertTrue(LinearSearch.findMax(this.intArray1) == (this.intArray1.length - 1 ));
 //    }
     
     /**

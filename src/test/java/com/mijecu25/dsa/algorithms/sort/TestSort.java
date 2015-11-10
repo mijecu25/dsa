@@ -12,8 +12,8 @@ import com.mijecu25.dsa.algorithms.TestAlgorithms;
 /**
  * This is the Sort test class.
  * 
- * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.5
+ * @author Miguel Velez miguelvelezmj25
+ * @version 0.2.0.1
  */
 public class TestSort extends TestAlgorithms {
 	private int[]          sortedIntArray = {1, 5, 8, 15};

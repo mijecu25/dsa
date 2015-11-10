@@ -3,8 +3,8 @@ package com.mijecu25.dsa.exceptions;
 /**
  * LinkedListUnderflowException
  * 
- * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.2
+ * @author Miguel Velez miguelvelezmj25
+ * @version 0.2.0.1
  */
 public class UnderflowException extends RuntimeException {
 

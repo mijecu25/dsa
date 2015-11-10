@@ -32,8 +32,8 @@ import com.mijecu25.dsa.algorithms.swap.XORSwap;
  * <br>
  * <i>Average case performance: </i> O(n log(n))
  * 
- * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.3
+ * @author Miguel Velez miguelvelezmj25
+ * @version 0.2.0.1
  */
 public class Quicksort extends Sort {
     
@@ -45,173 +45,173 @@ public class Quicksort extends Sort {
     /**
      * Sort the array in ascending order using this algorithm.
      * 
-     * @param intArray - the array that we want to sort
+     * @param intArray the array that we want to sort
      */
     public static void sort(int[] intArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(intArray, 0, intArray.length - 1, false);
+        Quicksort.sort(intArray, 0, intArray.length - 1 , false);
     }
     
     /**
      * Sort the array in descending order using this algorithm.
      * 
-     * @param intArray - the array that we want to sort
+     * @param intArray the array that we want to sort
      */
     public static void sortDescending(int[] intArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(intArray, 0, intArray.length - 1, true);
+        Quicksort.sort(intArray, 0, intArray.length - 1 , true);
     }
     
     /**
      * Sort the array in ascending order using this algorithm.
      * 
-     * @param charArray - the array that we want to sort
+     * @param charArray the array that we want to sort
      */
     public static void sort(char[] charArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(charArray, 0, charArray.length - 1, false);
+        Quicksort.sort(charArray, 0, charArray.length - 1 , false);
     }
     
     /**
      * Sort the array in descending order using this algorithm.
      * 
-     * @param charArray - the array that we want to sort
+     * @param charArray the array that we want to sort
      */
     public static void sortDescending(char[] charArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(charArray, 0, charArray.length - 1, true);
+        Quicksort.sort(charArray, 0, charArray.length - 1 , true);
     }
     
     /**
      * Sort the array in ascending order using this algorithm.
      * 
-     * @param byteArray - the array that we want to sort
+     * @param byteArray the array that we want to sort
      */
     public static void sort(byte[] byteArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(byteArray, 0, byteArray.length - 1, false);
+        Quicksort.sort(byteArray, 0, byteArray.length - 1 , false);
     }
     
     /**
      * Sort the array in descending order using this algorithm.
      * 
-     * @param byteArray - the array that we want to sort
+     * @param byteArray the array that we want to sort
      */
     public static void sortDescending(byte[] byteArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(byteArray, 0, byteArray.length - 1, true);
+        Quicksort.sort(byteArray, 0, byteArray.length - 1 , true);
     }
     
     /**
      * Sort the array in ascending order using this algorithm.
      * 
-     * @param shortArray - the array that we want to sort
+     * @param shortArray the array that we want to sort
      */
     public static void sort(short[] shortArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(shortArray, 0, shortArray.length - 1, false);
+        Quicksort.sort(shortArray, 0, shortArray.length - 1 , false);
     }
     
     /**
      * Sort the array in descending order using this algorithm.
      * 
-     * @param shortArray - the array that we want to sort
+     * @param shortArray the array that we want to sort
      */
     public static void sortDescending(short[] shortArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(shortArray, 0, shortArray.length - 1, true);
+        Quicksort.sort(shortArray, 0, shortArray.length - 1 , true);
     }
     
     /**
      * Sort the array in ascending order using this algorithm.
      * 
-     * @param longArray - the array that we want to sort
+     * @param longArray the array that we want to sort
      */
     public static void sort(long[] longArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(longArray, 0, longArray.length - 1, false);
+        Quicksort.sort(longArray, 0, longArray.length - 1 , false);
     }
     
     /**
      * Sort the array in descending order using this algorithm.
      * 
-     * @param longArray - the array that we want to sort
+     * @param longArray the array that we want to sort
      */
     public static void sortDescending(long[] longArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(longArray, 0, longArray.length - 1, true);
+        Quicksort.sort(longArray, 0, longArray.length - 1 , true);
     }
     
     /**
      * Sort the array in ascending order using this algorithm.
      * 
-     * @param floatArray - the array that we want to sort
+     * @param floatArray the array that we want to sort
      */
     public static void sort(float[] floatArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(floatArray, 0, floatArray.length - 1, false);
+        Quicksort.sort(floatArray, 0, floatArray.length - 1 , false);
     }
     
     /**
      * Sort the array in descending order using this algorithm.
      * 
-     * @param floatArray - the array that we want to sort
+     * @param floatArray the array that we want to sort
      */
     public static void sortDescending(float[] floatArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(floatArray, 0, floatArray.length - 1, true);
+        Quicksort.sort(floatArray, 0, floatArray.length - 1 , true);
     }
     
     /**
      * Sort the array in ascending order using this algorithm.
      * 
-     * @param doubleArray - the array that we want to sort
+     * @param doubleArray the array that we want to sort
      */
     public static void sort(double[] doubleArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(doubleArray, 0, doubleArray.length - 1, false);
+        Quicksort.sort(doubleArray, 0, doubleArray.length - 1 , false);
     }
     
     /**
      * Sort the array in descending order using this algorithm.
      * 
-     * @param doubleArray - the array that we want to sort
+     * @param doubleArray the array that we want to sort
      */
     public static void sortDescending(double[] doubleArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(doubleArray, 0, doubleArray.length - 1, true);
+        Quicksort.sort(doubleArray, 0, doubleArray.length - 1 , true);
     }
     
     /**
      * Sort the array in ascending order using this algorithm.
      * 
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param intArray - the array that we want to sort
+     * @param intArray the array that we want to sort
      */
     public static <E extends Comparable<E>> void sort(E[] intArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(intArray, 0, intArray.length - 1, false);
+        Quicksort.sort(intArray, 0, intArray.length - 1 , false);
     }
     
     /**
      * Sort the array in descending order using this algorithm.
      * 
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param intArray - the array that we want to sort
+     * @param intArray the array that we want to sort
      */
     public static <E extends Comparable<E>> void sortDescending(E[] intArray) {
         // Call the subroutine in ascending order
-        Quicksort.sort(intArray, 0, intArray.length - 1, true);
+        Quicksort.sort(intArray, 0, intArray.length - 1 , true);
     }
     
     /**
      * Sort the list in ascending order using this algorithm.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - the list that we want to sort
+     * @param list the list that we want to sort
      */
     public static <E extends Comparable<E>> void sort(List<E> list) {
         // Call the subroutine in ascending order
@@ -221,9 +221,9 @@ public class Quicksort extends Sort {
     /**
      * Sort the list in descending order using this algorithm.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - the list that we want to sort
+     * @param list the list that we want to sort
      */
     public static <E extends Comparable<E>> void sortDescending(List<E> list) {
         // Call the subroutine in ascending order
@@ -236,10 +236,10 @@ public class Quicksort extends Sort {
      * in order. This routine is used for both the ascending and descending algorithms. The only
      * difference is the call to the partition algorithm.
      * 
-     * @param intArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
-     * @param descending - boolean value that determines if we want to do descending sort
+     * @param intArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
+     * @param descending boolean value that determines if we want to do descending sort
      */
     private static void sort(int[] intArray, int start, int end, boolean descending) {
         // If start is greater or equal to end
@@ -270,9 +270,9 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in ascending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param intArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param intArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      *
      * @return an integer that represent the index of the pivot
      */
@@ -304,9 +304,9 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in descending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param intArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param intArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      * 
      * @return an integer that represent the index of the pivot
      */
@@ -339,10 +339,10 @@ public class Quicksort extends Sort {
      * in order. This routine is used for both the ascending and descending algorithms. The only
      * difference is the call to the partition algorithm.
      * 
-     * @param charArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
-     * @param descending - boolean value that determines if we want to do descending sort
+     * @param charArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
+     * @param descending boolean value that determines if we want to do descending sort
      */
     private static void sort(char[] charArray, int start, int end, boolean descending) {
         // If start is greater or equal to end
@@ -373,9 +373,9 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in ascending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param charArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param charArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      *
      * @return an integer that represent the index of the pivot
      */
@@ -407,9 +407,9 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in descending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param charArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param charArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      * 
      * @return an integer that represent the index of the pivot
      */
@@ -441,10 +441,10 @@ public class Quicksort extends Sort {
      * in order. This routine is used for both the ascending and descending algorithms. The only
      * difference is the call to the partition algorithm.
      * 
-     * @param byteArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
-     * @param descending - boolean value that determines if we want to do descending sort
+     * @param byteArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
+     * @param descending boolean value that determines if we want to do descending sort
      */
     private static void sort(byte[] byteArray, int start, int end, boolean descending) {
         // If start is greater or equal to end
@@ -475,9 +475,9 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in ascending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param byteArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param byteArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      *
      * @return an integer that represent the index of the pivot
      */
@@ -509,9 +509,9 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in descending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param byteArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param byteArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      * 
      * @return an integer that represent the index of the pivot
      */
@@ -543,10 +543,10 @@ public class Quicksort extends Sort {
      * in order. This routine is used for both the ascending and descending algorithms. The only
      * difference is the call to the partition algorithm.
      * 
-     * @param shortArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
-     * @param descending - boolean value that determines if we want to do descending sort
+     * @param shortArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
+     * @param descending boolean value that determines if we want to do descending sort
      */
     private static void sort(short[] shortArray, int start, int end, boolean descending) {
         // If start is greater or equal to end
@@ -577,9 +577,9 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in ascending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param shortArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param shortArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      *
      * @return an integer that represent the index of the pivot
      */
@@ -611,9 +611,9 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in descending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param shortArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param shortArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      * 
      * @return an integer that represent the index of the pivot
      */
@@ -645,10 +645,10 @@ public class Quicksort extends Sort {
      * in order. This routine is used for both the ascending and descending algorithms. The only
      * difference is the call to the partition algorithm.
      * 
-     * @param longArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
-     * @param descending - boolean value that determines if we want to do descending sort
+     * @param longArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
+     * @param descending boolean value that determines if we want to do descending sort
      */
     private static void sort(long[] longArray, int start, int end, boolean descending) {
         // If start is greater or equal to end
@@ -679,9 +679,9 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in ascending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param longArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param longArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      *
      * @return an integer that represent the index of the pivot
      */
@@ -713,9 +713,9 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in descending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param longArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param longArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      * 
      * @return an integer that represent the index of the pivot
      */
@@ -747,10 +747,10 @@ public class Quicksort extends Sort {
      * in order. This routine is used for both the ascending and descending algorithms. The only
      * difference is the call to the partition algorithm.
      * 
-     * @param floatArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
-     * @param descending - boolean value that determines if we want to do descending sort
+     * @param floatArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
+     * @param descending boolean value that determines if we want to do descending sort
      */
     private static void sort(float[] floatArray, int start, int end, boolean descending) {
         // If start is greater or equal to end
@@ -781,9 +781,9 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in ascending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param floatArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param floatArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      *
      * @return an integer that represent the index of the pivot
      */
@@ -815,9 +815,9 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in descending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param floatArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param floatArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      * 
      * @return an integer that represent the index of the pivot
      */
@@ -849,10 +849,10 @@ public class Quicksort extends Sort {
      * in order. This routine is used for both the ascending and descending algorithms. The only
      * difference is the call to the partition algorithm.
      * 
-     * @param doubleArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
-     * @param descending - boolean value that determines if we want to do descending sort
+     * @param doubleArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
+     * @param descending boolean value that determines if we want to do descending sort
      */
     private static void sort(double[] doubleArray, int start, int end, boolean descending) {
         // If start is greater or equal to end
@@ -883,9 +883,9 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in ascending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param doubleArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param doubleArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      *
      * @return an integer that represent the index of the pivot
      */
@@ -917,9 +917,9 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in descending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param dobuleArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param dobuleArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      * 
      * @return an integer that represent the index of the pivot
      */
@@ -952,12 +952,12 @@ public class Quicksort extends Sort {
      * in order. This routine is used for both the ascending and descending algorithms. The only
      * difference is the call to the partition algorithm.
      * 
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param intArray - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
-     * @param descending - boolean value that determines if we want to do descending sort
+     * @param intArray array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
+     * @param descending boolean value that determines if we want to do descending sort
      */
     private static <E extends Comparable<E>> void sort(E[] intArray, int start, int end, boolean descending) {
         // If start is greater or equal to end
@@ -988,11 +988,11 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in ascending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param array - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param array array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      *
      * @return an integer that represent the index of the pivot
      */
@@ -1024,11 +1024,11 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in descending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param array - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param array array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      * 
      * @return an integer that represent the index of the pivot
      */
@@ -1061,12 +1061,12 @@ public class Quicksort extends Sort {
      * in order. This routine is used for both the ascending and descending algorithms. The only
      * difference is the call to the partition algorithm.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - list that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
-     * @param descending - boolean value that determines if we want to do descending sort
+     * @param list list that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
+     * @param descending boolean value that determines if we want to do descending sort
      */
     private static <E extends Comparable<E>> void sort(List<E> list, int start, int end, boolean descending) {
         // If start is greater or equal to end
@@ -1097,11 +1097,11 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in ascending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - array that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param list array that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      *
      * @return an integer that represent the index of the pivot
      */
@@ -1133,11 +1133,11 @@ public class Quicksort extends Sort {
      * Routine that arranges the elements in descending order around a pivot. This routine 
      * runs in O(n) time.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - list that we want to sort
-     * @param start - index of the starting point to sort
-     * @param end - index of the end point to sort
+     * @param list list that we want to sort
+     * @param start index of the starting point to sort
+     * @param end index of the end point to sort
      * 
      * @return an integer that represent the index of the pivot
      */

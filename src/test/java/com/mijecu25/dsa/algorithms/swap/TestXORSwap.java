@@ -7,8 +7,8 @@ import org.junit.Test;
 /**
  * Test for XORSwap class.
  * 
- * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.8
+ * @author Miguel Velez miguelvelezmj25
+ * @version 0.2.0.1
  */
 public class TestXORSwap extends TestSwap {
 	

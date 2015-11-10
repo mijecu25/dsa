@@ -19,8 +19,8 @@ import com.mijecu25.dsa.algorithms.swap.TrivialSwap;
  * <br>
  * <i>Average case performance: </i> O(n<sup>2</sup>)
  * 
- * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.1
+ * @author Miguel Velez miguelvelezmj25
+ * @version 0.2.0.1
  */
 public final class Bubble extends Sort {
 
@@ -32,9 +32,9 @@ public final class Bubble extends Sort {
     /**
      * Sort the array in ascending order using this algorithm.
      * 
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param array - the array that we want to sort
+     * @param array the array that we want to sort
      */
     public static <E extends Comparable<E>> void sort(E[] array) {
         // Initialize helper variables
@@ -47,7 +47,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (array.length - 1); i++) {
+            for(int i = 0; i < (array.length - 1 ); i++) {
                 // If the current element is greater than the next element
                 if(array[i].compareTo(array[i + 1]) > 0) {
                     // Swap the elements
@@ -64,9 +64,9 @@ public final class Bubble extends Sort {
      * Sort the list in ascending order using this algorithm. The run time of this algorithm depends on the 
      * implementation of the list since it has elements added and removed from it.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - the list that we want to sort
+     * @param list the list that we want to sort
      */
     public static <E extends Comparable<E>> void sort(List<E> list) {
         // Initialize helper variables
@@ -95,7 +95,7 @@ public final class Bubble extends Sort {
     /**
      * Sort the int array in ascending order using this algorithm.
      * 
-     * @param intArray - the array of ints that we want to sort
+     * @param intArray the array of ints that we want to sort
      */
     public static void sort(int[] intArray) {
         // Initialize helper variables
@@ -108,7 +108,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (intArray.length - 1); i++) {
+            for(int i = 0; i < (intArray.length - 1 ); i++) {
                 // If the current element is greater than the next element
                 if(intArray[i] > intArray[i + 1]) {
                     // Swap the elements
@@ -124,7 +124,7 @@ public final class Bubble extends Sort {
     /**
      * Sort the byte array in ascending order using this algorithm.
      * 
-     * @param byteArray - the array of bytes that we want to sort
+     * @param byteArray the array of bytes that we want to sort
      */
     public static void sort(byte[] byteArray) {
         // Initialize helper variables
@@ -137,7 +137,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (byteArray.length - 1); i++) {
+            for(int i = 0; i < (byteArray.length - 1 ); i++) {
                 // If the current element is greater than the next element
                 if(byteArray[i] > byteArray[i + 1]) {
                     // Swap the elements
@@ -153,7 +153,7 @@ public final class Bubble extends Sort {
     /**
      * Sort the char array in ascending order using this algorithm.
      *
-     * @param charArray - the array of chars that we want to sort
+     * @param charArray the array of chars that we want to sort
      */
     public static void sort(char[] charArray) {
         // Initialize helper variables
@@ -166,7 +166,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (charArray.length - 1); i++) {
+            for(int i = 0; i < (charArray.length - 1 ); i++) {
                 // If the current element is greater than the next element
                 if(charArray[i] > charArray[i + 1]) {
                     // Swap the elements
@@ -182,7 +182,7 @@ public final class Bubble extends Sort {
     /**
      * Sort the double array in ascending order using this algorithm.
      * 
-     * @param doubleArray - the array of double that we want to sort
+     * @param doubleArray the array of double that we want to sort
      */
     public static void sort(double[] doubleArray) {
         // Initialize helper variables
@@ -195,7 +195,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (doubleArray.length - 1); i++) {
+            for(int i = 0; i < (doubleArray.length - 1 ); i++) {
                 // If the current element is greater than the next element
                 if(doubleArray[i] > doubleArray[i + 1]) {
                     // Swap the elements
@@ -211,7 +211,7 @@ public final class Bubble extends Sort {
     /**
      * Sort the float array in ascending order using this algorithm.
      * 
-     * @param floatArray - the array of float that we want to sort
+     * @param floatArray the array of float that we want to sort
      */
     public static void sort(float[] floatArray) {
         // Initialize helper variables
@@ -224,7 +224,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (floatArray.length - 1); i++) {
+            for(int i = 0; i < (floatArray.length - 1 ); i++) {
                 // If the current element is greater than the next element
                 if(floatArray[i] > floatArray[i + 1]) {
                     // Swap the elements
@@ -240,7 +240,7 @@ public final class Bubble extends Sort {
     /**
      * Sort the long array in ascending order using this algorithm.
      * 
-     * @param longArray - the array of longs that we want to sort
+     * @param longArray the array of longs that we want to sort
      */
     public static void sort(long[] longArray) {
         // Initialize helper variables
@@ -253,7 +253,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (longArray.length - 1); i++) {
+            for(int i = 0; i < (longArray.length - 1 ); i++) {
                 // If the current element is greater than the next element
                 if(longArray[i] > longArray[i + 1]) {
                     // Swap the elements
@@ -269,7 +269,7 @@ public final class Bubble extends Sort {
     /**
      * Sort the short array in ascending order using this algorithm.
      * 
-     * @param shortArray - the array of shorts that we want to sort
+     * @param shortArray the array of shorts that we want to sort
      */
     public static void sort(short[] shortArray) {
         // Initialize helper variables
@@ -282,7 +282,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (shortArray.length - 1); i++) {
+            for(int i = 0; i < (shortArray.length - 1 ); i++) {
                 // If the current element is greater than the next element
                 if(shortArray[i] > shortArray[i + 1]) {
                     // Swap the elements
@@ -298,9 +298,9 @@ public final class Bubble extends Sort {
      /**
      * Sort the array in descending order using this algorithm.
      * 
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param array - the array that we want to sort
+     * @param array the array that we want to sort
      */
     public static <E extends Comparable<E>> void sortDescending(E[] array) {
         // Initialize helper variables
@@ -313,7 +313,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (array.length - 1); i++) {
+            for(int i = 0; i < (array.length - 1 ); i++) {
                 // If the current element is less than the next element
                 if(array[i].compareTo(array[i + 1]) < 0) {
                     // Swap the elements
@@ -330,9 +330,9 @@ public final class Bubble extends Sort {
      * Sort the list in descending order using this algorithm. The run time of this algorithm depends on the 
      * implementation of the list since it has elements added and removed from it.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - the list that we want to sort
+     * @param list the list that we want to sort
      */
     public static <E extends Comparable<E>> void sortDescending(List<E> list) {
         // Initialize helper variables
@@ -361,7 +361,7 @@ public final class Bubble extends Sort {
     /**
      * Sort the int array in descending order using this algorithm.
      *
-     * @param intArray - the array of ints that we want to sort
+     * @param intArray the array of ints that we want to sort
      */
     public static void sortDescending(int[] intArray) {
         // Initialize helper variables
@@ -374,7 +374,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (intArray.length - 1); i++) {
+            for(int i = 0; i < (intArray.length - 1 ); i++) {
                 // If the current element is less than the next element
                 if(intArray[i] < intArray[i + 1]) {
                     // Swap the elements
@@ -390,7 +390,7 @@ public final class Bubble extends Sort {
     /**
      * Sort the byte array in descending order using this algorithm.
      *
-     * @param byteArray - the array of bytes that we want to sort
+     * @param byteArray the array of bytes that we want to sort
      */
     public static void sortDescending(byte[] byteArray) {
         // Initialize helper variables
@@ -403,7 +403,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (byteArray.length - 1); i++) {
+            for(int i = 0; i < (byteArray.length - 1 ); i++) {
                 // If the current element is less than the next element
                 if(byteArray[i] < byteArray[i + 1]) {
                     // Swap the elements
@@ -419,7 +419,7 @@ public final class Bubble extends Sort {
     /**
      * Sort the char array in descending order using this algorithm.
      *
-     * @param charArray - the array of chars that we want to sort
+     * @param charArray the array of chars that we want to sort
      */
     public static void sortDescending(char[] charArray) {
         // Initialize helper variables
@@ -432,7 +432,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (charArray.length - 1); i++) {
+            for(int i = 0; i < (charArray.length - 1 ); i++) {
                 // If the current element is less than the next element
                 if(charArray[i] < charArray[i + 1]) {
                     // Swap the elements
@@ -448,7 +448,7 @@ public final class Bubble extends Sort {
     /**
      * Sort the double array in descending order using this algorithm.
      *
-     * @param doubleArray - the array of double that we want to sort
+     * @param doubleArray the array of double that we want to sort
      */
     public static void sortDescending(double[] doubleArray) {
         // Initialize helper variables
@@ -461,7 +461,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (doubleArray.length - 1); i++) {
+            for(int i = 0; i < (doubleArray.length - 1 ); i++) {
                 // If the current element is less than the next element
                 if(doubleArray[i] < doubleArray[i + 1]) {
                     // Swap the elements
@@ -477,7 +477,7 @@ public final class Bubble extends Sort {
     /**
      * Sort the float array in descending order using this algorithm.
      *
-     * @param floatArray - the array of float that we want to sort
+     * @param floatArray the array of float that we want to sort
      */
     public static void sortDescending(float[] floatArray) {
         // Initialize helper variables
@@ -490,7 +490,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (floatArray.length - 1); i++) {
+            for(int i = 0; i < (floatArray.length - 1 ); i++) {
                 // If the current element is less than the next element
                 if(floatArray[i] < floatArray[i + 1]) {
                     // Swap the elements
@@ -506,7 +506,7 @@ public final class Bubble extends Sort {
     /**
      * Sort the long array in descending order using this algorithm.
      *
-     * @param longArray - the array of longs that we want to sort
+     * @param longArray the array of longs that we want to sort
      */
     public static void sortDescending(long[] longArray) {
         // Initialize helper variables
@@ -519,7 +519,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (longArray.length - 1); i++) {
+            for(int i = 0; i < (longArray.length - 1 ); i++) {
                 // If the current element is less than the next element
                 if(longArray[i] < longArray[i + 1]) {
                     // Swap the elements
@@ -535,7 +535,7 @@ public final class Bubble extends Sort {
     /**
      * Sort the short array in descending order using this algorithm.
      *
-     * @param shortArray - the array of shorts that we want to sort
+     * @param shortArray the array of shorts that we want to sort
      */
     public static void sortDescending(short[] shortArray) {
         // Initialize helper variables
@@ -548,7 +548,7 @@ public final class Bubble extends Sort {
             swapped = false;
             
             // Loop through the entire array
-            for(int i = 0; i < (shortArray.length - 1); i++) {
+            for(int i = 0; i < (shortArray.length - 1 ); i++) {
                 // If the current element is less than the next element
                 if(shortArray[i] < shortArray[i + 1]) {
                     // Swap the elements

@@ -10,8 +10,8 @@ import com.mijecu25.dsa.algorithms.sort.TestSort;
 /**
  * This is the Merge sort test class.
  * 
- * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.3
+ * @author Miguel Velez miguelvelezmj25
+ * @version 0.2.0.1
  */
 public class TestMerge extends TestSort {
 

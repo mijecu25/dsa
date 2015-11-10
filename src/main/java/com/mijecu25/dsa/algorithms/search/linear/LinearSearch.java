@@ -13,8 +13,8 @@ import com.mijecu25.dsa.algorithms.search.Search;
  * 
  * <i>Runtime: </i> O(n)
  * 
- * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.8
+ * @author Miguel Velez miguelvelezmj25
+ * @version 0.2.0.1
  */
 public final class LinearSearch extends Search {
     
@@ -27,10 +27,10 @@ public final class LinearSearch extends Search {
      * Search for the value in the array and return the index of the first occurrence from the
      * beginning of the array.
      * 
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param array - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param array array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -45,10 +45,10 @@ public final class LinearSearch extends Search {
      * implementation of the list. It is advised to use an array based implementation
      * to achieve O(n) runtime.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - list that we are searching in.
-     * @param value - value that is being searched in the list.
+     * @param list list that we are searching in.
+     * @param value value that is being searched in the list.
      * 
      * @return the index where the value is found in the list, else -1.
      */
@@ -61,8 +61,8 @@ public final class LinearSearch extends Search {
      * Search for the value in the int array and return the index of the first occurrence from the
      * beginning of the array.
      *  
-     * @param intArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param intArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -75,8 +75,8 @@ public final class LinearSearch extends Search {
      * Search for the value in the char array and return the index of the first occurrence from the
      * beginning of the array.
      *  
-     * @param charArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param charArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -89,8 +89,8 @@ public final class LinearSearch extends Search {
      * Search for the value in the byte array and return the index of the first occurrence from the
      * beginning of the array.
      *  
-     * @param byteArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param byteArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -103,8 +103,8 @@ public final class LinearSearch extends Search {
      * Search for the value in the short array and return the index of the first occurrence from the
      * beginning of the array.
      *  
-     * @param shortArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param shortArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -117,8 +117,8 @@ public final class LinearSearch extends Search {
      * Search for the value in the long array and return the index of the first occurrence from the
      * beginning of the array.
      *  
-     * @param longArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param longArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -131,8 +131,8 @@ public final class LinearSearch extends Search {
      * Search for the value in the float array and return the index of the first occurrence from the
      * beginning of the array.
      *  
-     * @param floatArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param floatArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -145,8 +145,8 @@ public final class LinearSearch extends Search {
      * Search for the value in the double array and return the index of the first occurrence from the
      * beginning of the array.
      *  
-     * @param doubleArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param doubleArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -159,10 +159,10 @@ public final class LinearSearch extends Search {
      * Search for the value in the array and return the index of the first occurrence from the
      * end of the array
      * 
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param array - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param array array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -177,10 +177,10 @@ public final class LinearSearch extends Search {
      * implementation of the list. It is advised to use an array based implementation
      * to achieve O(n) runtime.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - list that we are searching in.
-     * @param value - value that is being searched in the list.
+     * @param list list that we are searching in.
+     * @param value value that is being searched in the list.
      * 
      * @return the index where the value is found in the list, else -1.
      */
@@ -193,8 +193,8 @@ public final class LinearSearch extends Search {
      * Search for the value in the array and return the index of the first occurrence from the
      * end of the array
      *  
-     * @param intArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param intArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -207,8 +207,8 @@ public final class LinearSearch extends Search {
      * Search for the value in char array and return the index of the first occurrence from the
      * end of the array
      *  
-     * @param charArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param charArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -221,8 +221,8 @@ public final class LinearSearch extends Search {
      * Search for the value in the byte array and return the index of the first occurrence from the
      * end of the array
      *  
-     * @param byteArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param byteArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -235,8 +235,8 @@ public final class LinearSearch extends Search {
      * Search for the value in the short array and return the index of the first occurrence from the
      * end of the array
      *  
-     * @param shortArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param shortArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -249,8 +249,8 @@ public final class LinearSearch extends Search {
      * Search for the value in the long array and return the index of the first occurrence from the
      * end of the array
      *  
-     * @param longArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param longArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -263,8 +263,8 @@ public final class LinearSearch extends Search {
      * Search for the value in the float array and return the index of the first occurrence from the
      * end of the array
      *  
-     * @param floatArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param floatArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -277,8 +277,8 @@ public final class LinearSearch extends Search {
      * Search for the value in the double array and return the index of the first occurrence from the
      * end of the array
      *  
-     * @param doubleArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param doubleArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -291,11 +291,11 @@ public final class LinearSearch extends Search {
      * Search for the value in the array and return the index of the specified occurrence from the
      * beginning of the array.
      * 
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param array - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param array array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -333,9 +333,9 @@ public final class LinearSearch extends Search {
     /**
      * Search for the minimum element in the array.
      * 
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param array - array that we are searching in.
+     * @param array array that we are searching in.
      * 
      * @return the minimum element in the array.
      */
@@ -364,9 +364,9 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the index of the minimum value in the array.
 //     * 
-//     * @param <E> - the type of elements in this array.
+//     * @param <E> the type of elements in this array.
 //     * 
-//     * @param array - array that we are searching in.
+//     * @param array array that we are searching in.
 //     * 
 //     * @return the index of the minimum element in the array
 //     */
@@ -395,9 +395,9 @@ public final class LinearSearch extends Search {
     /**
      * Search for the maximum element in the array.
      *      
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param array - array that we are searching in.
+     * @param array array that we are searching in.
      * 
      * @return the maximum element in the array.
      */
@@ -426,9 +426,9 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the maximum value in the array.
 //     *
-//     * @param <E> - the type of elements in this array.
+//     * @param <E> the type of elements in this array.
 //     * 
-//     * @param array - array that we are searching in.
+//     * @param array array that we are searching in.
 //     * 
 //     * @return the index of the maximum element in the array
 //     */
@@ -460,11 +460,11 @@ public final class LinearSearch extends Search {
      * implementation of the list. It is advised to use an array based implementation
      * to achieve O(n) runtime.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - list that we are searching in.
-     * @param value - value that is being searched in the list.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param list list that we are searching in.
+     * @param value value that is being searched in the list.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the list, else -1.
      */
@@ -502,9 +502,9 @@ public final class LinearSearch extends Search {
     /**
      * Search for the minimum element in the list.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - list that we are searching in.
+     * @param list list that we are searching in.
      * 
      * @return the minimum element in the list.
      */
@@ -533,9 +533,9 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the index of the minimum value in the list.
 //     * 
-//     * @param <E> - the type of elements in this list.
+//     * @param <E> the type of elements in this list.
 //     * 
-//     * @param array - list that we are searching in.
+//     * @param array list that we are searching in.
 //     * 
 //     * @return the index of the minimum element in the list
 //     */
@@ -564,9 +564,9 @@ public final class LinearSearch extends Search {
     /**
      * Search for the maximum element in the list.
      *      
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - list that we are searching in.
+     * @param list list that we are searching in.
      * 
      * @return the maximum element in the list.
      */
@@ -595,9 +595,9 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the maximum value in the list.
 //     *
-//     * @param <E> - the type of elements in this list.
+//     * @param <E> the type of elements in this list.
 //     * 
-//     * @param array - list that we are searching in.
+//     * @param array list that we are searching in.
 //     * 
 //     * @return the index of the maximum element in the list
 //     */
@@ -627,9 +627,9 @@ public final class LinearSearch extends Search {
      * Search for the value in the int array and return the index of the specified occurrence from the
      * beginning of the array.
      *  
-     * @param intArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param intArray array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -667,7 +667,7 @@ public final class LinearSearch extends Search {
     /**
      * Search for the minimum element in the array.
      * 
-     * @param intArray - array that we are searching in.
+     * @param intArray array that we are searching in.
      * 
      * @return the minimum element in the array.
      */
@@ -696,7 +696,7 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the minimum value in the array.
 //     * 
-//     * @param intArray - array that we are searching in.
+//     * @param intArray array that we are searching in.
 //     * 
 //     * @return the index of the minimum element in the array
 //     */
@@ -725,7 +725,7 @@ public final class LinearSearch extends Search {
     /**
      * Search for the maximum element in the array.
      * 
-     * @param intArray - array that we are searching in.
+     * @param intArray array that we are searching in.
      * 
      * @return the maximum element in the array.
      */
@@ -754,7 +754,7 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the maximum value in the array.
 //     * 
-//     * @param intArray - array that we are searching in.
+//     * @param intArray array that we are searching in.
 //     * 
 //     * @return the index of the maximum element in the array
 //     */
@@ -784,9 +784,9 @@ public final class LinearSearch extends Search {
      * Search for the value in the char array and return the index of the first occurrence from the
      * beginning of the array.
      *  
-     * @param charArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param charArray array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -824,7 +824,7 @@ public final class LinearSearch extends Search {
     /**
      * Search for the minimum element in the array.
      * 
-     * @param charArray - array that we are searching in.
+     * @param charArray array that we are searching in.
      * 
      * @return the minimum element in the array.
      */
@@ -853,7 +853,7 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the minimum value in the array.
 //     * 
-//     * @param charArray - array that we are searching in.
+//     * @param charArray array that we are searching in.
 //     * 
 //     * @return the index of the minimum element in the array
 //     */
@@ -882,7 +882,7 @@ public final class LinearSearch extends Search {
     /**
      * Search for the maximum element in the array.
      * 
-     * @param charArray - array that we are searching in.
+     * @param charArray array that we are searching in.
      * 
      * @return the maximum element in the array.
      */
@@ -911,7 +911,7 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the maximum value in the array.
 //     * 
-//     * @param charArray - array that we are searching in.
+//     * @param charArray array that we are searching in.
 //     * 
 //     * @return the index of the maximum element in the array
 //     */
@@ -941,9 +941,9 @@ public final class LinearSearch extends Search {
      * Search for the value in the byte array and return the index of the first occurrence from the
      * beginning of the array.
      *  
-     * @param byteArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param byteArray array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -981,7 +981,7 @@ public final class LinearSearch extends Search {
     /**
      * Search for the minimum element in the array.
      * 
-     * @param byteArray - array that we are searching in.
+     * @param byteArray array that we are searching in.
      * 
      * @return the minimum element in the array.
      */
@@ -1010,7 +1010,7 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the minimum value in the array.
 //     * 
-//     * @param byteArray - array that we are searching in.
+//     * @param byteArray array that we are searching in.
 //     * 
 //     * @return the index of the minimum element in the array
 //     */
@@ -1039,7 +1039,7 @@ public final class LinearSearch extends Search {
     /**
      * Search for the maximum element in the array.
      * 
-     * @param byteArray - array that we are searching in.
+     * @param byteArray array that we are searching in.
      * 
      * @return the maximum element in the array.
      */
@@ -1068,7 +1068,7 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the maximum value in the array.
 //     * 
-//     * @param byteArray - array that we are searching in.
+//     * @param byteArray array that we are searching in.
 //     * 
 //     * @return the index of the maximum element in the array
 //     */
@@ -1098,9 +1098,9 @@ public final class LinearSearch extends Search {
      * Search for the value in the short array and return the index of the first occurrence from the
      * beginning of the array.
      *  
-     * @param shortArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param shortArray array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -1138,7 +1138,7 @@ public final class LinearSearch extends Search {
     /**
      * Search for the minimum element in the array.
      * 
-     * @param shortArray - array that we are searching in.
+     * @param shortArray array that we are searching in.
      * 
      * @return the minimum element in the array.
      */
@@ -1167,7 +1167,7 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the minimum value in the array.
 //     * 
-//     * @param shortArray - array that we are searching in.
+//     * @param shortArray array that we are searching in.
 //     * 
 //     * @return the index of the minimum element in the array
 //     */
@@ -1196,7 +1196,7 @@ public final class LinearSearch extends Search {
     /**
      * Search for the maximum element in the array.
      * 
-     * @param shortArray - array that we are searching in.
+     * @param shortArray array that we are searching in.
      * 
      * @return the maximum element in the array.
      */
@@ -1225,7 +1225,7 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the maximum value in the array.
 //     * 
-//     * @param shortArray - array that we are searching in.
+//     * @param shortArray array that we are searching in.
 //     * 
 //     * @return the index of the maximum element in the array
 //     */
@@ -1255,9 +1255,9 @@ public final class LinearSearch extends Search {
      * Search for the value in the long array and return the index of the first occurrence from the
      * beginning of the array.
      *  
-     * @param longArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param longArray array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -1295,7 +1295,7 @@ public final class LinearSearch extends Search {
     /**
      * Search for the minimum element in the array.
      * 
-     * @param longArray - array that we are searching in.
+     * @param longArray array that we are searching in.
      * 
      * @return the minimum element in the array.
      */
@@ -1324,7 +1324,7 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the minimum value in the array.
 //     * 
-//     * @param longArray - array that we are searching in.
+//     * @param longArray array that we are searching in.
 //     * 
 //     * @return the index of the minimum element in the array
 //     */
@@ -1353,7 +1353,7 @@ public final class LinearSearch extends Search {
     /**
      * Search for the maximum element in the array.
      * 
-     * @param longArray - array that we are searching in.
+     * @param longArray array that we are searching in.
      * 
      * @return the maximum element in the array.
      */
@@ -1382,7 +1382,7 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the maximum value in the array.
 //     * 
-//     * @param longArray - array that we are searching in.
+//     * @param longArray array that we are searching in.
 //     * 
 //     * @return the index of the maximum element in the array
 //     */
@@ -1412,9 +1412,9 @@ public final class LinearSearch extends Search {
      * Search for the value in the float array and return the index of the first occurrence from the
      * beginning of the array.
      *  
-     * @param floatArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param floatArray array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -1452,7 +1452,7 @@ public final class LinearSearch extends Search {
     /**
      * Search for the minimum element in the array.
      * 
-     * @param floatArray - array that we are searching in.
+     * @param floatArray array that we are searching in.
      * 
      * @return the minimum element in the array.
      */
@@ -1481,7 +1481,7 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the minimum value in the array.
 //     * 
-//     * @param floatArray - array that we are searching in.
+//     * @param floatArray array that we are searching in.
 //     * 
 //     * @return the index of the minimum element in the array
 //     */
@@ -1510,7 +1510,7 @@ public final class LinearSearch extends Search {
     /**
      * Search for the maximum element in the array.
      * 
-     * @param floatArray - array that we are searching in.
+     * @param floatArray array that we are searching in.
      * 
      * @return the maximum element in the array.
      */
@@ -1539,7 +1539,7 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the maximum value in the array.
 //     * 
-//     * @param floatArray - array that we are searching in.
+//     * @param floatArray array that we are searching in.
 //     * 
 //     * @return the index of the maximum element in the array
 //     */
@@ -1569,9 +1569,9 @@ public final class LinearSearch extends Search {
      * Search for the value in the double array and return the index of the first occurrence from the
      * beginning of the array.
      *  
-     * @param doubleArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param doubleArray array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -1609,7 +1609,7 @@ public final class LinearSearch extends Search {
     /**
      * Search for the minimum element in the array.
      * 
-     * @param doubleArray - array that we are searching in.
+     * @param doubleArray array that we are searching in.
      * 
      * @return the minimum element in the array.
      */
@@ -1638,7 +1638,7 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the minimum value in the array.
 //     * 
-//     * @param doubleArray - array that we are searching in.
+//     * @param doubleArray array that we are searching in.
 //     * 
 //     * @return the index of the minimum element in the array
 //     */
@@ -1667,7 +1667,7 @@ public final class LinearSearch extends Search {
     /**
      * Search for the maximum element in the array.
      * 
-     * @param doubleArray - array that we are searching in.
+     * @param doubleArray array that we are searching in.
      * 
      * @return the maximum element in the array.
      */
@@ -1696,7 +1696,7 @@ public final class LinearSearch extends Search {
 //    /**
 //     * Find the first index of the maximum value in the array.
 //     * 
-//     * @param doubleArray - array that we are searching in.
+//     * @param doubleArray array that we are searching in.
 //     * 
 //     * @return the index of the maximum element in the array
 //     */
@@ -1726,11 +1726,11 @@ public final class LinearSearch extends Search {
      * Search for the value in the array and return the index of the specified occurrence from the
      * end of the array.
      * 
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param array - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param array array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -1771,11 +1771,11 @@ public final class LinearSearch extends Search {
      * implementation of the list. It is advised to use an array based implementation
      * to achieve O(n) runtime.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - list that we are searching in.
-     * @param value - value that is being searched in the list.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param list list that we are searching in.
+     * @param value value that is being searched in the list.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the list, else -1.
      */
@@ -1814,9 +1814,9 @@ public final class LinearSearch extends Search {
      * Search for the value in the int array and return the index of the specified occurrence from the
      * end of the array.
      *  
-     * @param intArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param intArray array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -1855,9 +1855,9 @@ public final class LinearSearch extends Search {
      * Search for the value in the char array and return the index of the first occurrence from the
      * end of the array.
      *  
-     * @param charArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param charArray array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -1896,9 +1896,9 @@ public final class LinearSearch extends Search {
      * Search for the value in the byte array and return the index of the first occurrence from the
      * end of the array.
      *  
-     * @param byteArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param byteArray array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -1937,9 +1937,9 @@ public final class LinearSearch extends Search {
      * Search for the value in the short array and return the index of the first occurrence from the
      * end of the array.
      *  
-     * @param shortArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param shortArray array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -1978,9 +1978,9 @@ public final class LinearSearch extends Search {
      * Search for the value in the long array and return the index of the first occurrence from the
      * end of the array.
      *  
-     * @param longArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param longArray array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -2019,9 +2019,9 @@ public final class LinearSearch extends Search {
      * Search for the value in the float array and return the index of the first occurrence from the
      * end of the array.
      *  
-     * @param floatArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param floatArray array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -2060,9 +2060,9 @@ public final class LinearSearch extends Search {
      * Search for the value in the double array and return the index of the first occurrence from the
      * end of the array.
      *  
-     * @param doubleArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
-     * @param occurrence - number of times we have seen the value before returning the index.
+     * @param doubleArray array that we are searching in.
+     * @param value value that is being searched in the array.
+     * @param occurrence number of times we have seen the value before returning the index.
      * 
      * @return the index where the value is found in the array, else -1.
      */

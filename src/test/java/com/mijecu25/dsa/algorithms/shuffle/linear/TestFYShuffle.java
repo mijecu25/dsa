@@ -12,8 +12,8 @@ import com.mijecu25.dsa.algorithms.shuffle.TestShuffle;
 /**
  * This is the FYShuffle test class.
  * 
- * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.9
+ * @author Miguel Velez miguelvelezmj25
+ * @version 0.2.0.1
  */
 public class TestFYShuffle extends TestShuffle {
 

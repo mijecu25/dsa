@@ -16,8 +16,8 @@ package com.mijecu25.dsa.algorithms.swap;
  * 
  * <i>Runtime: </i> O(1)
  * 
- * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.7
+ * @author Miguel Velez miguelvelezmj25
+ * @version 0.2.0.1
  */
 public final class XORSwap extends Swap {
 	
@@ -29,10 +29,10 @@ public final class XORSwap extends Swap {
 	/**
      * Swap the elements of two long arrays at the specified positions.
 	 * 
-	 * @param intArray1 - one of the arrays that will have one of its values swapped.
-	 * @param array1Index - index of the first array that will be swapped.
-	 * @param intArray2 - other array that will have one of its values swapped.
-	 * @param array2Index - index of the second array that will be swapped.
+	 * @param intArray1 one of the arrays that will have one of its values swapped.
+	 * @param array1Index index of the first array that will be swapped.
+	 * @param intArray2 other array that will have one of its values swapped.
+	 * @param array2Index index of the second array that will be swapped.
 	 */
 	public static void swap(int[] intArray1, int array1Index, int[] intArray2, int array2Index) {
 		// If the values are not the same
@@ -47,9 +47,9 @@ public final class XORSwap extends Swap {
 	/**
 	 * Swap the elements of two int arrays at the same position
 	 * 
-	 * @param intArray1 - one of the arrays that will have one of its values swapped.
-	 * @param intArray2 - other array that will have one of its values swapped.
-	 * @param index - index of the arrays that will have their values swapped.
+	 * @param intArray1 one of the arrays that will have one of its values swapped.
+	 * @param intArray2 other array that will have one of its values swapped.
+	 * @param index index of the arrays that will have their values swapped.
 	 */
 	public static void swap(int[] intArray1, int[] intArray2, int index) {
 		// Call the other method by passing the index twice
@@ -59,9 +59,9 @@ public final class XORSwap extends Swap {
     /**
      * Swap two elements of an int array at the specified positions
      *
-     * @param intArray - array that will have two of its values swapped.
-     * @param index1 - one of the indexes of the array.
-     * @param index2 - other index of the array.
+     * @param intArray array that will have two of its values swapped.
+     * @param index1 one of the indexes of the array.
+     * @param index2 other index of the array.
      */
     public static void swap(int[] intArray, int index1, int index2) {
         // Call the other method by passing the array twice
@@ -72,8 +72,8 @@ public final class XORSwap extends Swap {
 	 * Helper method that swaps all the elements of the arrays. This method runs in 
 	 * O(<code>Math.min(array1.length, array2.length</code>) time.
 	 * 
-	 * @param intArray1 - one array that will have its values swapped.
-	 * @param intArray2 - other array that will have its values swapped. 
+	 * @param intArray1 one array that will have its values swapped.
+	 * @param intArray2 other array that will have its values swapped. 
 	 */
 	public static void swap(int[] intArray1, int[] intArray2) {		
 	    // Get the minimum length of both arrays
@@ -89,10 +89,10 @@ public final class XORSwap extends Swap {
 	/**
      * Swap the elements of two long arrays at the specified positions.
      * 
-     * @param longArray1 - one of the arrays that will have one of its values swapped.
-     * @param array1Index - index of the first array that will be swapped.
-     * @param longArray2 - other array that will have one of its values swapped.
-     * @param array2Index - index of the second array that will be swapped.
+     * @param longArray1 one of the arrays that will have one of its values swapped.
+     * @param array1Index index of the first array that will be swapped.
+     * @param longArray2 other array that will have one of its values swapped.
+     * @param array2Index index of the second array that will be swapped.
      */
     public static void swap(long[] longArray1, int array1Index, long[] longArray2, int array2Index) {
         // If the values are not the same
@@ -107,9 +107,9 @@ public final class XORSwap extends Swap {
     /**
      * Swap the elements of two long arrays at the same position
      * 
-     * @param longArray1 - one of the arrays that will have one of its values swapped.
-     * @param longArray2 - other array that will have one of its values swapped.
-     * @param index - index of the arrays that will have their values swapped.
+     * @param longArray1 one of the arrays that will have one of its values swapped.
+     * @param longArray2 other array that will have one of its values swapped.
+     * @param index index of the arrays that will have their values swapped.
      */
     public static void swap(long[] longArray1, long[] longArray2, int index) {
         // Call the other method by passing the index twice
@@ -119,9 +119,9 @@ public final class XORSwap extends Swap {
     /**
      * Swap two elements of a long array at the specified positions
      *
-     * @param longArray - array that will have two of its values swapped.
-     * @param index1 - one of the indexes of the array.
-     * @param index2 - other index of the array.
+     * @param longArray array that will have two of its values swapped.
+     * @param index1 one of the indexes of the array.
+     * @param index2 other index of the array.
      */
     public static void swap(long[] longArray, int index1, int index2) {
         // Call the other method by passing the array twice
@@ -132,8 +132,8 @@ public final class XORSwap extends Swap {
      * Helper method that swaps all the elements of the array. This method runs in 
      * O(<code>Math.min(array1.length, array2.length</code>) time.
      * 
-     * @param longArray1 - one array that will have its values swapped.
-     * @param longArray2 - other array that will have its values swapped. 
+     * @param longArray1 one array that will have its values swapped.
+     * @param longArray2 other array that will have its values swapped. 
      */
     public static void swap(long[] longArray1, long[] longArray2) {     
         // Get the minimum length of both arrays
@@ -149,10 +149,10 @@ public final class XORSwap extends Swap {
     /**
      * Swap the elements of two char arrays at the specified positions.
      * 
-     * @param charArray1 - one of the arrays that will have one of its values swapped.
-     * @param array1Index - index of the first array that will be swapped.
-     * @param charArray2 - other array that will have one of its values swapped.
-     * @param array2Index - index of the second array that will be swapped.
+     * @param charArray1 one of the arrays that will have one of its values swapped.
+     * @param array1Index index of the first array that will be swapped.
+     * @param charArray2 other array that will have one of its values swapped.
+     * @param array2Index index of the second array that will be swapped.
      */
     public static void swap(char[] charArray1, int array1Index, char[] charArray2, int array2Index) {
         // If the values are not the same
@@ -167,9 +167,9 @@ public final class XORSwap extends Swap {
     /**
      * Swap the elements of two char arrays at the same position
      * 
-     * @param charArray1 - one of the arrays that will have one of its values swapped.
-     * @param charArray2 - other array that will have one of its values swapped.
-     * @param index - index of the arrays that will have their values swapped.
+     * @param charArray1 one of the arrays that will have one of its values swapped.
+     * @param charArray2 other array that will have one of its values swapped.
+     * @param index index of the arrays that will have their values swapped.
      */
     public static void swap(char[] charArray1, char[] charArray2, int index) {
         // Call the other method by passing the index twice
@@ -179,9 +179,9 @@ public final class XORSwap extends Swap {
     /**
      * Swap two elements of a char array at the specified positions
      *
-     * @param charArray - array that will have two of its values swapped.
-     * @param index1 - one of the indexes of the array.
-     * @param index2 - other index of the array.
+     * @param charArray array that will have two of its values swapped.
+     * @param index1 one of the indexes of the array.
+     * @param index2 other index of the array.
      */
     public static void swap(char[] charArray, int index1, int index2) {
         // Call the other method by passing the array twice
@@ -192,8 +192,8 @@ public final class XORSwap extends Swap {
      * Helper method that swaps all the elements of the array. This method runs in 
      * O(<code>Math.min(array1.length, array2.length</code>) time.
      * 
-     * @param charArray1 - one array that will have its values swapped.
-     * @param charArray2 - other array that will have its values swapped. 
+     * @param charArray1 one array that will have its values swapped.
+     * @param charArray2 other array that will have its values swapped. 
      */
     public static void swap(char[] charArray1, char[] charArray2) {     
         // Get the minimum length of both arrays
@@ -209,10 +209,10 @@ public final class XORSwap extends Swap {
     /**
      * Swap the elements of two byte arrays at the specified positions.
      * 
-     * @param byteArray1 - one of the arrays that will have one of its values swapped.
-     * @param array1Index - index of the first array that will be swapped.
-     * @param byteArray2 - other array that will have one of its values swapped.
-     * @param array2Index - index of the second array that will be swapped.
+     * @param byteArray1 one of the arrays that will have one of its values swapped.
+     * @param array1Index index of the first array that will be swapped.
+     * @param byteArray2 other array that will have one of its values swapped.
+     * @param array2Index index of the second array that will be swapped.
      */
     public static void swap(byte[] byteArray1, int array1Index, byte[] byteArray2, int array2Index) {
         // If the values are not the same
@@ -227,9 +227,9 @@ public final class XORSwap extends Swap {
     /**
      * Swap the elements of two byte arrays at the same position
      * 
-     * @param byteArray1 - one of the arrays that will have one of its values swapped.
-     * @param byteArray2 - other array that will have one of its values swapped.
-     * @param index - index of the arrays that will have their values swapped.
+     * @param byteArray1 one of the arrays that will have one of its values swapped.
+     * @param byteArray2 other array that will have one of its values swapped.
+     * @param index index of the arrays that will have their values swapped.
      */
     public static void swap(byte[] byteArray1, byte[] byteArray2, int index) {
         // Call the other method by passing the index twice
@@ -239,9 +239,9 @@ public final class XORSwap extends Swap {
     /**
      * Swap two elements of a byte array at the specified positions
      *
-     * @param byteArray - array that will have two of its values swapped.
-     * @param index1 - one of the indexes of the array.
-     * @param index2 - other index of the array.
+     * @param byteArray array that will have two of its values swapped.
+     * @param index1 one of the indexes of the array.
+     * @param index2 other index of the array.
      */
     public static void swap(byte[] byteArray, int index1, int index2) {
         // Call the other method by passing the array twice
@@ -252,8 +252,8 @@ public final class XORSwap extends Swap {
      * Helper method that swaps all the elements of the array. This method runs in 
      * O(<code>Math.min(array1.length, array2.length</code>) time.
      * 
-     * @param byteArray1 - one array that will have its values swapped.
-     * @param byteArray2 - other array that will have its values swapped. 
+     * @param byteArray1 one array that will have its values swapped.
+     * @param byteArray2 other array that will have its values swapped. 
      */
     public static void swap(byte[] byteArray1, byte[] byteArray2) {     
         // Get the minimum length of both arrays
@@ -269,10 +269,10 @@ public final class XORSwap extends Swap {
     /**
      * Swap the elements of two long arrays at the specified positions.
      * 
-     * @param shortArray1 - one of the arrays that will have one of its values swapped.
-     * @param array1Index - index of the first array that will be swapped.
-     * @param shortArray2 - other array that will have one of its values swapped.
-     * @param array2Index - index of the second array that will be swapped.
+     * @param shortArray1 one of the arrays that will have one of its values swapped.
+     * @param array1Index index of the first array that will be swapped.
+     * @param shortArray2 other array that will have one of its values swapped.
+     * @param array2Index index of the second array that will be swapped.
      */
     public static void swap(short[] shortArray1, int array1Index, short[] shortArray2, int array2Index) {
         // If the values are not the same
@@ -287,9 +287,9 @@ public final class XORSwap extends Swap {
     /**
      * Swap the elements of short long arrays at the same position
      * 
-     * @param shortArray1 - one of the arrays that will have one of its values swapped.
-     * @param shortArray2 - other array that will have one of its values swapped.
-     * @param index - index of the arrays that will have their values swapped.
+     * @param shortArray1 one of the arrays that will have one of its values swapped.
+     * @param shortArray2 other array that will have one of its values swapped.
+     * @param index index of the arrays that will have their values swapped.
      */
     public static void swap(short[] shortArray1, short[] shortArray2, int index) {
         // Call the other method by passing the index twice
@@ -299,9 +299,9 @@ public final class XORSwap extends Swap {
     /**
      * Swap two elements of a short array at the specified positions
      *
-     * @param shortArray - array that will have two of its values swapped.
-     * @param index1 - one of the indexes of the array.
-     * @param index2 - other index of the array.
+     * @param shortArray array that will have two of its values swapped.
+     * @param index1 one of the indexes of the array.
+     * @param index2 other index of the array.
      */
     public static void swap(short[] shortArray, int index1, int index2) {
         // Call the other method by passing the array twice
@@ -312,8 +312,8 @@ public final class XORSwap extends Swap {
      * Helper method that swaps all the elements of the array. This method runs in 
      * O(<code>Math.min(array1.length, array2.length</code>) time.
      * 
-     * @param shortArray1 - one array that will have its values swapped.
-     * @param shortArray2 - other array that will have its values swapped. 
+     * @param shortArray1 one array that will have its values swapped.
+     * @param shortArray2 other array that will have its values swapped. 
      */
     public static void swap(short[] shortArray1, short[] shortArray2) {     
         // Get the minimum length of both arrays

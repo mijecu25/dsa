@@ -10,8 +10,8 @@ import com.mijecu25.dsa.algorithms.sort.TestSort;
 /**
  * This is the Bogosort test class.
  * 
- * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.7
+ * @author Miguel Velez miguelvelezmj25
+ * @version 0.2.0.1
  */
 public class TestBogosort extends TestSort {
 		

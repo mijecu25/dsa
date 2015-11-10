@@ -24,8 +24,8 @@ import com.mijecu25.dsa.algorithms.search.Search;
  * 
  * <i>Runtime: </i> O(log(n))
  * 
- * @author Miguel Velez - miguelvelezmj25
- * @version 0.1.3.3
+ * @author Miguel Velez miguelvelezmj25
+ * @version 0.2.0.1
  */
 public final class BinarySearch extends Search {
       
@@ -37,10 +37,10 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the sorted sorted array and return the index.
      * 
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param array - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param array array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -64,7 +64,7 @@ public final class BinarySearch extends Search {
             // If the value is less than the current value
             if(value.compareTo(array[middle]) < 0) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
@@ -82,10 +82,10 @@ public final class BinarySearch extends Search {
      * implementation of the list. It is advised to use an array based implementation
      * to achieve O(log (n)) runtime.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - list that we are searching in.
-     * @param value - value that is being searched in the list.
+     * @param list list that we are searching in.
+     * @param value value that is being searched in the list.
      * 
      * @return the index where the value is found in the list, else -1.
      */
@@ -109,7 +109,7 @@ public final class BinarySearch extends Search {
             // If the value is less than the current value
             if(value.compareTo(list.get(middle)) < 0) {
                 // Search on the left half of the list
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the list
@@ -125,8 +125,8 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the sorted int array and return the index.
      *  
-     * @param intArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param intArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -150,7 +150,7 @@ public final class BinarySearch extends Search {
             // If the value is less than the current value
             if(value < intArray[middle]) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
@@ -166,8 +166,8 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the sorted char array and return the index.
      *  
-     * @param charArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param charArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -191,7 +191,7 @@ public final class BinarySearch extends Search {
             // If the value is less than the current value
             if(value < charArray[middle]) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
@@ -207,8 +207,8 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the sorted byte array and return the index.
      *  
-     * @param byteArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param byteArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -232,7 +232,7 @@ public final class BinarySearch extends Search {
             // If the value is less than the current value
             if(value < byteArray[middle]) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
@@ -248,8 +248,8 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the sorted short array and return the index.
      *  
-     * @param shortArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param shortArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -273,7 +273,7 @@ public final class BinarySearch extends Search {
             // If the value is less than the current value
             if(value < shortArray[middle]) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
@@ -289,8 +289,8 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the sorted long array and return the index.
      *  
-     * @param longArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param longArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -314,7 +314,7 @@ public final class BinarySearch extends Search {
             // If the value is less than the current value
             if(value < longArray[middle]) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
@@ -330,8 +330,8 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the sorted float array and return the index.
      *  
-     * @param floatArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param floatArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -355,7 +355,7 @@ public final class BinarySearch extends Search {
             // If the value is less than the current value
             if(value < floatArray[middle]) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
@@ -371,8 +371,8 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the sorted double array and return the index.
      *  
-     * @param doubleArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param doubleArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -396,7 +396,7 @@ public final class BinarySearch extends Search {
             // If the value is less than the current value
             if(value < doubleArray[middle]) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
@@ -412,10 +412,10 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the reverse sorted sorted array and return the index.
      * 
-     * @param <E> - the type of elements in this array.
+     * @param <E> the type of elements in this array.
      * 
-     * @param array - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param array array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -439,7 +439,7 @@ public final class BinarySearch extends Search {
             // If the value is greater than the current value
             if(value.compareTo(array[middle]) > 0) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
@@ -457,10 +457,10 @@ public final class BinarySearch extends Search {
      * implementation of the list. It is advised to use an array based implementation
      * to achieve O(log (n)) runtime.
      * 
-     * @param <E> - the type of elements in this list.
+     * @param <E> the type of elements in this list.
      * 
-     * @param list - list that we are searching in.
-     * @param value - value that is being searched in the list.
+     * @param list list that we are searching in.
+     * @param value value that is being searched in the list.
      * 
      * @return the index where the value is found in the list, else -1.
      */
@@ -484,7 +484,7 @@ public final class BinarySearch extends Search {
             // If the value is greater than the current value
             if(value.compareTo(list.get(middle)) > 0) {
                 // Search on the left half of the list
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the list
@@ -500,8 +500,8 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the reverse sorted int array and return the index.
      *  
-     * @param intArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param intArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -525,7 +525,7 @@ public final class BinarySearch extends Search {
             // If the value is greater than the current value
             if(value > intArray[middle]) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
@@ -541,8 +541,8 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the reverse sorted char array and return the index.
      *  
-     * @param charArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param charArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -566,7 +566,7 @@ public final class BinarySearch extends Search {
             // If the value is greater than the current value
             if(value > charArray[middle]) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
@@ -582,8 +582,8 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the reverse sorted byte array and return the index.
      *  
-     * @param byteArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param byteArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -607,7 +607,7 @@ public final class BinarySearch extends Search {
             // If the value is greater than the current value
             if(value > byteArray[middle]) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
@@ -623,8 +623,8 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the reverse sorted short array and return the index.
      *  
-     * @param shortArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param shortArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -648,7 +648,7 @@ public final class BinarySearch extends Search {
             // If the value is greater than the current value
             if(value > shortArray[middle]) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
@@ -664,8 +664,8 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the reverse sorted long array and return the index.
      *  
-     * @param longArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param longArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -689,7 +689,7 @@ public final class BinarySearch extends Search {
             // If the value is greater than the current value
             if(value > longArray[middle]) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
@@ -705,8 +705,8 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the reverse sorted float array and return the index.
      *  
-     * @param floatArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param floatArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -730,7 +730,7 @@ public final class BinarySearch extends Search {
             // If the value is greater than the current value
             if(value > floatArray[middle]) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
@@ -746,8 +746,8 @@ public final class BinarySearch extends Search {
     /**
      * Search for the value in the reverse sorted double array and return the index.
      *  
-     * @param doubleArray - array that we are searching in.
-     * @param value - value that is being searched in the array.
+     * @param doubleArray array that we are searching in.
+     * @param value value that is being searched in the array.
      * 
      * @return the index where the value is found in the array, else -1.
      */
@@ -771,7 +771,7 @@ public final class BinarySearch extends Search {
             // If the value is greater than the current value
             if(value > doubleArray[middle]) {
                 // Search on the left half of the array
-                end = middle - 1;
+                end = middle - 1 ;
             }
             else {
                 // Search on the right half of the array
