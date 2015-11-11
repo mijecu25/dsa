@@ -13,8 +13,8 @@ import com.mijecu25.dsa.algorithms.search.Search;
  * 
  * <i>Runtime: </i> O(n)
  * 
- * @author Miguel Velez miguelvelezmj25
- * @version 0.2.0.1
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.2.0.2
  */
 public final class LinearSearch extends Search {
     

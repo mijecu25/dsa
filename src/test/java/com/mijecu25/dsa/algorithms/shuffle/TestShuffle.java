@@ -7,8 +7,8 @@ import com.mijecu25.dsa.algorithms.TestAlgorithms;
 /**
  * Test for Shuffle class.
  * 
- * @author Miguel Velez miguelvelezmj25
- * @version 0.2.0.1
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.2.0.2
  */
 public class TestShuffle extends TestAlgorithms {
         

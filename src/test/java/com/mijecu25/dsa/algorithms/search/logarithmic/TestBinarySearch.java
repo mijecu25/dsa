@@ -11,8 +11,8 @@ import org.junit.Assert;
 /**
  * Test for BinarySearch class.
  * 
- * @author Miguel Velez miguelvelezmj25
- * @version 0.2.0.1
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.2.0.2
  */
 public class TestBinarySearch extends TestSearch {
 

@@ -11,8 +11,8 @@ import org.junit.Assert;
 /**
  * Test for LinearSearch class.
  * 
- * @author Miguel Velez miguelvelezmj25
- * @version 0.2.0.1
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.2.0.2
  */
 public class TestLinearSearch extends TestSearch {
 

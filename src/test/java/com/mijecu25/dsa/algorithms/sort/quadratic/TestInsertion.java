@@ -10,8 +10,8 @@ import com.mijecu25.dsa.algorithms.sort.TestSort;
 /**
  * This is the Insertion sort test class.
  * 
- * @author Miguel Velez miguelvelezmj25
- * @version 0.2.0.1
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.2.0.2
  */
 public class TestInsertion extends TestSort {
 		

@@ -16,8 +16,8 @@ package com.mijecu25.dsa.algorithms.swap;
  * 
  * <i>Runtime: </i> O(1)
  * 
- * @author Miguel Velez miguelvelezmj25
- * @version 0.2.0.1
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.2.0.2
  */
 public final class XORSwap extends Swap {
 	

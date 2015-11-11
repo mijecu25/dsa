@@ -18,8 +18,8 @@ import com.mijecu25.dsa.algorithms.sort.Sort;
  * <br>
  * <i>Average case performance: </i> O(n<sup>2</sup>)
  * 
- * @author Miguel Velez miguelvelezmj25
- * @version 0.2.0.1
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.2.0.2
  */
 public final class Insertion extends Sort {
 

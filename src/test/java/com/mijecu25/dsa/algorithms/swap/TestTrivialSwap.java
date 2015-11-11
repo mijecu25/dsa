@@ -10,8 +10,8 @@ import org.junit.Test;
 /**
  * Test for TrivialSwap class.
  * 
- * @author Miguel Velez miguelvelezmj25
- * @version 0.2.0.1
+ * @author Miguel Velez - miguelvelezmj25
+ * @version 0.2.0.2
  */
 public class TestTrivialSwap extends TestSwap {
 	
