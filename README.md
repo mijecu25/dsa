@@ -8,9 +8,7 @@
 
 Implementation of data structures and algorithms in Java
 
-=================
-
-###License
+## License
 
 The MIT License (MIT)
 
