@@ -6,7 +6,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mijecu25/dsa/master/LICENSE)
 [![docs-badge](https://img.shields.io/badge/API-docs-blue.svg)](http://www.mijecu25.com/software/dsa/)
 
-Implementation of data structures and algorithms in Java
+Java library of data structures and algorithms.
 
 ## License
 
