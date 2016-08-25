@@ -14,7 +14,6 @@ import com.mijecu25.dsa.algorithms.sort.TestSort;
  * @version 0.2.0.2
  */
 public class TestMerge extends TestSort {
-
     @Before
     public void initialize() { 
         super.initialize();
@@ -25,10 +24,8 @@ public class TestMerge extends TestSort {
      */
     @Test
     public void testMerge() {
-        // Sort the array using Merge
         Merge.sort(this.intArray1);
         
-        // Assert that the array is sorted
         Assert.assertTrue(Sort.isSorted(this.intArray1));
     }
     
@@ -37,10 +34,8 @@ public class TestMerge extends TestSort {
      */
     @Test
     public void testMergeDescending() {
-        // Sort the array using Merge
         Merge.sortDescending(this.intArray1);
         
-        // Assert that the array is sorted
         Assert.assertTrue(Sort.isReverseSorted(this.intArray1));
     }
     
@@ -49,10 +44,8 @@ public class TestMerge extends TestSort {
      */
     @Test
     public void testMerge2() {
-        // Sort the array using Merge
         Merge.sort(this.integerArray1);
         
-        // Assert that the array is sorted
         Assert.assertTrue(Sort.isSorted(this.integerArray1));
     }
     
@@ -61,10 +54,8 @@ public class TestMerge extends TestSort {
      */
     @Test
     public void testMergeDescending2() {
-        // Sort the array using Merge
         Merge.sortDescending(this.integerArray1);
         
-        // Assert that the array is sorted
         Assert.assertTrue(Sort.isReverseSorted(this.integerArray1));
     }  
     
@@ -73,10 +64,8 @@ public class TestMerge extends TestSort {
      */
     @Test
     public void testMerge3() {
-        // Sort the list using Merge
         Merge.sort(this.list1);
         
-        // Assert that the list is sorted
         Assert.assertTrue(Sort.isSorted(this.list1));
     }
     
@@ -85,10 +74,8 @@ public class TestMerge extends TestSort {
      */
     @Test
     public void testMergeDescending3() {
-        // Sort the list using Merge
         Merge.sortDescending(this.list1);
         
-        // Assert that the list is sorted
         Assert.assertTrue(Sort.isReverseSorted(this.list1));
     }
     

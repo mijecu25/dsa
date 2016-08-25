@@ -35,7 +35,6 @@ public final class XORSwap extends Swap {
 	 * @param array2Index index of the second array that will be swapped.
 	 */
 	public static void swap(int[] intArray1, int array1Index, int[] intArray2, int array2Index) {
-		// If the values are not the same
 		if(intArray1[array1Index] != intArray2[array2Index]) {
 			intArray1[array1Index] = intArray1[array1Index] ^ intArray2[array2Index];
 			intArray2[array2Index] = intArray1[array1Index] ^ intArray2[array2Index];
@@ -52,10 +51,8 @@ public final class XORSwap extends Swap {
 	 * @param index index of the arrays that will have their values swapped.
 	 */
 	public static void swap(int[] intArray1, int[] intArray2, int index) {
-		// Call the other method by passing the index twice
 		XORSwap.swap(intArray1, index, intArray2, index);
 	}
-
     /**
      * Swap two elements of an int array at the specified positions
      *
@@ -64,10 +61,8 @@ public final class XORSwap extends Swap {
      * @param index2 other index of the array.
      */
     public static void swap(int[] intArray, int index1, int index2) {
-        // Call the other method by passing the array twice
         XORSwap.swap(intArray, index1, intArray, index2);
     }
-
 	/**
 	 * Helper method that swaps all the elements of the arrays. This method runs in 
 	 * O(<code>Math.min(array1.length, array2.length</code>) time.
@@ -76,12 +71,9 @@ public final class XORSwap extends Swap {
 	 * @param intArray2 other array that will have its values swapped. 
 	 */
 	public static void swap(int[] intArray1, int[] intArray2) {		
-	    // Get the minimum length of both arrays
 	    int minLength = Math.min(intArray1.length, intArray2.length);
 	    
-		// Loop through the values of the array
 		for(int i = 0; i < minLength; i++) {
-			// Call the method that swaps the same index
 			XORSwap.swap(intArray1, intArray2, i);
 		}
 	}
@@ -95,7 +87,6 @@ public final class XORSwap extends Swap {
      * @param array2Index index of the second array that will be swapped.
      */
     public static void swap(long[] longArray1, int array1Index, long[] longArray2, int array2Index) {
-        // If the values are not the same
         if(longArray1[array1Index] != longArray2[array2Index]) {
             longArray1[array1Index] = longArray1[array1Index] ^ longArray2[array2Index];
             longArray2[array2Index] = longArray1[array1Index] ^ longArray2[array2Index];
@@ -112,10 +103,8 @@ public final class XORSwap extends Swap {
      * @param index index of the arrays that will have their values swapped.
      */
     public static void swap(long[] longArray1, long[] longArray2, int index) {
-        // Call the other method by passing the index twice
         XORSwap.swap(longArray1, index, longArray2, index);
     }
-
     /**
      * Swap two elements of a long array at the specified positions
      *
@@ -124,7 +113,6 @@ public final class XORSwap extends Swap {
      * @param index2 other index of the array.
      */
     public static void swap(long[] longArray, int index1, int index2) {
-        // Call the other method by passing the array twice
         XORSwap.swap(longArray, index1, longArray, index2);
     }
     
@@ -136,12 +124,9 @@ public final class XORSwap extends Swap {
      * @param longArray2 other array that will have its values swapped. 
      */
     public static void swap(long[] longArray1, long[] longArray2) {     
-        // Get the minimum length of both arrays
         int minLength = Math.min(longArray1.length, longArray2.length);
         
-        // Loop through the values of the array
         for(int i = 0; i < minLength; i++) {
-            // Call the method that swaps the same index
             XORSwap.swap(longArray1, longArray2, i);
         }
     }
@@ -155,7 +140,6 @@ public final class XORSwap extends Swap {
      * @param array2Index index of the second array that will be swapped.
      */
     public static void swap(char[] charArray1, int array1Index, char[] charArray2, int array2Index) {
-        // If the values are not the same
         if(charArray1[array1Index] != charArray2[array2Index]) {
             charArray1[array1Index] = (char) (charArray1[array1Index] ^ charArray2[array2Index]);
             charArray2[array2Index] = (char) (charArray1[array1Index] ^ charArray2[array2Index]);
@@ -172,10 +156,8 @@ public final class XORSwap extends Swap {
      * @param index index of the arrays that will have their values swapped.
      */
     public static void swap(char[] charArray1, char[] charArray2, int index) {
-        // Call the other method by passing the index twice
         XORSwap.swap(charArray1, index, charArray2, index);
     }
-
     /**
      * Swap two elements of a char array at the specified positions
      *
@@ -184,7 +166,6 @@ public final class XORSwap extends Swap {
      * @param index2 other index of the array.
      */
     public static void swap(char[] charArray, int index1, int index2) {
-        // Call the other method by passing the array twice
         XORSwap.swap(charArray, index1, charArray, index2);
     }
     
@@ -196,12 +177,9 @@ public final class XORSwap extends Swap {
      * @param charArray2 other array that will have its values swapped. 
      */
     public static void swap(char[] charArray1, char[] charArray2) {     
-        // Get the minimum length of both arrays
         int minLength = Math.min(charArray1.length, charArray2.length);
         
-        // Loop through the values of the array
         for(int i = 0; i < minLength; i++) {
-            // Call the method that swaps the same index
             XORSwap.swap(charArray1, charArray2, i);
         }
     }
@@ -215,7 +193,6 @@ public final class XORSwap extends Swap {
      * @param array2Index index of the second array that will be swapped.
      */
     public static void swap(byte[] byteArray1, int array1Index, byte[] byteArray2, int array2Index) {
-        // If the values are not the same
         if(byteArray1[array1Index] != byteArray2[array2Index]) {
             byteArray1[array1Index] = (byte) (byteArray1[array1Index] ^ byteArray2[array2Index]);
             byteArray2[array2Index] = (byte) (byteArray1[array1Index] ^ byteArray2[array2Index]);
@@ -232,10 +209,8 @@ public final class XORSwap extends Swap {
      * @param index index of the arrays that will have their values swapped.
      */
     public static void swap(byte[] byteArray1, byte[] byteArray2, int index) {
-        // Call the other method by passing the index twice
         XORSwap.swap(byteArray1, index, byteArray2, index);
     }
-
     /**
      * Swap two elements of a byte array at the specified positions
      *
@@ -244,7 +219,6 @@ public final class XORSwap extends Swap {
      * @param index2 other index of the array.
      */
     public static void swap(byte[] byteArray, int index1, int index2) {
-        // Call the other method by passing the array twice
         XORSwap.swap(byteArray, index1, byteArray, index2);
     }
     
@@ -256,12 +230,9 @@ public final class XORSwap extends Swap {
      * @param byteArray2 other array that will have its values swapped. 
      */
     public static void swap(byte[] byteArray1, byte[] byteArray2) {     
-        // Get the minimum length of both arrays
         int minLength = Math.min(byteArray1.length, byteArray2.length);
         
-        // Loop through the values of the array
         for(int i = 0; i < minLength; i++) {
-            // Call the method that swaps the same index
             XORSwap.swap(byteArray1, byteArray2, i);
         }
     }
@@ -275,7 +246,6 @@ public final class XORSwap extends Swap {
      * @param array2Index index of the second array that will be swapped.
      */
     public static void swap(short[] shortArray1, int array1Index, short[] shortArray2, int array2Index) {
-        // If the values are not the same
         if(shortArray1[array1Index] != shortArray2[array2Index]) {
             shortArray1[array1Index] = (short) (shortArray1[array1Index] ^ shortArray2[array2Index]);
             shortArray2[array2Index] = (short) (shortArray1[array1Index] ^ shortArray2[array2Index]);
@@ -292,10 +262,8 @@ public final class XORSwap extends Swap {
      * @param index index of the arrays that will have their values swapped.
      */
     public static void swap(short[] shortArray1, short[] shortArray2, int index) {
-        // Call the other method by passing the index twice
         XORSwap.swap(shortArray1, index, shortArray2, index);
     }
-
     /**
      * Swap two elements of a short array at the specified positions
      *
@@ -304,7 +272,6 @@ public final class XORSwap extends Swap {
      * @param index2 other index of the array.
      */
     public static void swap(short[] shortArray, int index1, int index2) {
-        // Call the other method by passing the array twice
         XORSwap.swap(shortArray, index1, shortArray, index2);
     }
     
@@ -316,12 +283,9 @@ public final class XORSwap extends Swap {
      * @param shortArray2 other array that will have its values swapped. 
      */
     public static void swap(short[] shortArray1, short[] shortArray2) {     
-        // Get the minimum length of both arrays
         int minLength = Math.min(shortArray1.length, shortArray2.length);
         
-        // Loop through the values of the array
         for(int i = 0; i < minLength; i++) {
-            // Call the method that swaps the same index
             XORSwap.swap(shortArray1, shortArray2, i);
         }
     }

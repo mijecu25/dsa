@@ -26,18 +26,13 @@ public abstract class Sort {
      * @return <i>true</i> if the array is sorted, else <i>false</i>.
      */
     public static <E extends Comparable<E>> boolean isSorted(E[] array) {
-        // Loop through all the elements in the array
         for(int i = 0; i < array.length - 1 ; i++) { 
-            // If the current element is greater than the next element      
             if(array[i].compareTo(array[i + 1]) > 0) {
-                // The array is not sorted
                 return false;
             }
             
         }
-        
-        // If we loop through the entire array without returning, it means
-        // that the array is sorted
+		
         return true;
     }
     
@@ -56,18 +51,13 @@ public abstract class Sort {
      * @return <i>true</i> if the list is sorted, else <i>false</i>.
      */
     public static <E extends Comparable<E>> boolean isSorted(List<E> list) {
-        // Loop through all the elements in the list
         for(int i = 0; i < list.size() - 1; i++) {           
-            // If the current element is greater than the next element      
             if(list.get(i).compareTo(list.get(i + 1)) > 0) {
-                // The list is not sorted
                 return false;
             }
             
         }
         
-        // If we loop through the entire list without returning, it means
-        // that the list is sorted
         return true;
     }
     
@@ -85,18 +75,13 @@ public abstract class Sort {
 	 * @return <i>true</i> if the integer array is sorted, else <i>false</i>.
 	 */
 	public static boolean isSorted(int[] intArray) {
-		// Loop through all the elements in the array
 		for(int i = 0; i < intArray.length - 1 ; i++) {			
-			// If the current element is greater than the next element		
 			if(intArray[i] > intArray [i + 1]) {
-				// The array is not sorted
 				return false;
 			}
 			
 		}
 		
-		// If we loop through the entire array without returning, it means
-		// that the array is sorted
 		return true;
 	}
 	
@@ -115,18 +100,13 @@ public abstract class Sort {
      * @return <i>true</i> if the array is reverse sorted, else <i>false</i>.
      */
     public static <E extends Comparable<E>> boolean isReverseSorted(E[] array) {
-     // Loop through all the elements in the array
         for(int i = 0; i < array.length - 1 ; i++) {           
-            // If the current element is less than the next element      
             if(array[i].compareTo(array[i + 1]) < 0) {
-                // The array is not sorted
                 return false;
             }
             
         }
         
-        // If we loop through the entire array without returning, it means
-        // that the array is sorted
         return true;
     }
     
@@ -145,18 +125,13 @@ public abstract class Sort {
      * @return <i>true</i> if the list is reverse sorted, else <i>false</i>.
      */
     public static <E extends Comparable<E>> boolean isReverseSorted(List<E> list) {
-        // Loop through all the elements in the list
         for(int i = 0; i < list.size() - 1; i++) {           
-            // If the current element is less than the next element      
             if(list.get(i).compareTo(list.get(i + 1)) < 0) {
-                // The list is not sorted
                 return false;
             }
             
         }
         
-        // If we loop through the entire list without returning, it means
-        // that the list is sorted
         return true;
     }
 	
@@ -174,18 +149,13 @@ public abstract class Sort {
 	 * @return <i>true</i> if the integer array is reverse sorted, else <i>false</i>.
 	 */
 	public static boolean isReverseSorted(int[] intArray) {
-		// Loop through all the elements in the array		
 		for(int i = 0; i < intArray.length - 1 ; i++) {
-			// If the current element is less than the next element		
 			if(intArray[i] < intArray [i + 1]) {
-				// The array is not reverse sorted
 				return false;
 			}
 			
 		}
 		
-		// If we loop through the entire array without returning, it means
-		// that the array is sorted
 		return true;
 	}
 	
@@ -203,18 +173,12 @@ public abstract class Sort {
 	 * @return <i>true</i> if the byte array is sorted, else <i>false</i>.
 	 */
 	public static boolean isSorted(byte[] byteArray) {
-		// Loop through all the elements in the array
 		for(int i = 0; i < byteArray.length - 1 ; i++) {			
-			// If the current element is less than the next element		
 			if(byteArray[i] > byteArray [i + 1]) {
-				// The array is not sorted
 				return false;
 			}
 			
-		}
-		
-		// If we loop through the entire array without returning, it means
-		// that the array is sorted
+		}		
 		return true;
 	}
 	
@@ -232,18 +196,12 @@ public abstract class Sort {
 	 * @return <i>true</i> if the byte array is reverse sorted, else <i>false</i>.
 	 */
 	public static boolean isReverseSorted(byte[] byteArray) {
-		// Loop through all the elements in the array		
 		for(int i = 0; i < byteArray.length - 1 ; i++) {
-			// If the current element is less than the next element		
 			if(byteArray[i] < byteArray [i + 1]) {
-				// The array is not reverse sorted
 				return false;
 			}
 			
-		}
-		
-		// If we loop through the entire array without returning, it means
-		// that the array is sorted
+		}		
 		return true;
 	}
 	
@@ -261,19 +219,14 @@ public abstract class Sort {
 	 * @return <i>true</i> if the char array is sorted, else <i>false</i>.
 	 */
 	public static boolean isSorted(char[] charArray) {
-		// Loop through all the elements in the array
 		for(int i = 0; i < charArray.length - 1 ; i++) {
 			
-			// If the current element is less than the next element		
 			if(charArray[i] > charArray [i + 1]) {
-				// The array is not sorted
 				return false;
 			}
 			
 		}
 		
-		// If we loop through the entire array without returning, it means
-		// that the array is sorted
 		return true;
 	}
 	
@@ -291,19 +244,14 @@ public abstract class Sort {
 	 * @return <i>true</i> if the char array is reverse sorted, else <i>false</i>.
 	 */
 	public static boolean isReverseSorted(char[] charArray) {
-		// Loop through all the elements in the array
 		
 		for(int i = 0; i < charArray.length - 1 ; i++) {
-			// If the current element is less than the next element		
 			if(charArray[i] < charArray [i + 1]) {
-				// The array is not reverse sorted
 				return false;
 			}
 			
 		}
 		
-		// If we loop through the entire array without returning, it means
-		// that the array is sorted
 		return true;
 	}
 	
@@ -321,19 +269,14 @@ public abstract class Sort {
 	 * @return <i>true</i> if the double array is sorted, else <i>false</i>.
 	 */
 	public static boolean isSorted(double[] doubleArray) {
-		// Loop through all the elements in the array
 		for(int i = 0; i < doubleArray.length - 1 ; i++) {
 			
-			// If the current element is less than the next element		
 			if(doubleArray[i] > doubleArray [i + 1]) {
-				// The array is not sorted
 				return false;
 			}
 			
 		}
 		
-		// If we loop through the entire array without returning, it means
-		// that the array is sorted
 		return true;
 	}
 	
@@ -351,19 +294,14 @@ public abstract class Sort {
 	 * @return <i>true</i> if the double array is reverse sorted, else <i>false</i>.
 	 */
 	public static boolean isReverseSorted(double[] doubleArray) {
-		// Loop through all the elements in the array
 		
 		for(int i = 0; i < doubleArray.length - 1 ; i++) {
-			// If the current element is less than the next element		
 			if(doubleArray[i] < doubleArray [i + 1]) {
-				// The array is not reverse sorted
 				return false;
 			}
 			
 		}
 		
-		// If we loop through the entire array without returning, it means
-		// that the array is sorted
 		return true;
 	}
 	
@@ -381,19 +319,14 @@ public abstract class Sort {
 	 * @return <i>true</i> if the float array is sorted, else <i>false</i>.
 	 */
 	public static boolean isSorted(float[] floatArray) {
-		// Loop through all the elements in the array
 		for(int i = 0; i < floatArray.length - 1 ; i++) {
 			
-			// If the current element is less than the next element		
 			if(floatArray[i] > floatArray [i + 1]) {
-				// The array is not sorted
 				return false;
 			}
 			
 		}
 		
-		// If we loop through the entire array without returning, it means
-		// that the array is sorted
 		return true;
 	}
 	
@@ -411,19 +344,14 @@ public abstract class Sort {
 	 * @return <i>true</i> if the float array is reverse sorted, else <i>false</i>.
 	 */
 	public static boolean isReverseSorted(float[] floatArray) {
-		// Loop through all the elements in the array
 		
 		for(int i = 0; i < floatArray.length - 1 ; i++) {
-			// If the current element is less than the next element		
 			if(floatArray[i] < floatArray [i + 1]) {
-				// The array is not reverse sorted
 				return false;
 			}
 			
 		}
 		
-		// If we loop through the entire array without returning, it means
-		// that the array is sorted
 		return true;
 	}
 	
@@ -441,19 +369,14 @@ public abstract class Sort {
 	 * @return <i>true</i> if the long array is sorted, else <i>false</i>.
 	 */
 	public static boolean isSorted(long[] longArray) {
-		// Loop through all the elements in the array
 		for(int i = 0; i < longArray.length - 1 ; i++) {
 			
-			// If the current element is less than the next element		
 			if(longArray[i] > longArray [i + 1]) {
-				// The array is not sorted
 				return false;
 			}
 			
 		}
 		
-		// If we loop through the entire array without returning, it means
-		// that the array is sorted
 		return true;
 	}
 	
@@ -471,19 +394,14 @@ public abstract class Sort {
 	 * @return <i>true</i> if the long array is reverse sorted, else <i>false</i>.
 	 */
 	public static boolean isReverseSorted(long[] longArray) {
-		// Loop through all the elements in the array
 		
 		for(int i = 0; i < longArray.length - 1 ; i++) {
-			// If the current element is less than the next element		
 			if(longArray[i] < longArray [i + 1]) {
-				// The array is not reverse sorted
 				return false;
 			}
 			
 		}
 		
-		// If we loop through the entire array without returning, it means
-		// that the array is sorted
 		return true;
 	}
 	
@@ -501,19 +419,14 @@ public abstract class Sort {
 	 * @return <i>true</i> if the short array is sorted, else <i>false</i>.
 	 */
 	public static boolean isSorted(short[] shortArray) {
-		// Loop through all the elements in the array
 		for(int i = 0; i < shortArray.length - 1 ; i++) {
 			
-			// If the current element is less than the next element		
 			if(shortArray[i] > shortArray [i + 1]) {
-				// The array is not sorted
 				return false;
 			}
 			
 		}
 		
-		// If we loop through the entire array without returning, it means
-		// that the array is sorted
 		return true;
 	}
 	
@@ -531,20 +444,14 @@ public abstract class Sort {
 	 * @return <i>true</i> if the short array is reverse sorted, else <i>false</i>.
 	 */
 	public static boolean isReverseSorted(short[] shortArray) {
-		// Loop through all the elements in the array
 		
 		for(int i = 0; i < shortArray.length - 1 ; i++) {
-			// If the current element is less than the next element		
 			if(shortArray[i] < shortArray [i + 1]) {
-				// The array is not reverse sorted
 				return false;
 			}
 			
 		}
 		
-		// If we loop through the entire array without returning, it means
-		// that the array is sorted
 		return true;
 	}
-
 }

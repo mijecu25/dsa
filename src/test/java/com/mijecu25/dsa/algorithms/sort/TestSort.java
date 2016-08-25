@@ -47,10 +47,8 @@ public class TestSort extends TestAlgorithms {
 	 */
 	@Test
 	public void testIsSorted() {
-		// Assert that the sorted array is sorted
 		Assert.assertTrue(Sort.isSorted(this.sortedIntArray));
 		
-		// Assert that the unsorted array is not sorted
 		Assert.assertFalse(Sort.isSorted(this.intArray1));
 	}
 	
@@ -59,10 +57,8 @@ public class TestSort extends TestAlgorithms {
 	 */
 	@Test
 	public void testIsReverseSorted() {
-		// Assert that the reverse sorted array is reverse sorted
 		Assert.assertTrue(Sort.isReverseSorted(this.reverseSortedIntArray));
 		
-		// Assert that the unsorted array is not reverse sorted
 		Assert.assertFalse(Sort.isReverseSorted(this.sortedIntArray));
 	}
 	
@@ -71,10 +67,8 @@ public class TestSort extends TestAlgorithms {
 	 */
 	@Test
 	public void testIsSortedElements() {        
-        // Assert that the array is sorted
         Assert.assertTrue(Sort.isSorted(this.sortedElements));
         
-        // Assert that the unsorted array is not sorted
         Assert.assertFalse(Sort.isSorted(this.integerArray1));  
 	}
 	
@@ -83,10 +77,8 @@ public class TestSort extends TestAlgorithms {
      */
     @Test
     public void testIsReverseSortedElements() {        
-        // Assert that the array is reverse sorted
         Assert.assertTrue(Sort.isReverseSorted(this.reverseSortedElements));
         
-        // Assert that the unsorted array is not reverse sorted
         Assert.assertFalse(Sort.isReverseSorted(this.integerArray1));  
     }
     
@@ -95,13 +87,10 @@ public class TestSort extends TestAlgorithms {
      */
     @Test
     public void testIsSortedList() {          
-        // Assert that the list is sorted
         Assert.assertTrue(Sort.isSorted(this.sortedList));
         
-        // Add element to list to make it unsorted
         this.sortedList.add(1, "w");
         
-        // Assert that the unsorted array is not sorted
         Assert.assertFalse(Sort.isSorted(this.sortedList));  
     }
     
@@ -110,13 +99,10 @@ public class TestSort extends TestAlgorithms {
      */
     @Test
     public void testIsReverseSortedList() {        
-        // Assert that the array is reverse sorted
         Assert.assertTrue(Sort.isReverseSorted(this.reverseSortedList));
         
-        // Add element to list to make it unsorted
         this.reverseSortedList.add(1, "w");
         
-        // Assert that the sorted array is not reverse sorted
         Assert.assertFalse(Sort.isReverseSorted(this.reverseSortedList));  
     }
 	

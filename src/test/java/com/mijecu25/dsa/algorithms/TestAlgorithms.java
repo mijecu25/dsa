@@ -14,7 +14,6 @@ import org.junit.rules.ExpectedException;
  * @version 0.2.0.2
  */
 public class TestAlgorithms {
-
     protected Integer[]         integerArray1 = {1, 2, 3, 4, 1, 3, 4, 5};
     protected Integer[]         integerArray2 = {5, 8, 7, 6};
     protected int[]             intArray1 = {1, 5, 3, 8, 14, 5, 1, 7, 10};

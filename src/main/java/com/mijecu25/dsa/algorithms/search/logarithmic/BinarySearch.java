@@ -45,35 +45,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static <E extends Comparable<E>> int search(E[] array, E value) {                 
-        // Get the indexes of the array
         int start = 0;
         int end = array.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value.equals(array[middle])) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is less than the current value
             if(value.compareTo(array[middle]) < 0) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -90,35 +81,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the list, else -1.
      */
     public static <E extends Comparable<E>> int search(List<E> list, E value) { 
-        // Get the indexes of the list
         int start = 0;
         int end = list.size() - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the list
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value.equals(list.get(middle))) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is less than the current value
             if(value.compareTo(list.get(middle)) < 0) {
-                // Search on the left half of the list
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the list
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -131,35 +113,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static int search(int[] intArray, int value) { 
-        // Get the indexes of the array
         int start = 0;
         int end = intArray.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value == intArray[middle]) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is less than the current value
             if(value < intArray[middle]) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -172,35 +145,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static int search(char[] charArray, char value) { 
-        // Get the indexes of the array
         int start = 0;
         int end = charArray.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value == charArray[middle]) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is less than the current value
             if(value < charArray[middle]) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -213,35 +177,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static int search(byte[] byteArray, byte value) { 
-        // Get the indexes of the array
         int start = 0;
         int end = byteArray.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value == byteArray[middle]) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is less than the current value
             if(value < byteArray[middle]) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -254,35 +209,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static int search(short[] shortArray, short value) { 
-        // Get the indexes of the array
         int start = 0;
         int end = shortArray.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value == shortArray[middle]) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is less than the current value
             if(value < shortArray[middle]) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -295,35 +241,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static int search(long[] longArray, long value) { 
-        // Get the indexes of the array
         int start = 0;
         int end = longArray.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value == longArray[middle]) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is less than the current value
             if(value < longArray[middle]) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -336,35 +273,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static int search(float[] floatArray, float value) { 
-        // Get the indexes of the array
         int start = 0;
         int end = floatArray.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value == floatArray[middle]) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is less than the current value
             if(value < floatArray[middle]) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -377,35 +305,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static int search(double[] doubleArray, double value) { 
-        // Get the indexes of the array
         int start = 0;
         int end = doubleArray.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value == doubleArray[middle]) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is less than the current value
             if(value < doubleArray[middle]) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -420,35 +339,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static <E extends Comparable<E>> int searchDescending(E[] array, E value) {                 
-        // Get the indexes of the array
         int start = 0;
         int end = array.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value.equals(array[middle])) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is greater than the current value
             if(value.compareTo(array[middle]) > 0) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -465,35 +375,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the list, else -1.
      */
     public static <E extends Comparable<E>> int searchDescending(List<E> list, E value) { 
-        // Get the indexes of the list
         int start = 0;
         int end = list.size() - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the list
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value.equals(list.get(middle))) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is greater than the current value
             if(value.compareTo(list.get(middle)) > 0) {
-                // Search on the left half of the list
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the list
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -506,35 +407,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static int searchDescending(int[] intArray, int value) { 
-        // Get the indexes of the array
         int start = 0;
         int end = intArray.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value == intArray[middle]) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is greater than the current value
             if(value > intArray[middle]) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -547,35 +439,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static int searchDescending(char[] charArray, char value) { 
-        // Get the indexes of the array
         int start = 0;
         int end = charArray.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value == charArray[middle]) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is greater than the current value
             if(value > charArray[middle]) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -588,35 +471,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static int searchDescending(byte[] byteArray, byte value) { 
-        // Get the indexes of the array
         int start = 0;
         int end = byteArray.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value == byteArray[middle]) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is greater than the current value
             if(value > byteArray[middle]) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -629,35 +503,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static int searchDescending(short[] shortArray, short value) { 
-        // Get the indexes of the array
         int start = 0;
         int end = shortArray.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value == shortArray[middle]) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is greater than the current value
             if(value > shortArray[middle]) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -670,35 +535,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static int searchDescending(long[] longArray, long value) { 
-        // Get the indexes of the array
         int start = 0;
         int end = longArray.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value == longArray[middle]) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is greater than the current value
             if(value > longArray[middle]) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -711,35 +567,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static int searchDescending(float[] floatArray, float value) { 
-        // Get the indexes of the array
         int start = 0;
         int end = floatArray.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value == floatArray[middle]) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is greater than the current value
             if(value > floatArray[middle]) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
@@ -752,35 +599,26 @@ public final class BinarySearch extends Search {
      * @return the index where the value is found in the array, else -1.
      */
     public static int searchDescending(double[] doubleArray, double value) { 
-        // Get the indexes of the array
         int start = 0;
         int end = doubleArray.length - 1;
         int middle = 0;
         
-        // While the start index is less than or equal to the end index
         while(start <= end) {
-            // Get the middle index of the array
             middle = (start + end) >> 1;
         
-            // If the value equals to the current object
             if(value == doubleArray[middle]) {
-                // Return the index
                 return middle;
             }
             
-            // If the value is greater than the current value
             if(value > doubleArray[middle]) {
-                // Search on the left half of the array
                 end = middle - 1 ;
             }
             else {
-                // Search on the right half of the array
                 start = middle + 1;
             }
         }
                 
-        // If the method has not returned by this point, it means that the
-        // value was not found. So we return -1
+
         return -1;
     }
     
