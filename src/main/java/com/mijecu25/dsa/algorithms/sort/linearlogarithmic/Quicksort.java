@@ -48,7 +48,6 @@ public class Quicksort extends Sort {
      * @param intArray the array that we want to sort
      */
     public static void sort(int[] intArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(intArray, 0, intArray.length - 1 , false);
     }
     
@@ -58,7 +57,6 @@ public class Quicksort extends Sort {
      * @param intArray the array that we want to sort
      */
     public static void sortDescending(int[] intArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(intArray, 0, intArray.length - 1 , true);
     }
     
@@ -68,7 +66,6 @@ public class Quicksort extends Sort {
      * @param charArray the array that we want to sort
      */
     public static void sort(char[] charArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(charArray, 0, charArray.length - 1 , false);
     }
     
@@ -78,7 +75,6 @@ public class Quicksort extends Sort {
      * @param charArray the array that we want to sort
      */
     public static void sortDescending(char[] charArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(charArray, 0, charArray.length - 1 , true);
     }
     
@@ -88,7 +84,6 @@ public class Quicksort extends Sort {
      * @param byteArray the array that we want to sort
      */
     public static void sort(byte[] byteArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(byteArray, 0, byteArray.length - 1 , false);
     }
     
@@ -98,7 +93,6 @@ public class Quicksort extends Sort {
      * @param byteArray the array that we want to sort
      */
     public static void sortDescending(byte[] byteArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(byteArray, 0, byteArray.length - 1 , true);
     }
     
@@ -108,7 +102,6 @@ public class Quicksort extends Sort {
      * @param shortArray the array that we want to sort
      */
     public static void sort(short[] shortArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(shortArray, 0, shortArray.length - 1 , false);
     }
     
@@ -118,7 +111,6 @@ public class Quicksort extends Sort {
      * @param shortArray the array that we want to sort
      */
     public static void sortDescending(short[] shortArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(shortArray, 0, shortArray.length - 1 , true);
     }
     
@@ -128,7 +120,6 @@ public class Quicksort extends Sort {
      * @param longArray the array that we want to sort
      */
     public static void sort(long[] longArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(longArray, 0, longArray.length - 1 , false);
     }
     
@@ -138,7 +129,6 @@ public class Quicksort extends Sort {
      * @param longArray the array that we want to sort
      */
     public static void sortDescending(long[] longArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(longArray, 0, longArray.length - 1 , true);
     }
     
@@ -148,7 +138,6 @@ public class Quicksort extends Sort {
      * @param floatArray the array that we want to sort
      */
     public static void sort(float[] floatArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(floatArray, 0, floatArray.length - 1 , false);
     }
     
@@ -158,7 +147,6 @@ public class Quicksort extends Sort {
      * @param floatArray the array that we want to sort
      */
     public static void sortDescending(float[] floatArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(floatArray, 0, floatArray.length - 1 , true);
     }
     
@@ -168,7 +156,6 @@ public class Quicksort extends Sort {
      * @param doubleArray the array that we want to sort
      */
     public static void sort(double[] doubleArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(doubleArray, 0, doubleArray.length - 1 , false);
     }
     
@@ -178,7 +165,6 @@ public class Quicksort extends Sort {
      * @param doubleArray the array that we want to sort
      */
     public static void sortDescending(double[] doubleArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(doubleArray, 0, doubleArray.length - 1 , true);
     }
     
@@ -190,7 +176,6 @@ public class Quicksort extends Sort {
      * @param intArray the array that we want to sort
      */
     public static <E extends Comparable<E>> void sort(E[] intArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(intArray, 0, intArray.length - 1 , false);
     }
     
@@ -202,7 +187,6 @@ public class Quicksort extends Sort {
      * @param intArray the array that we want to sort
      */
     public static <E extends Comparable<E>> void sortDescending(E[] intArray) {
-        // Call the subroutine in ascending order
         Quicksort.sort(intArray, 0, intArray.length - 1 , true);
     }
     
@@ -214,7 +198,6 @@ public class Quicksort extends Sort {
      * @param list the list that we want to sort
      */
     public static <E extends Comparable<E>> void sort(List<E> list) {
-        // Call the subroutine in ascending order
         Quicksort.sort(list, 0, list.size() - 1, false);
     }
     
@@ -226,7 +209,6 @@ public class Quicksort extends Sort {
      * @param list the list that we want to sort
      */
     public static <E extends Comparable<E>> void sortDescending(List<E> list) {
-        // Call the subroutine in ascending order
         Quicksort.sort(list, 0, list.size() - 1, true);
     }
     
@@ -242,27 +224,20 @@ public class Quicksort extends Sort {
      * @param descending boolean value that determines if we want to do descending sort
      */
     private static void sort(int[] intArray, int start, int end, boolean descending) {
-        // If start is greater or equal to end
         if(start >= end) {
             return ;
         }
 
-        // Create variable for index of pivot after the partition
         int pivot = 0;
         
-        // If descending algorithm
         if(descending) {
-            // Call the partition descending routine
             pivot = Quicksort.partitionDescending(intArray, start, end);
         }
         else {
-            // Call the partition ascending routine
             pivot = Quicksort.partition(intArray, start, end);
         }
         
-        // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(intArray, start, pivot - 1, descending);
-        // // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(intArray, pivot + 1, end, descending);   
     }
     
@@ -277,26 +252,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static int partition(int[] intArray, int start, int end) {
-        // Select the pivot to be the last element
         int pivot = intArray[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is less or equal to the pivot
             if(intArray[j] <= pivot) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 XORSwap.swap(intArray, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         XORSwap.swap(intArray, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     
@@ -311,26 +278,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static int partitionDescending(int[] intArray, int start, int end) {
-        // Select the pivot to be the last element
         int pivot = intArray[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is greate or equal to the pivot
             if(intArray[j] >= pivot) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 XORSwap.swap(intArray, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         XORSwap.swap(intArray, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     
@@ -345,27 +304,20 @@ public class Quicksort extends Sort {
      * @param descending boolean value that determines if we want to do descending sort
      */
     private static void sort(char[] charArray, int start, int end, boolean descending) {
-        // If start is greater or equal to end
         if(start >= end) {
             return ;
         }
 
-        // Create variable for index of pivot after the partition
         int pivot = 0;
         
-        // If descending algorithm
         if(descending) {
-            // Call the partition descending routine
             pivot = Quicksort.partitionDescending(charArray, start, end);
         }
         else {
-            // Call the partition ascending routine
             pivot = Quicksort.partition(charArray, start, end);
         }
         
-        // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(charArray, start, pivot - 1, descending);
-        // // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(charArray, pivot + 1, end, descending);   
     }
     
@@ -380,26 +332,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static int partition(char[] charArray, int start, int end) {
-        // Select the pivot to be the last element
         char pivot = charArray[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is less or equal to the pivot
             if(charArray[j] <= pivot) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 XORSwap.swap(charArray, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         XORSwap.swap(charArray, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     
@@ -414,26 +358,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static int partitionDescending(char[] charArray, int start, int end) {
-        // Select the pivot to be the last element
         char pivot = charArray[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is greate or equal to the pivot
             if(charArray[j] >= pivot) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 XORSwap.swap(charArray, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         XORSwap.swap(charArray, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     /**
@@ -447,27 +383,20 @@ public class Quicksort extends Sort {
      * @param descending boolean value that determines if we want to do descending sort
      */
     private static void sort(byte[] byteArray, int start, int end, boolean descending) {
-        // If start is greater or equal to end
         if(start >= end) {
             return ;
         }
 
-        // Create variable for index of pivot after the partition
         int pivot = 0;
         
-        // If descending algorithm
         if(descending) {
-            // Call the partition descending routine
             pivot = Quicksort.partitionDescending(byteArray, start, end);
         }
         else {
-            // Call the partition ascending routine
             pivot = Quicksort.partition(byteArray, start, end);
         }
         
-        // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(byteArray, start, pivot - 1, descending);
-        // // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(byteArray, pivot + 1, end, descending);   
     }
     
@@ -482,26 +411,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static int partition(byte[] byteArray, int start, int end) {
-        // Select the pivot to be the last element
         byte pivot = byteArray[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is less or equal to the pivot
             if(byteArray[j] <= pivot) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 XORSwap.swap(byteArray, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         XORSwap.swap(byteArray, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     
@@ -516,26 +437,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static int partitionDescending(byte[] byteArray, int start, int end) {
-        // Select the pivot to be the last element
         byte pivot = byteArray[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is greate or equal to the pivot
             if(byteArray[j] >= pivot) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 XORSwap.swap(byteArray, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         XORSwap.swap(byteArray, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     /**
@@ -549,27 +462,20 @@ public class Quicksort extends Sort {
      * @param descending boolean value that determines if we want to do descending sort
      */
     private static void sort(short[] shortArray, int start, int end, boolean descending) {
-        // If start is greater or equal to end
         if(start >= end) {
             return ;
         }
 
-        // Create variable for index of pivot after the partition
         int pivot = 0;
         
-        // If descending algorithm
         if(descending) {
-            // Call the partition descending routine
             pivot = Quicksort.partitionDescending(shortArray, start, end);
         }
         else {
-            // Call the partition ascending routine
             pivot = Quicksort.partition(shortArray, start, end);
         }
         
-        // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(shortArray, start, pivot - 1, descending);
-        // // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(shortArray, pivot + 1, end, descending);   
     }
     
@@ -584,26 +490,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static int partition(short[] shortArray, int start, int end) {
-        // Select the pivot to be the last element
         short pivot = shortArray[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is less or equal to the pivot
             if(shortArray[j] <= pivot) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 XORSwap.swap(shortArray, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         XORSwap.swap(shortArray, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     
@@ -618,26 +516,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static int partitionDescending(short[] shortArray, int start, int end) {
-        // Select the pivot to be the last element
         short pivot = shortArray[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is greate or equal to the pivot
             if(shortArray[j] >= pivot) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 XORSwap.swap(shortArray, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         XORSwap.swap(shortArray, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     /**
@@ -651,27 +541,20 @@ public class Quicksort extends Sort {
      * @param descending boolean value that determines if we want to do descending sort
      */
     private static void sort(long[] longArray, int start, int end, boolean descending) {
-        // If start is greater or equal to end
         if(start >= end) {
             return ;
         }
 
-        // Create variable for index of pivot after the partition
         int pivot = 0;
         
-        // If descending algorithm
         if(descending) {
-            // Call the partition descending routine
             pivot = Quicksort.partitionDescending(longArray, start, end);
         }
         else {
-            // Call the partition ascending routine
             pivot = Quicksort.partition(longArray, start, end);
         }
         
-        // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(longArray, start, pivot - 1, descending);
-        // // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(longArray, pivot + 1, end, descending);   
     }
     
@@ -686,26 +569,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static int partition(long[] longArray, int start, int end) {
-        // Select the pivot to be the last element
         long pivot = longArray[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is less or equal to the pivot
             if(longArray[j] <= pivot) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 XORSwap.swap(longArray, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         XORSwap.swap(longArray, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     
@@ -720,26 +595,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static int partitionDescending(long[] longArray, int start, int end) {
-        // Select the pivot to be the last element
         long pivot = longArray[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is greate or equal to the pivot
             if(longArray[j] >= pivot) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 XORSwap.swap(longArray, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         XORSwap.swap(longArray, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     /**
@@ -753,27 +620,20 @@ public class Quicksort extends Sort {
      * @param descending boolean value that determines if we want to do descending sort
      */
     private static void sort(float[] floatArray, int start, int end, boolean descending) {
-        // If start is greater or equal to end
         if(start >= end) {
             return ;
         }
 
-        // Create variable for index of pivot after the partition
         int pivot = 0;
         
-        // If descending algorithm
         if(descending) {
-            // Call the partition descending routine
             pivot = Quicksort.partitionDescending(floatArray, start, end);
         }
         else {
-            // Call the partition ascending routine
             pivot = Quicksort.partition(floatArray, start, end);
         }
         
-        // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(floatArray, start, pivot - 1, descending);
-        // // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(floatArray, pivot + 1, end, descending);   
     }
     
@@ -788,26 +648,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static int partition(float[] floatArray, int start, int end) {
-        // Select the pivot to be the last element
         float pivot = floatArray[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is less or equal to the pivot
             if(floatArray[j] <= pivot) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 TrivialSwap.swap(floatArray, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         TrivialSwap.swap(floatArray, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     
@@ -822,26 +674,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static int partitionDescending(float[] floatArray, int start, int end) {
-        // Select the pivot to be the last element
         float pivot = floatArray[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is greate or equal to the pivot
             if(floatArray[j] >= pivot) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 TrivialSwap.swap(floatArray, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         TrivialSwap.swap(floatArray, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     /**
@@ -855,27 +699,20 @@ public class Quicksort extends Sort {
      * @param descending boolean value that determines if we want to do descending sort
      */
     private static void sort(double[] doubleArray, int start, int end, boolean descending) {
-        // If start is greater or equal to end
         if(start >= end) {
             return ;
         }
 
-        // Create variable for index of pivot after the partition
         int pivot = 0;
         
-        // If descending algorithm
         if(descending) {
-            // Call the partition descending routine
             pivot = Quicksort.partitionDescending(doubleArray, start, end);
         }
         else {
-            // Call the partition ascending routine
             pivot = Quicksort.partition(doubleArray, start, end);
         }
         
-        // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(doubleArray, start, pivot - 1, descending);
-        // // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(doubleArray, pivot + 1, end, descending);   
     }
     
@@ -890,26 +727,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static int partition(double[] doubleArray, int start, int end) {
-        // Select the pivot to be the last element
         double pivot = doubleArray[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is less or equal to the pivot
             if(doubleArray[j] <= pivot) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 TrivialSwap.swap(doubleArray, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         TrivialSwap.swap(doubleArray, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     
@@ -924,29 +753,20 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static int partitionDescending(double[] dobuleArray, int start, int end) {
-        // Select the pivot to be the last element
         double pivot = dobuleArray[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is greate or equal to the pivot
             if(dobuleArray[j] >= pivot) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 TrivialSwap.swap(dobuleArray, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         TrivialSwap.swap(dobuleArray, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
-
     /**
      * Sort routine that recursively calls itself after the partition algorithm sorted the elements
      * in order. This routine is used for both the ascending and descending algorithms. The only
@@ -960,27 +780,20 @@ public class Quicksort extends Sort {
      * @param descending boolean value that determines if we want to do descending sort
      */
     private static <E extends Comparable<E>> void sort(E[] intArray, int start, int end, boolean descending) {
-        // If start is greater or equal to end
         if(start >= end) {
             return ;
         }
 
-        // Create variable for index of pivot after the partition
         int pivot = 0;
         
-        // If descending algorithm
         if(descending) {
-            // Call the partition descending routine
             pivot = Quicksort.partitionDescending(intArray, start, end);
         }
         else {
-            // Call the partition ascending routine
             pivot = Quicksort.partition(intArray, start, end);
         }
         
-        // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(intArray, start, pivot - 1, descending);
-        // // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(intArray, pivot + 1, end, descending);   
     }
     
@@ -997,26 +810,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static <E extends Comparable<E>> int partition(E[] array, int start, int end) {
-        // Select the pivot to be the last element
         E pivot = array[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is less or equal to the pivot
             if(array[j].compareTo(pivot) <= 0) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 TrivialSwap.swap(array, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         TrivialSwap.swap(array, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     
@@ -1033,26 +838,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static <E extends Comparable<E>> int partitionDescending(E[] array, int start, int end) {
-        // Select the pivot to be the last element
         E pivot = array[end];
-        // The final index of the pivot is initialized outside of the current array
         int index = start - 1;
         
-        // Loop through the array from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is greate or equal to the pivot
             if(array[j].compareTo(pivot) >= 0) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 TrivialSwap.swap(array, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         TrivialSwap.swap(array, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     
@@ -1069,27 +866,20 @@ public class Quicksort extends Sort {
      * @param descending boolean value that determines if we want to do descending sort
      */
     private static <E extends Comparable<E>> void sort(List<E> list, int start, int end, boolean descending) {
-        // If start is greater or equal to end
         if(start >= end) {
             return ;
         }
 
-        // Create variable for index of pivot after the partition
         int pivot = 0;
         
-        // If descending algorithm
         if(descending) {
-            // Call the partition descending routine
             pivot = Quicksort.partitionDescending(list, start, end);
         }
         else {
-            // Call the partition ascending routine
             pivot = Quicksort.partition(list, start, end);
         }
         
-        // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(list, start, pivot - 1, descending);
-        // // Recursively call the sort algorithm on the left half of the pivot
         Quicksort.sort(list, pivot + 1, end, descending);   
     }
     
@@ -1106,26 +896,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static <E extends Comparable<E>> int partition(List<E> list, int start, int end) {
-        // Select the pivot to be the last element
         E pivot = list.get(end);
-        // The final index of the pivot is initialized outside of the current list
         int index = start - 1;
         
-        // Loop through the list from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is less or equal to the pivot
             if(list.get(j).compareTo(pivot) <= 0) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 TrivialSwap.swap(list, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         TrivialSwap.swap(list, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     
@@ -1142,26 +924,18 @@ public class Quicksort extends Sort {
      * @return an integer that represent the index of the pivot
      */
     private static <E extends Comparable<E>> int partitionDescending(List<E> list, int start, int end) {
-        // Select the pivot to be the last element
         E pivot = list.get(end);
-        // The final index of the pivot is initialized outside of the current list
         int index = start - 1;
         
-        // Loop through the list from start to end
         for(int j = start; j < end; j++) {
-            // if the current element is greate or equal to the pivot
             if(list.get(j).compareTo(pivot) >= 0) {
-                // Increase the index
                 index++;
-                // Swap the values in the index and the current element
                 TrivialSwap.swap(list, index, j);
             }
         }
         
-        // Swap the current index with the pivot
         TrivialSwap.swap(list, index + 1, end);
         
-        // Return the current location of the pivot
         return index + 1;
     }
     

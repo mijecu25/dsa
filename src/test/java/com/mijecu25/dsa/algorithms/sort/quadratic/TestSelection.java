@@ -14,7 +14,6 @@ import com.mijecu25.dsa.algorithms.sort.TestSort;
  * @version 0.2.0.2
  */
 public class TestSelection extends TestSort {
-
     @Before
     public void initialize() { 
         super.initialize();
@@ -25,22 +24,17 @@ public class TestSelection extends TestSort {
      */
     @Test
     public void testSelection() {
-        // Sort the array using selection
         Selection.sort(this.intArray1);
         
-        // Assert that the array is sorted
         Assert.assertTrue(Sort.isSorted(this.intArray1));
     }
-
     /**
      * Test descending Selection primitives
      */
     @Test
     public void testDescendingSelection() {
-        // Sort the array using selection
         Selection.sortDescending(this.intArray1);
 
-        // Assert that the array is sorted in descending order
         Assert.assertTrue(Sort.isReverseSorted(this.intArray1));
     }
     
@@ -49,22 +43,17 @@ public class TestSelection extends TestSort {
      */
     @Test
     public void testSelection2() {
-        // Sort the array using selection
         Selection.sort(this.integerArray1);
         
-        // Assert that the array is sorted
         Assert.assertTrue(Sort.isSorted(this.integerArray1));
     }
-
     /**
      * Test descending Selection elements
      */
     @Test
     public void testDescendingSelection2() {
-        // Sort the array using selection
         Selection.sortDescending(this.integerArray1);
 
-        // Assert that the array is sorted in descending order
         Assert.assertTrue(Sort.isReverseSorted(this.integerArray1));
     }
     
@@ -73,22 +62,17 @@ public class TestSelection extends TestSort {
      */
     @Test
     public void testSelection3() {
-        // Sort the array using selection
         Selection.sort(this.list1);
         
-        // Assert that the array is sorted
         Assert.assertTrue(Sort.isSorted(this.list1));
     }
-
     /**
      * Test descending Selection list
      */
     @Test
     public void testDescendingSelection3() {
-        // Sort the array using selection
         Selection.sortDescending(this.list1);
 
-        // Assert that the array is sorted in descending order
         Assert.assertTrue(Sort.isReverseSorted(this.list1));
     }
     

@@ -22,7 +22,6 @@ import com.mijecu25.dsa.algorithms.sort.Sort;
  * @version 0.2.0.2
  */
 public final class Insertion extends Sort {
-
     /**
      * Don't let anyone instantiate this class
      */
@@ -36,28 +35,19 @@ public final class Insertion extends Sort {
      * @param array the array that we want to sort
      */
     public static <E extends Comparable<E>> void sort(E[] array) {
-        // Initialize helper variables
         int index = 0;
         E value = null;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < array.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = array[index];
-            
-            // While the index is greater than 0 and the value is less than the
-            // value to the left
+
             while(index > 0 && value.compareTo(array[index - 1]) < 0) {
-                // Copy the value to the left to the current spot
                 array[index] = array[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             array[index] = value;
         }
     }
@@ -71,29 +61,21 @@ public final class Insertion extends Sort {
      * @param list the list that we want to sort
      */
     public static <E extends Comparable<E>> void sort(List<E> list) {
-        // Initialize helper variables
         int index = 0;
         E value = null;
         
-        // Loop through the list beginning at the second element
         for(int i = 1; i < list.size(); i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the list. We have to remove the element
-            // since we are working with lists.
+
             value = list.remove(index);
             
-            // While the index is greater than 0 and the value is less than the
-            // value to the left
+
             while(index > 0 && value.compareTo(list.get(index - 1)) < 0) {
-                // Copy the value to the left to the current spot
                 list.add(index, list.get(index - 1));
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             list.add(index, value);
         }
     }
@@ -104,28 +86,20 @@ public final class Insertion extends Sort {
      * @param intArray the array of ints that we want to sort
      */
     public static void sort(int[] intArray) {
-        // Initialize helper variables
         int index = 0;
         int value = 0;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < intArray.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = intArray[index];
             
-            // While the index is greater than 0 and the value is less than the
-            // value to the left
+
             while(index > 0 && value < intArray[index - 1]) {
-                // Copy the value to the left to the current spot
                 intArray[index] = intArray[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             intArray[index] = value;
         }
     }
@@ -136,28 +110,20 @@ public final class Insertion extends Sort {
      * @param byteArray the array of bytes that we want to sort
      */
     public static void sort(byte[] byteArray) {
-        // Initialize helper variables
         int index = 0;
         byte value = 0;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < byteArray.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = byteArray[index];
             
-            // While the index is greater than 0 and the value is less than the
-            // value to the left
+
             while(index > 0 && value < byteArray[index - 1]) {
-                // Copy the value to the left to the current spot
                 byteArray[index] = byteArray[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             byteArray[index] = value;
         }
     }
@@ -168,28 +134,20 @@ public final class Insertion extends Sort {
      * @param charArray the array of chars that we want to sort
      */
     public static void sort(char[] charArray) {
-        // Initialize helper variables
         int index = 0;
         char value = 0;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < charArray.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = charArray[index];
             
-            // While the index is greater than 0 and the value is less than the
-            // value to the left
+
             while(index > 0 && value < charArray[index - 1]) {
-                // Copy the value to the left to the current spot
                 charArray[index] = charArray[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             charArray[index] = value;
         }
     }
@@ -200,28 +158,20 @@ public final class Insertion extends Sort {
      * @param doubleArray the array of double that we want to sort
      */
     public static void sort(double[] doubleArray) {
-        // Initialize helper variables
         int index = 0;
         double value = 0.0;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < doubleArray.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = doubleArray[index];
             
-            // While the index is greater than 0 and the value is less than the
-            // value to the left
+
             while(index > 0 && value < doubleArray[index - 1]) {
-                // Copy the value to the left to the current spot
                 doubleArray[index] = doubleArray[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             doubleArray[index] = value;
         }
     }
@@ -232,28 +182,20 @@ public final class Insertion extends Sort {
      * @param floatArray the array of float that we want to sort
      */
     public static void sort(float[] floatArray) {
-        // Initialize helper variables
         int index = 0;
         float value = 0f;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < floatArray.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = floatArray[index];
             
-            // While the index is greater than 0 and the value is less than the
-            // value to the left
+
             while(index > 0 && value < floatArray[index - 1]) {
-                // Copy the value to the left to the current spot
                 floatArray[index] = floatArray[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             floatArray[index] = value;
         }
     }
@@ -264,28 +206,20 @@ public final class Insertion extends Sort {
      * @param longArray the array of longs that we want to sort
      */
     public static void sort(long[] longArray) {
-        // Initialize helper variables
         int index = 0;
         long value = 0;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < longArray.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = longArray[index];
             
-            // While the index is greater than 0 and the value is less than the
-            // value to the left
+
             while(index > 0 && value < longArray[index - 1]) {
-                // Copy the value to the left to the current spot
                 longArray[index] = longArray[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             longArray[index] = value;
         }
     }
@@ -296,32 +230,23 @@ public final class Insertion extends Sort {
      * @param shortArray the array of shorts that we want to sort
      */
     public static void sort(short[] shortArray) {
-        // Initialize helper variables
         int index = 0;
         short value = 0;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < shortArray.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = shortArray[index];
             
-            // While the index is greater than 0 and the value is less than the
-            // value to the left
+
             while(index > 0 && value < shortArray[index - 1]) {
-                // Copy the value to the left to the current spot
                 shortArray[index] = shortArray[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             shortArray[index] = value;
         }
     }
-
      /**
      * Sort the array in descending order using this algorithm.
      * 
@@ -330,28 +255,20 @@ public final class Insertion extends Sort {
      * @param array the array that we want to sort
      */
     public static <E extends Comparable<E>> void sortDescending(E[] array) {
-        // Initialize helper variables
         int index = 0;
         E value = null;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < array.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = array[index];
             
-            // While the index is greater than 0 and the value is greater than the
-            // value to the left
+
             while(index > 0 && value.compareTo(array[index - 1]) > 0) {
-                // Copy the value to the left to the current spot
                 array[index] = array[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             array[index] = value;
         }
     }
@@ -365,29 +282,21 @@ public final class Insertion extends Sort {
      * @param list the list that we want to sort
      */
     public static <E extends Comparable<E>> void sortDescending(List<E> list) {
-        // Initialize helper variables
         int index = 0;
         E value = null;
         
-        // Loop through the list beginning at the second element
         for(int i = 1; i < list.size(); i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the list. Remove the value since
-            // we are manipulating a list
+
             value = list.remove(index);
             
-            // While the index is greater than 0 and the value is greater than the
-            // value to the left
+
             while(index > 0 && value.compareTo(list.get(index - 1)) > 0) {
-                // Copy the value to the left to the current spot
                 list.add(index, list.get(index - 1));
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             list.add(index, value);
         }
     }
@@ -398,220 +307,158 @@ public final class Insertion extends Sort {
      * @param intArray the array of ints that we want to sort
      */
     public static void sortDescending(int[] intArray) {
-        // Initialize helper variables
         int index = 0;
         int value = 0;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < intArray.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = intArray[index];
             
-            // While the index is greater than 0 and the value is greater than the
-            // value to the left
+
             while(index > 0 && value > intArray[index - 1]) {
-                // Copy the value to the left to the current spot
                 intArray[index] = intArray[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             intArray[index] = value;
         }
     }
-
     /**
      * Sort the byte array in descending order using this algorithm.
      *
      * @param byteArray the array of bytes that we want to sort
      */
     public static void sortDescending(byte[] byteArray) {
-        // Initialize helper variables
         int index = 0;
         byte value = 0;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < byteArray.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = byteArray[index];
             
-            // While the index is greater than 0 and the value is greater than the
-            // value to the left
+
             while(index > 0 && value > byteArray[index - 1]) {
-                // Copy the value to the left to the current spot
                 byteArray[index] = byteArray[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             byteArray[index] = value;
         }
     }
-
     /**
      * Sort the char array in descending order using this algorithm.
      *
      * @param charArray the array of chars that we want to sort
      */
     public static void sortDescending(char[] charArray) {
-        // Initialize helper variables
         int index = 0;
         char value = 0;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < charArray.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = charArray[index];
             
-            // While the index is greater than 0 and the value is greater than the
-            // value to the left
+
             while(index > 0 && value > charArray[index - 1]) {
-                // Copy the value to the left to the current spot
                 charArray[index] = charArray[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             charArray[index] = value;
         }
     }
-
     /**
      * Sort the double array in descending order using this algorithm.
      *
      * @param doubleArray the array of double that we want to sort
      */
     public static void sortDescending(double[] doubleArray) {
-        // Initialize helper variables
         int index = 0;
         double value = 0;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < doubleArray.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = doubleArray[index];
             
-            // While the index is greater than 0 and the value is greater than the
-            // value to the left
+
             while(index > 0 && value > doubleArray[index - 1]) {
-                // Copy the value to the left to the current spot
                 doubleArray[index] = doubleArray[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             doubleArray[index] = value;
         }
     }
-
     /**
      * Sort the float array in descending order using this algorithm.
      *
      * @param floatArray the array of float that we want to sort
      */
     public static void sortDescending(float[] floatArray) {
-        // Initialize helper variables
         int index = 0;
         float value = 0;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < floatArray.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = floatArray[index];
             
-            // While the index is greater than 0 and the value is greater than the
-            // value to the left
+
             while(index > 0 && value > floatArray[index - 1]) {
-                // Copy the value to the left to the current spot
                 floatArray[index] = floatArray[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             floatArray[index] = value;
         }
     }
-
     /**
      * Sort the long array in descending order using this algorithm.
      *
      * @param longArray the array of longs that we want to sort
      */
     public static void sortDescending(long[] longArray) {
-        // Initialize helper variables
         int index = 0;
         long value = 0;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < longArray.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = longArray[index];
             
-            // While the index is greater than 0 and the value is greater than the
-            // value to the left
+
             while(index > 0 && value > longArray[index - 1]) {
-                // Copy the value to the left to the current spot
                 longArray[index] = longArray[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             longArray[index] = value;
         }
     }
-
     /**
      * Sort the short array in descending order using this algorithm.
      *
      * @param shortArray the array of shorts that we want to sort
      */
     public static void sortDescending(short[] shortArray) {
-        // Initialize helper variables
         int index = 0;
         short value = 0;
         
-        // Loop through the array beginning at the second element
         for(int i = 1; i < shortArray.length; i++) {
-            // Set the index to the current iteration of the loop
             index = i;
-            // Set value to the current element of the array            
             value = shortArray[index];
             
-            // While the index is greater than 0 and the value is greater than the
-            // value to the left
+
             while(index > 0 && value > shortArray[index - 1]) {
-                // Copy the value to the left to the current spot
                 shortArray[index] = shortArray[index - 1];
                 
-                // Decrease the index
                 index--;
             }
             
-            // Copy the current value to the current position
             shortArray[index] = value;
         }
     }
